@@ -1,13 +1,20 @@
 body {
   font-family: "Poppins", "Ubuntu", sans-serif;
   background-color: #e6e1d3;
+  width:1440px;
+  height:1915px;
+  border:0;
+  padding:0;
+
 }
 header {
   background-color: #03196c;
   height: 150px;
+  width:1440px;
   padding: 40px 0 40px 230px;
   display: flex;
   justify-content: flex-start;
+
 }
 nav {
   width: 980px;
