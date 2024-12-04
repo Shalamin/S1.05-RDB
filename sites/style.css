@@ -6,7 +6,8 @@ header {
   background-color: #03196c;
   height: 150px;
   padding: 40px 0 40px 230px;
-  display: flexbox;
+  display: flex;
+  justify-content: flex-start;
 }
 nav {
   width: 980px;
@@ -31,4 +32,7 @@ nav a {
 header img {
   flex-direction: row;
   margin: 0px 25px 0px 85px;
+}
+header img {
+  justify-self:flex-end;
 }
