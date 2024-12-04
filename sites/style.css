@@ -1,6 +1,8 @@
 body {
   font-family: "Poppins", "Ubuntu", sans-serif;
   background-color: #e6e1d3;
+  border: 0;
+  margin: 0;
 }
 /*
 #####################################################
@@ -13,7 +15,16 @@ header {
   background-color: #03196c;
   height: 150px;
   padding: 40px 0 40px 230px;
+  text-align: center;
+}
+
+header ul{
   display: flexbox;
+}
+
+header h1 {
+  color: #e6e1d3;
+  font-family: "Poppins", sans-serif;
 }
 <<<<<<< HEAD
 
