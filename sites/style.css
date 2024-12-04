@@ -1,24 +1,32 @@
 body {
   font-family: "Poppins", "Ubuntu", sans-serif;
   background-color: #e6e1d3;
-  border:0;
-  padding:0;
-
 }
+/*
+#####################################################
+#                                                   #
+#                       Header                      #
+#                                                   #
+#####################################################
+*/
 header {
   background-color: #03196c;
+  height: 150px;
   padding: 40px 0 40px 230px;
-  display: flex;
-  justify-content: flex-start;
-
+  display: flexbox;
+}
+header img {
+  flex-direction: row;
+  margin: 0px 25px 0px 85px;
 }
 nav {
   width: 980px;
   height: 70px;
   margin: 0;
-  background-image: url(../images/bannière.webp);
+  background-image: url(../images/Image_general/bannière.webp);
+  
   flex-direction: row;
-  display: center;
+  display: center inline-block;
 }
 nav a {
   width: 180px;
@@ -32,10 +40,43 @@ nav a {
   text-align: center;
   display: inline-block;
 }
-header img {
-  flex-direction: row;
-  margin: 0px 25px 0px 85px;
+
+/*
+#####################################################
+#                                                   #
+#                       Body                        #
+#                                                   #
+#####################################################
+*/
+section {
+  display: flex;
 }
-header img {
-  justify-self:flex-end;
+article {
+  background-color: #d5c46c;
+  border: solid 1px #03196c;
+  margin: 20px;
+  border-radius: 20px;
 }
+h2 {
+  font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+}
+
+/*
+#####################################################
+#                                                   #
+#                       Footer                      #
+#                                                   #
+#####################################################
+*/
