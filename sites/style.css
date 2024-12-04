@@ -23,9 +23,10 @@ nav {
   width: 980px;
   height: 70px;
   margin: 0;
-  background-image: url(../images/bannière.webp);
+  background-image: url(../images/Image_general/bannière.webp);
+  
   flex-direction: row;
-  display: center;
+  display: center inline-block;
 }
 nav a {
   width: 180px;
