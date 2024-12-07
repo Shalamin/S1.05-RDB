@@ -1,3 +1,67 @@
+/*
+#####################################################
+#                                                   #
+#                      Polices                      #
+#                                                   #
+#####################################################
+*/
+    @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-Bold.woff2') format('woff2'),
+          url('fonts/Poppins-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-Light.woff2') format('woff2'),
+          url('fonts/Poppins-Light.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-Italic.woff2') format('woff2'),
+          url('fonts/Poppins-Italic.woff') format('woff');
+      font-weight: normal;
+      font-style: italic;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-Medium.woff2') format('woff2'),
+          url('fonts/Poppins-Medium.woff') format('woff');
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-Regular.woff2') format('woff2'),
+          url('fonts/Poppins-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-Thin.woff2') format('woff2'),
+          url('fonts/Poppins-Thin.woff') format('woff');
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Poppins';
+      src: url('fonts/Poppins-SemiBold.woff2') format('woff2'),
+          url('Poppins-SemiBold.woff') format('woff');
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+
 body {
   font-family: "Poppins", "Ubuntu", sans-serif;
   background-color: #e6e1d3;
@@ -13,7 +77,7 @@ header {
   background-color: #03196c;
   height: 150px;
   padding: 40px 0 40px 230px;
-  display: flexbox;
+  display: flex;
 }
 header img {
   flex-direction: row;
@@ -23,10 +87,12 @@ nav {
   width: 980px;
   height: 70px;
   margin: 0;
-  background-image: url(../images/Image_general/bannière.webp);
+  background-image: url("../images/Image_general/bannière.webp");
+  
   
   flex-direction: row;
-  display: center inline-block;
+  justify-content: center inline-block;
+
 }
 nav a {
   width: 180px;
