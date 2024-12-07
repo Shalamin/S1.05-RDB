@@ -133,8 +133,11 @@ article {
 }
 section article p, section article img, section article div{
   display:none;
-  transition: all 4s ease 1s;
 
+}
+
+section article{
+  transition: all 2s ease;
 }
 article nav{
   display:flex;
@@ -203,13 +206,14 @@ h2 {
 #                                                   #
 #####################################################
 */
-section:nth-child(1):hover article{
+section:nth-child(1) article:hover{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  height:575px;  
+  height:575px;
+  width:1334px;
 }
-section:nth-child(1):hover article div p, section:nth-child(1):hover article div img, section:nth-child(1):hover article div{
+section:nth-child(1) article:hover div p, section:nth-child(1) article:hover div img, section:nth-child(1) article:hover div{
   display:flex;
   flex-direction:row;
   height:50px;
