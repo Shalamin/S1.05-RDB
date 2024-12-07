@@ -80,6 +80,7 @@ header {
   padding: 40px 0 40px 230px;
   display: flex;
   
+  
 }
 header img {
   flex-direction: row;
@@ -89,7 +90,10 @@ nav {
   width: 980px;
   height: 70px;
   margin: 0;
-  background-image: url("../images/Image_general/bannière.webp");
+  background-image: url("../images/Image_general/bannière\ 1.png");
+
+  
+  
   
   
   flex-direction: row;
