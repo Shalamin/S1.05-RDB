@@ -1,6 +1,8 @@
 body {
   font-family: "Poppins", "Ubuntu", sans-serif;
   background-color: #e6e1d3;
+  border: 0;
+  padding: 0;
 }
 /*
 #####################################################
@@ -49,9 +51,56 @@ nav a {
 #####################################################
 */
 section {
-  display: flex;
+
+  background-color: #d5c46c;
+  margin: 20px;
 }
-article {
+
+section > h3{
+  padding: 1em;
+  background-color: #304aab;
+  margin: 2em 40em;
+  text-align: center;
+}
+
+section > h3 > a{
+  color: #e6e1d3;
+}
+
+section div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  
+}
+
+section div article{
+  background-color: #304aab;
+  margin: 5em;
+  width: 20em;
+  height: 40em;
+  padding: 1em;
+}
+
+section div article p{
+  display: none;
+}
+
+section div article:hover p{
+  display: inline;
+}
+
+section div article{
+  background-color: #304aab;
+  margin: 5em;
+  width: 20em;
+  height: 40em;
+  padding: 1em;
+}
+
+
+article, section{
   background-color: #d5c46c;
   border: solid 1px #03196c;
   margin: 20px;
