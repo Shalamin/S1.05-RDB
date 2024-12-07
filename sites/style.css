@@ -86,16 +86,11 @@ header img {
   flex-direction: row;
   margin: 0px 25px 0px 85px;
 }
-nav {
+header nav {
   width: 980px;
   height: 70px;
   margin: 0;
   background-image: url("../images/Image_general/bannière\ 1.png");
-
-  
-  
-  
-  
   flex-direction: row;
   justify-content: center inline-block;
 
@@ -135,7 +130,7 @@ article {
   width: 784px;
   height:171px;
 }
-section article p, section article img, section article div{
+section article p, section article img, section article div, section article table{
   display:none;
 
 }
@@ -151,7 +146,33 @@ article nav{
   text-align: left;
 }
 
+section:nth-child(2) article img{
+  margin-top:2em;
+  margin-left:2em;
+  display:block;
+}
+section:nth-child(2) h2{
+  display:block;
+  float: right;
+  font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: 0;
+  width:150px;
 
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: #304aab solid 3px;
+  border-right-width: 5px;
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+}
 section:nth-child(2) figure{
   margin-left:100px;
 }
@@ -173,7 +194,6 @@ section:nth-child(4) img{
 nav figure{
   position:relative;
 }
-
 nav figure img{
   float:right;
 }
@@ -223,10 +243,44 @@ section:nth-child(1) article:hover div p, section:nth-child(1) article:hover div
   height:50px;
   width:50px;
 }
-
 section:nth-child(1) article:hover p, section:nth-child(1) article:hover img{
   display:flex;
+}
+
+section:nth-child(2) article:hover {
+  display:flex;
+  flex-direction:row-reverse;
+  height:368px;
+  width:1201px;
+}
+section:nth-child(2) article:hover {
+  display:flex;
+  flex-direction:row-reverse;
+  height:368px;
+  width:1201px;
+}
+section:nth-child(2) article:hover img{
+  display:none;
+}
+section:nth-child(2) article:hover h2{
+  height:1.15em;
+}
+section:nth-child(2):hover img{
+  display:none;
+}
+section:nth-child(2) article:hover table{
+  display:inline-block;
+  text-align: center;
   
+}
+section:nth-child(2) article:hover table th, section:nth-child(2) article:hover table td {
+  padding-right:4em;
+  padding-left:4em;
+  border-right:solid #304aab 5px;   
+}
+section:nth-child(3) article:hover{
+   width:1319px;
+   height:403px;
 }
 
 
