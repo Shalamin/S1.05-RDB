@@ -90,8 +90,7 @@ header img {
   margin: 0px 25px 0px 85px;
 }
 header nav {
-  width: 80%;
-  height: 70px;
+  height: 80px;
   margin: 0;
   background-image: url("../images/Image_general/bannière.webp");
   flex-direction: row;
@@ -183,11 +182,16 @@ section div article{
   padding: 1em;
 }
 
-article, section, main > div{
+article, section, main > span > div{
   background-color: #d5c46c;
   border: solid 1px #03196c;
   margin: 20px;
   border-radius: 20px;
+}
+
+span{
+  display: flex;
+  justify-content: space-between;
 }
 h2 {
   color: #03196c;
