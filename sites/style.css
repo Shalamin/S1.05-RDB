@@ -80,24 +80,25 @@ header {
   background-color: #03196c;
   height: 150px;
   padding: 40px 0 40px 230px;
-  display: flexbox;
+  display: flex;
+  
+  
 }
 header img {
   flex-direction: row;
   margin: 0px 25px 0px 85px;
 }
-nav {
+header nav {
   width: 980px;
   height: 70px;
   margin: 0;
-  background-image: url(../images/Image_general/bannière.webp);
-  
+  background-image: url("../images/Image_general/bannière.webp");
   flex-direction: row;
-  display: center inline-block;
+  justify-content: center inline-block;
+
 }
-nav a {
-  width: 180px;
-  height: 44px;
+header nav a {
+  padding:0.1em 0.2em ;
   border-radius: 20px;
   margin: 10px;
   color: #03196c;
