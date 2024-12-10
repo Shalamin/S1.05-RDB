@@ -130,14 +130,14 @@ article {
   width: 784px;
   height:171px;
 }
-section article p, section article img, section article div, section article table{
+section article p, section article img, section article ul, section article table, section article div{
   display:none;
-
 }
 
 section article{
   transition: all 2s ease;
 }
+
 article nav{
   display:flex;
   flex-direction: row;
@@ -197,18 +197,12 @@ section:nth-child(4) article{
 section:nth-child(4) img{
   display:block;
 }
-nav figure{
-  position:relative;
-}
-nav figure img{
-  float:right;
-}
-nav figure figcaption{
-  float:right;
-}
+
 section:nth-child(1) img{
   padding-right:2em;
 }
+
+
 
 h2 {
   font-family: "Ubuntu";
@@ -238,19 +232,46 @@ h2 {
 */
 section:nth-child(1) article:hover{
   display:flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
   height:575px;
   width:1334px;
 }
-section:nth-child(1) article:hover div p, section:nth-child(1) article:hover div img, section:nth-child(1) article:hover div{
+
+section:nth-child(1) article:hover ul img{
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
+  justify-content: flex-start;
   height:50px;
   width:50px;
 }
-section:nth-child(1) article:hover p, section:nth-child(1) article:hover img{
+section:nth-child(1) article:hover ul p{
   display:flex;
+  width:auto;
+}
+section:nth-child(1) article:hover ul{
+  display:flex;
+  flex-direction: column;
+  padding-left:0;
+  margin-left:0;
+}
+section:nth-child(1) article:hover ul li{
+  display:flex;
+  flex-direction: row;
+  padding: 20px 0 20px 0;
+}
+section:nth-child(1) article:hover div{
+  display:flex;
+  flex-direction: column;
+}
+section:nth-child(1) article:hover div>p{
+  display:block;
+  justify-self:flex-end;
+  margin-left:2em;
+  margin-top:5em;
+}
+section:nth-child(1):hover>figure{
+  display:none;
+
 }
 
 section:nth-child(2) article:hover {
