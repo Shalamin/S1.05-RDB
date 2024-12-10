@@ -281,14 +281,9 @@ section:nth-child(2) #interaction:hover {
   display:flex;
   flex-direction:row-reverse;
   height:368px;
-  width:1201px;
+  width:1400px;
 }
-section:nth-child(2) #interaction:hover {
-  display:flex;
-  flex-direction:row-reverse;
-  height:368px;
-  width:1201px;
-}
+
 section:nth-child(2) #interaction:hover img{
   display:none;
 }
@@ -300,13 +295,20 @@ section:nth-child(2):hover img{
 }
 section:nth-child(2) #interaction:hover table{
   display:inline-block;
-  text-align: center;
+  text-align:center;
   
 }
 section:nth-child(2) #interaction:hover table th, section:nth-child(2) #interaction:hover table td {
   padding-right:4em;
   padding-left:4em;
   border-right:solid #304aab 5px;   
+}
+section:nth-child(2) #interaction:hover table td {
+  height:50px;
+  text-align: center;
+}
+section:nth-child(2) #interaction:hover table td::before{
+  content:"- "
 }
 section:nth-child(3) #interaction:hover{
    width:1319px;
