@@ -115,7 +115,8 @@ header nav a {
 #                                                   #
 #####################################################
 */
-section {
+section{
+  position:relative;
   display: flex;
   justify-content: space-between;
   margin:2em;
@@ -129,12 +130,15 @@ article {
   padding: 2em;
   width: 784px;
   height:171px;
+  z-index:10;
 }
-section article p, section article img, section article ul, section article table, section article div{
+section>#interaction>p, section>#interaction>div>ul, section>#interaction>table, section>#interaction>div>p{
   display:none;
 }
-
-section article{
+div h2{
+  display: block;
+}
+section>article{
   transition: all 2s ease;
 }
 
@@ -230,82 +234,81 @@ h2 {
 #                                                   #
 #####################################################
 */
-section:nth-child(1) article:hover{
+section:nth-child(1) #interaction:hover{
+  position:relative;
   display:flex;
   flex-direction: row;
   height:575px;
   width:1334px;
 }
 
-section:nth-child(1) article:hover ul img{
+
+section:nth-child(1) #interaction:hover ul img{
   display:flex;
   flex-direction:column;
   justify-content: flex-start;
   height:50px;
   width:50px;
 }
-section:nth-child(1) article:hover ul p{
+section:nth-child(1) #interaction:hover ul p{
   display:flex;
   width:auto;
 }
-section:nth-child(1) article:hover ul{
+section:nth-child(1) #interaction:hover ul{
   display:flex;
   flex-direction: column;
   padding-left:0;
   margin-left:0;
 }
-section:nth-child(1) article:hover ul li{
+section:nth-child(1) #interaction:hover ul li{
   display:flex;
   flex-direction: row;
   padding: 20px 0 20px 0;
 }
-section:nth-child(1) article:hover div{
+section:nth-child(1) #interaction:hover div{
   display:flex;
   flex-direction: column;
 }
-section:nth-child(1) article:hover div>p{
+section:nth-child(1) #interaction:hover div>p{
   display:block;
   justify-self:flex-end;
   margin-left:2em;
   margin-top:5em;
 }
-section:nth-child(1):hover>figure{
-  display:none;
 
-}
 
-section:nth-child(2) article:hover {
+section:nth-child(2) #interaction:hover {
   display:flex;
   flex-direction:row-reverse;
   height:368px;
   width:1201px;
 }
-section:nth-child(2) article:hover {
+section:nth-child(2) #interaction:hover {
   display:flex;
   flex-direction:row-reverse;
   height:368px;
   width:1201px;
 }
-section:nth-child(2) article:hover img{
+section:nth-child(2) #interaction:hover img{
   display:none;
 }
-section:nth-child(2) article:hover h2{
+section:nth-child(2) #interaction:hover h2{
   height:1.15em;
 }
 section:nth-child(2):hover img{
   display:none;
 }
-section:nth-child(2) article:hover table{
+section:nth-child(2) #interaction:hover table{
   display:inline-block;
   text-align: center;
   
 }
-section:nth-child(2) article:hover table th, section:nth-child(2) article:hover table td {
+section:nth-child(2) #interaction:hover table th, section:nth-child(2) #interaction:hover table td {
   padding-right:4em;
   padding-left:4em;
   border-right:solid #304aab 5px;   
 }
-section:nth-child(3) article:hover{
+section:nth-child(3) #interaction:hover{
    width:1319px;
    height:403px;
 }
