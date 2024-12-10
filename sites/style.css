@@ -68,6 +68,7 @@ body {
   background-color: #e6e1d3;
   border: 0;
   padding: 0;
+  margin: 0;
 }
 /*
 #####################################################
@@ -89,7 +90,7 @@ header img {
   margin: 0px 25px 0px 85px;
 }
 header nav {
-  width: 980px;
+  width: 80%;
   height: 70px;
   margin: 0;
   background-image: url("../images/Image_general/bannière.webp");
@@ -100,6 +101,7 @@ header nav {
 header nav a {
   padding:0.1em 0.2em ;
   border-radius: 20px;
+  border: solid 2px black;
   margin: 10px;
   color: #03196c;
   background-color: #d5c46c;
@@ -110,13 +112,19 @@ header nav a {
 }
 /*en-tête de l'accueil uniquement : */
 h1 {
-  border-top: -10%;
-  padding: 15%;
+  color: #e6e1d3;
+  background-color: #03196c;
+  padding: 1em;
+  text-align: center;
+  margin: 0;
+}
+
+body > div{
+  padding-bottom: 25%;
   background-image: url(../images/Img_Accueil/main_img.jpg);
   background-repeat: no-repeat;
   background-position: -10px;
-  background-size: 100%;
-  text-align: center;
+  background-size: 105%;
 }
 
 /*
@@ -135,7 +143,7 @@ section {
 section > h3{
   padding: 1em;
   background-color: #304aab;
-  margin: 2em 40em;
+  margin: 2em 40%;
   text-align: center;
 }
 
@@ -182,7 +190,6 @@ article, section, main > div{
   border-radius: 20px;
 }
 h2 {
-  font-family: "Ubuntu";
   color: #03196c;
   /*bordure GAUCHE des titres*/
   border-left: #304aab solid 3px;
@@ -207,7 +214,7 @@ h2 {
 #####################################################
 */
 
-div span{
+div > div{
   display: flex;
 }
 
