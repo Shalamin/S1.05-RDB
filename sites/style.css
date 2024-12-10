@@ -108,6 +108,16 @@ header nav a {
   text-align: center;
   display: inline-block;
 }
+/*en-tête de l'accueil uniquement : */
+h1 {
+  border-top: -10%;
+  padding: 15%;
+  background-image: url(../images/Img_Accueil/main_img.jpg);
+  background-repeat: no-repeat;
+  background-position: -10px;
+  background-size: 100%;
+  text-align: center;
+}
 
 /*
 #####################################################
@@ -165,8 +175,7 @@ section div article{
   padding: 1em;
 }
 
-
-article, section{
+article, section, main > div{
   background-color: #d5c46c;
   border: solid 1px #03196c;
   margin: 20px;
@@ -186,6 +195,20 @@ h2 {
   /*bordure DROITE et HAUT des titres*/
   border-top: 0;
   border-right: 0;
+}
+
+
+
+/*
+#####################################################
+#                                                   #
+#                CAROUSSEL CSS                      #
+#                                                   #
+#####################################################
+*/
+
+div span{
+  display: flex;
 }
 
 /*
