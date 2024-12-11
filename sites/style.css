@@ -295,8 +295,7 @@ section:nth-child(2):hover img{
 }
 section:nth-child(2) #interaction:hover table{
   display:inline-block;
-  text-align:center;
-  
+  text-align:center;  
 }
 section:nth-child(2) #interaction:hover table th, section:nth-child(2) #interaction:hover table td {
   padding-right:4em;
