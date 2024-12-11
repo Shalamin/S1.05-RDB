@@ -107,6 +107,12 @@ header nav a {
   text-align: center;
   display: inline-block;
 }
+/*
+*  Présentation : Réduire cadre, "nationalité : française" trouver un moyen de faire plus concis, alignement
+*  Palmarès : SOUS le titre (le respecter), trop large aussi
+*  Actualités (trop grand aussi), le mettre côte à côte avec réseaux ?
+*  Bordures des articles, mettre la même que sur les images (+ moderne)
+*/
 
 /*
 #####################################################
@@ -117,14 +123,14 @@ header nav a {
 */
 section{
   position:relative;
-  display: flex;
-  justify-content: space-between;
+  display:flex;
+  justify-content:space-between;
   margin:2em;
 
 }
 article {
   background-color: #d5c46c;
-  border: solid 3px #03196c;
+  border: solid 10px #03196c;
   margin: 20px;
   border-radius: 20px;
   padding: 2em;
@@ -155,6 +161,11 @@ article nav figure{
   align-items:center; 
 }
 
+section:nth-child(2){
+  justify-content:space-between;
+  margin-left:50px;
+  margin-right:80px;
+}
 
 section:nth-child(2) article img{
   margin-top:2em;
@@ -184,7 +195,8 @@ section:nth-child(2) h2{
 
 }
 section:nth-child(2) figure{
-  margin-left:100px;
+  justify-self:flex-start;
+  margin-left:0px;
 }
 section:nth-child(2) article{
   height:265px;
@@ -205,8 +217,6 @@ section:nth-child(4) img{
 section:nth-child(1) img{
   padding-right:2em;
 }
-
-
 
 h2 {
   font-family: "Ubuntu";
@@ -238,8 +248,8 @@ section:nth-child(1) #interaction:hover{
   position:relative;
   display:flex;
   flex-direction: row;
-  height:575px;
-  width:1334px;
+  height:450px;
+  width:1200px;
 }
 
 
@@ -281,18 +291,16 @@ section:nth-child(2) #interaction:hover {
   display:flex;
   flex-direction:row-reverse;
   height:368px;
-  width:1400px;
+  width:1100px;
 }
 
 section:nth-child(2) #interaction:hover img{
   display:none;
 }
 section:nth-child(2) #interaction:hover h2{
-  height:1.15em;
+  height: 1.37em;
 }
-section:nth-child(2):hover img{
-  display:none;
-}
+
 section:nth-child(2) #interaction:hover table{
   display:inline-block;
   text-align:center;  
