@@ -96,9 +96,11 @@ header nav {
   flex-direction: row;
   justify-content: center inline-block;
 
+
 }
 header nav a {
-  padding:0.1em 0.2em ;
+  height: 50px;
+  width: 300px;
   border-radius: 20px;
   border: solid 2px black;
   margin: 10px;
@@ -111,6 +113,7 @@ header nav a {
 }
 /*en-tête de l'accueil uniquement : */
 h1 {
+  font-size: 300%;
   color: #e6e1d3;
   background-color: #03196c;
   padding: 1em;
@@ -154,16 +157,7 @@ section div{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
-  
-}
-
-section div article{
-  background-color: #304aab;
-  margin: 5em;
-  width: 20em;
-  height: 40em;
-  padding: 1em;
+   
 }
 
 section div article p{
@@ -176,28 +170,32 @@ section div article:hover p{
 
 section div article{
   background-color: #304aab;
-  margin: 5em;
   width: 20em;
   height: 40em;
   padding: 1em;
 }
 
-article, section, main > span > div{
+article, section, main > span > div, figure > img{
   background-color: #d5c46c;
-  border: solid 1px #03196c;
-  margin: 20px;
+  border: solid 10px #03196c;
+  margin: 10px;
   border-radius: 20px;
 }
 
-span{
-  display: flex;
-  justify-content: space-between;
+
+
+body > article, section, main > article{
+  margin: 2em 13em;
 }
+
+
 h2 {
+  font-family: "Ubuntu";
   color: #03196c;
   /*bordure GAUCHE des titres*/
   border-left: #304aab solid 3px;
   border-left-width: 5px;
+  width:200px;
 
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
@@ -206,18 +204,46 @@ h2 {
   /*bordure DROITE et HAUT des titres*/
   border-top: 0;
   border-right: 0;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+  margin: 0.5em;
 }
 
 
+
+/*
+#####################################################
+#                                                   #
+#                     SPONSORS                      #
+#                                                   #
+#####################################################
+*/
+
 article > div{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1em;
 }
 article > div img{
   margin: 0.5em;
 }
 
+
+/*
+#####################################################
+#                                                   #
+#           CAROUSSEL + MOMENTS FORTS               #
+#                                                   #
+#####################################################
+*/
+
+span{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 15em;
+}
 
 /*
 #####################################################
@@ -229,6 +255,10 @@ article > div img{
 
 div > div{
   display: flex;
+}
+
+div > div > figure{
+  margin: 0;
 }
 
 /*
