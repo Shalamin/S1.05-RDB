@@ -209,6 +209,15 @@ h2 {
 }
 
 
+article > div{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+article > div img{
+  margin: 0.5em;
+}
+
 
 /*
 #####################################################
