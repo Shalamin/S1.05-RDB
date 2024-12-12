@@ -173,15 +173,14 @@ section div article{
   width: 20em;
   height: 40em;
   padding: 1em;
+  margin: 10px;
 }
 
-article, section, main > span > div, figure > img{
+article, section, span > div{
   background-color: #d5c46c;
   border: solid 10px #03196c;
-  margin: 10px;
   border-radius: 20px;
 }
-
 
 
 body > article, section, main > article{
@@ -241,9 +240,18 @@ article > div img{
 
 span{
   display: flex;
-  justify-content: space-around;
-  margin: 0 15em;
+  justify-content: space-between;
+  margin: 3em 13em;
+  align-items: flex-start;
 }
+span > div{
+  margin: 0;
+}
+
+span > div:nth-child(2){
+  margin-left: 2em;
+}
+
 
 /*
 #####################################################
@@ -255,11 +263,27 @@ span{
 
 div > div{
   display: flex;
+  flex-wrap: nowrap;
+  }
+
+div > div > figure > img{
+  margin: 0;
+  width: 80%;
+  height: 80%;
 }
 
 div > div > figure{
   margin: 0;
+  margin-bottom: 5em;
+  text-align: center;
 }
+
+figcaption{
+  background-color: #e6e1d3;
+  margin: 0 2em;
+}
+
+
 
 /*
 #####################################################
@@ -292,3 +316,32 @@ td{
 #                                                   #
 #####################################################
 */
+
+
+
+
+@media screen and (max-width: 1700px) {
+
+
+  /*
+  #####################################################
+  #                                                   #
+  #           CAROUSSEL + MOMENTS FORTS               #
+  #                   RESPONSIVE                      #
+  #                                                   #
+  #####################################################
+  */
+  span {
+    display: inline-block;
+    margin: 2em 13em;
+  }
+
+  span > div:nth-child(1){
+    margin-bottom: 2em;
+  }
+
+  span > div:nth-child(2){
+    margin-left: 0;
+  }
+
+}
