@@ -66,6 +66,7 @@ body {
   font-family: "Poppins", "Ubuntu", sans-serif;
   background-color: #e6e1d3;
   color:#03196c;
+  margin:0;
 }
 /*
 #####################################################
@@ -107,12 +108,7 @@ header nav a {
   text-align: center;
   display: inline-block;
 }
-/*
-*  Présentation : Réduire cadre, "nationalité : française" trouver un moyen de faire plus concis, alignement
-*  Palmarès : SOUS le titre (le respecter), trop large aussi
-*  Actualités (trop grand aussi), le mettre côte à côte avec réseaux ?
-*  Bordures des articles, mettre la même que sur les images (+ moderne)
-*/
+
 
 /*
 #####################################################
@@ -141,6 +137,10 @@ article {
 section>#interaction>p, section>#interaction>div>ul, section>#interaction>table, section>#interaction>div>p{
   display:none;
 }
+main>div{
+  display:flex;
+  justify-content: row;
+}
 div h2{
   display: block;
 }
@@ -149,6 +149,7 @@ section>article{
 }
 
 article nav{
+  margin-top:6em;
   display:flex;
   flex-direction: row;
   align-items: flex-start;
@@ -159,6 +160,10 @@ article nav figure{
   display:flex;
   flex-direction:column;
   align-items:center; 
+}
+article nav figcaption{
+  width:150px;
+  text-align: center;
 }
 
 section:nth-child(2){
@@ -196,19 +201,21 @@ section:nth-child(2) h2{
 }
 section:nth-child(2) figure{
   justify-self:flex-start;
-  margin-left:0px;
+  margin-left:5px;
 }
 section:nth-child(2) article{
   height:265px;
 }
 
-section:nth-child(3) article{
-  width:1143px;
+main>div section:nth-child(1) article{
+  width: 700px;;
   height:163px;
+  margin-right:4em;
 }
-section:nth-child(4) article{
-  width:1345px;
-  height:192px;
+main>div section:nth-child(2) article{
+  width:700px;
+  height:250px;
+
 }
 section:nth-child(4) img{
   display:block;
@@ -225,6 +232,7 @@ h2 {
   border-left: #304aab solid 3px;
   border-left-width: 5px;
   width:200px;
+  height:1.5em;
 
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
@@ -236,6 +244,9 @@ h2 {
 
   padding-left: 10px;
   padding-bottom: 10px;
+}
+main>div section:nth-child(2) h2{
+  width:auto;
 }
 /*
 #####################################################
@@ -287,7 +298,7 @@ section:nth-child(1) #interaction:hover div>p{
 }
 
 
-section:nth-child(2) #interaction:hover {
+section:nth-child(2) #interaction:hover{
   display:flex;
   flex-direction:row-reverse;
   height:368px;
@@ -297,11 +308,10 @@ section:nth-child(2) #interaction:hover {
 section:nth-child(2) #interaction:hover img{
   display:none;
 }
-section:nth-child(2) #interaction:hover h2{
-  height: 1.37em;
-}
+
 
 section:nth-child(2) #interaction:hover table{
+  margin-top:3.8em;
   display:inline-block;
   text-align:center;  
 }
@@ -310,6 +320,7 @@ section:nth-child(2) #interaction:hover table th, section:nth-child(2) #interact
   padding-left:4em;
   border-right:solid #304aab 5px;   
 }
+
 section:nth-child(2) #interaction:hover table td {
   height:50px;
   text-align: center;
@@ -317,9 +328,9 @@ section:nth-child(2) #interaction:hover table td {
 section:nth-child(2) #interaction:hover table td::before{
   content:"- "
 }
-section:nth-child(3) #interaction:hover{
-   width:1319px;
-   height:403px;
+main>div>section:nth-child(1) #interaction:hover{
+  width:700px;
+  height:400px;
 }
 
 
