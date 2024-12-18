@@ -150,39 +150,37 @@ display: inline-block;
 #                                                   #
 #####################################################
 */
-
-
-table{
-  margin: 1em;
-  background-color: #304aab;
-  width: 95%;
-  border: solid 20px #304aab;
-  border-radius: 150px;
-  border-spacing: 0;
-  margin: auto;
-
-  border-spacing: 0;
-  border-collapse: separate;
-  border-radius: 15px;
-}
-table tr
+table
 {
-  border: 20px solid #304aab;
-}
- tr{
-  background-color: #e6e1d3;
-  padding: 10px;
-  border: solid 20px #304aab;
+  background-color: #03196c;
+  width: 95%;
+  border: solid 20px   #03196c;
   border-radius: 15px;
-  
+
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  margin: auto;
 }
+table thead th
+{
+  margin-top: 0px;
+  color: #e6e1d3;
+  border: 5px solid #03196c;
+  background-color: #03196c;
 
-
-td{
-  background-color: #e6e1d3;
- 
+  border-spacing: 0px;
   padding: 10px;
 }
+
+table tbody tr td
+ {
+  padding: 10px;
+  background-color: #e6e1d3;
+  border: 0px solid ;
+  color: black ;
+}
+
+
 /*
 #####################################################
 #                                                   #
