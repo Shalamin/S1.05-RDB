@@ -121,6 +121,25 @@ section article{
   
   border-radius: 20px;
 }
+h2 {
+  font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+  width:200px;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
 /*
 display: inline-block;
   width: 100px;
