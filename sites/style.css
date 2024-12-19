@@ -152,9 +152,9 @@ display: inline-block;
 */
 table
 {
-  background-color: #03196c;
+  background-color: #304AAB;
   width: 95%;
-  border: solid 20px   #03196c;
+  border: solid 15px   #03196c;
   border-radius: 15px;
 
   border-spacing: 0px 10px;
@@ -167,7 +167,6 @@ table thead th
   color: #e6e1d3;
   border: 5px solid #03196c;
   background-color: #03196c;
-
   border-spacing: 0px;
   padding: 10px;
 }
