@@ -168,12 +168,32 @@ section div article:hover p{
   display: inline;
 }
 
+section div article:hover{
+  transition-duration: 2s;
+  width: 45em;
+}
+
+article img{
+  width: 70%;
+}
+
 section div article{
+  transition-duration: 2s;
   background-color: #304aab;
-  width: 20em;
+  width: 30em;
   height: 40em;
   padding: 1em;
   margin: 10px;
+}
+
+section div article div{
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+  
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+
 }
 
 article, section, span > div{
