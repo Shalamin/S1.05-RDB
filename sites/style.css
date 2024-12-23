@@ -294,7 +294,9 @@ main>div section:nth-child(2) h2{
 #                                                   #
 #####################################################
 */
+
 section:nth-child(2) div>h2{
+  
   display:block;
   font-family: "Ubuntu";
   color: #03196c;
@@ -303,6 +305,8 @@ section:nth-child(2) div>h2{
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
   border-bottom-width: 5px;
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
 
   /*bordure DROITE et HAUT des titres*/
   border-top: 0;
