@@ -294,7 +294,23 @@ main>div section:nth-child(2) h2{
 #                                                   #
 #####################################################
 */
+section:nth-child(2) div>h2{
+  display:block;
+  font-family: "Ubuntu";
+  color: #03196c;
+  width:auto;
 
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
 section div article p{
   display: none;
 }
@@ -486,7 +502,6 @@ footer article {
   height: auto;
   padding: 20px;
   border-radius: 20px;
-  
 
 }
 footer article h1{
@@ -534,9 +549,12 @@ footer section article:nth-child(1){
   margin : 0 20px;
 }
 footer section article:nth-of-type(2), footer section article:nth-of-type(3){
+  display:flex;
   background-color: #d5c46c;
   color :#03196c;
   width: 10em;
   height: 20px;
   margin : 0 20px;
+  align-items: center;
+  justify-content: center;
 }
