@@ -306,10 +306,7 @@ section div article{
   padding: 1em;
   margin: 10px;
 }
-section:nth-child(2)>div{
-  display:flex;
-  flex-shrink: 1;
-}
+
 section:nth-child(2) div article div{
   width: 185px;
   height: 127px;
@@ -320,7 +317,37 @@ section:nth-child(2) div article div{
 
 }
 
+section:nth-child(2) div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+   
+}
 
+section div article p{
+  display: none;
+}
+
+section div article:hover p{
+  display: inline;
+}
+
+section div article:hover{
+  transition-duration: 2s;
+  width: 45em;
+}
+
+section div div article img{
+  width: 70%;
+}
+
+
+
+section>div, span > div{
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  border-radius: 20px;
+}
 
 
 /*
