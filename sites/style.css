@@ -298,7 +298,14 @@ main>div section:nth-child(2) h2{
 section div article p{
   display: none;
 }
-
+section div article{
+  transition-duration: 2s;
+  background-color: #304aab;
+  width: 30em;
+  height: 40em;
+  padding: 1em;
+  margin: 10px;
+}
 
 
 
