@@ -5,6 +5,14 @@
 #                                                   #
 #####################################################
 */
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('fonts/ubuntu.woff2') format('woff2'),
+        url('fonts/ubuntu.woff') format('woff');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+  }
     @font-face {
       font-family: 'Poppins';
       src: url('fonts/Poppins-Bold.woff2') format('woff2'),
@@ -78,7 +86,8 @@ body {
 header {
   background-color: #03196c;
   height: 150px;
-  padding: 40px 0 40px 230px;
+  width:100%;
+  padding: 40px 0 40px 150px;
   display: flex;
   
   
@@ -88,17 +97,19 @@ header img {
   margin: 0px 25px 0px 85px;
 }
 header nav {
-  width: 980px;
+  display:flex;
+  width: 1300px;
   height: 70px;
   margin: 0;
   background-image: url("../images/Image_general/bannière\ 1.png");
   flex-direction: row;
-  justify-content: center inline-block;
+  justify-content: space-around;
+  align-items: center;
 
 }
 header nav a {
-  width: 180px;
-  height: 44px;
+  width: 300px;
+  height: 50px;
   border-radius: 20px;
   margin: 10px;
   color: #03196c;
@@ -107,7 +118,9 @@ header nav a {
   text-decoration: none;
   text-align: center;
   display: inline-block;
+  
 }
+
 
 
 /*
