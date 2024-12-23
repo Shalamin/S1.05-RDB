@@ -198,7 +198,7 @@ section:nth-child(2){
   margin-right:80px;
 }
 
-section:nth-child(2) article img{
+section:nth-child(2) #interaction img{
   margin-top:2em;
   margin-left:2em;
   display:block;
@@ -229,7 +229,7 @@ section:nth-child(2) figure{
   justify-self:flex-start;
   margin-left:5px;
 }
-section:nth-child(2) article{
+section:nth-child(2) #interaction{
   height:265px;
 }
 /*
@@ -306,7 +306,9 @@ section div article{
   padding: 1em;
   margin: 10px;
 }
-
+section:nth-child(2){
+  width:100%;
+}
 
 
 
