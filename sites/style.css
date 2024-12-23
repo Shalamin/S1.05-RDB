@@ -147,6 +147,28 @@ article {
   height:171px;
   z-index:10;
 }
+
+h2 {
+  font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+  width:200px;
+  height:1.5em;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
 section>#interaction>p, section>#interaction>div>ul, section>#interaction>table, section>#interaction>div>p{
   display:none;
 }
@@ -161,24 +183,15 @@ section>article{
   transition: all 2s ease;
 }
 
-article nav{
-  margin-top:6em;
-  display:flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
 
-}
-article nav figure{
-  display:flex;
-  flex-direction:column;
-  align-items:center; 
-}
-article nav figcaption{
-  width:150px;
-  text-align: center;
-}
 
+/*
+#####################################################
+#                                                   #
+#                     Palmarès                      #
+#                                                   #
+#####################################################
+*/
 section:nth-child(2){
   justify-content:space-between;
   margin-left:50px;
@@ -219,48 +232,79 @@ section:nth-child(2) figure{
 section:nth-child(2) article{
   height:265px;
 }
+/*
+#####################################################
+#                                                   #
+#                       Actus                       #
+#                                                   #
+#####################################################
+*/
 
 main>div section:nth-child(1) article{
   width: 700px;;
   height:163px;
   margin-right:4em;
 }
-main>div section:nth-child(2) article{
-  width:700px;
-  height:250px;
-
-}
-section:nth-child(4) img{
-  display:block;
-}
 
 section:nth-child(1) img{
   padding-right:2em;
 }
-
-h2 {
-  font-family: "Ubuntu";
-  color: #03196c;
-  /*bordure GAUCHE des titres*/
-  border-left: #304aab solid 3px;
-  border-left-width: 5px;
-  width:200px;
-  height:1.5em;
-
-  /*bordure BAS des titres*/
-  border-bottom: #304aab solid 3px;
-  border-bottom-width: 5px;
-
-  /*bordure DROITE et HAUT des titres*/
-  border-top: 0;
-  border-right: 0;
-
-  padding-left: 10px;
-  padding-bottom: 10px;
+/*
+#####################################################
+#                                                   #
+#                     Réseaux                       #
+#                                                   #
+#####################################################
+*/
+main>div section:nth-child(2) article{
+  width:700px;
+  height:250px;
 }
+
+main div section:nth-child(2) article nav{
+  margin-top:6em;
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+main div section:nth-child(2) article nav figure{
+  display:flex;
+  flex-direction:column;
+  align-items:center; 
+}
+main div section:nth-child(2) article nav figcaption{
+  width:150px;
+  text-align: center;
+}
+
+
+section:nth-child(4) img{
+  display:block;
+}
+
 main>div section:nth-child(2) h2{
   width:auto;
 }
+/*
+#####################################################
+#                                                   #
+#                     CSS Elouan                    #
+#                                                   #
+#####################################################
+*/
+
+section div article p{
+  display: none;
+}
+
+
+
+
+
+
+
 /*
 #####################################################
 #                                                   #
