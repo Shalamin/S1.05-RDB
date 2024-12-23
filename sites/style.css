@@ -347,9 +347,30 @@ main>div>section:nth-child(1) #interaction:hover{
 }
 
 
+/*
+#####################################################
+#                                                   #
+#              Tableau des médailles                #
+#                                                   #
+#####################################################
+*/
 
+table, tr{
+  padding: 10px;
+  border: solid 20px #304aab;
+  border-collapse: collapse;
+  border-radius: 15px;
+}
 
+table{
+  margin: 1em;
+  width: 33%;
+}
 
+td{
+  background-color: #e6e1d3;
+  padding: 10px;
+}
 
 
 /*
