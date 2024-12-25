@@ -210,7 +210,7 @@ section:nth-child(2) h2{
   color: #03196c;
   /*bordure GAUCHE des titres*/
   border-left: 0;
-  width:150px;
+  width:auto;
 
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
@@ -294,10 +294,8 @@ main>div section:nth-child(2) h2{
 #                                                   #
 #####################################################
 */
-span{
-  display:flex;
-}
-h1 {
+
+div h1 {
   font-size: 300%;
   color: #e6e1d3;
   background-color: #03196c;
@@ -308,8 +306,21 @@ h1 {
 div > div{
   display: flex;
   flex-wrap: nowrap;
-  }
+}
 
+span{
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 13em;
+    align-items: flex-start;
+}
+span > div{
+    margin: 0;
+}
+  
+span > div:nth-child(2){
+    margin-left: 2em;
+}
 div > div > figure > img{
   margin: 0;
   width: 80%;
@@ -325,6 +336,17 @@ div > div > figure{
 div>figure figcaption{
   background-color: #e6e1d3;
   margin: 0 2em;
+}
+
+main:nth-of-type(1) section>div{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+main:nth-child(9) article{
+  margin-left:80em; 
+  margin-right:auto;
+  width:80%;
 }
 body > div{
   padding-bottom: 25%;
@@ -550,6 +572,7 @@ footer article {
 footer article h1{
   color: #03196c;
   align-items: left;
+  
 
 }
 footer article p:nth-last-child(1) em{
