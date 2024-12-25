@@ -294,6 +294,22 @@ main>div section:nth-child(2) h2{
 #                                                   #
 #####################################################
 */
+h1 {
+  font-size: 300%;
+  color: #e6e1d3;
+  background-color: #03196c;
+  padding: 1em;
+  text-align: center;
+  margin: 0;
+}
+
+body > div{
+  padding-bottom: 25%;
+  background-image: url(../images/Img_Accueil/main_img.jpg);
+  background-repeat: no-repeat;
+  background-position: -10px;
+  background-size: 105%;
+}
 
 section:nth-child(2) div>h2{
   
