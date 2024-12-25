@@ -76,6 +76,7 @@ body {
   color:#03196c;
   margin:0;
 }
+
 /*
 #####################################################
 #                                                   #
@@ -86,11 +87,9 @@ body {
 header {
   background-color: #03196c;
   height: 150px;
-  width:100%;
+  width:auto;
   padding: 40px 0 40px 150px;
-  display: flex;
-  
-  
+  display: flex;  
 }
 header img {
   flex-direction: row;
@@ -167,6 +166,7 @@ h2 {
 
   padding-left: 10px;
   padding-bottom: 10px;
+  margin-left:0.5em;
 }
 
 section>#interaction>p, section>#interaction>div>ul, section>#interaction>table, section>#interaction>div>p{
@@ -294,7 +294,11 @@ main>div section:nth-child(2) h2{
 #                                                   #
 #####################################################
 */
-
+/*
+#####################################################
+#                     Titre                         #
+#####################################################
+*/
 div h1 {
   font-size: 300%;
   color: #e6e1d3;
@@ -303,6 +307,18 @@ div h1 {
   text-align: center;
   margin: 0;
 }
+body > div{
+  padding-bottom: 25%;
+  background-image: url(../images/Img_Accueil/main_img.jpg);
+  background-repeat: no-repeat;
+  background-position: -10px;
+  background-size: 105%;
+}
+/*
+#####################################################
+#             Médailles + Moments forts             #
+#####################################################
+*/
 div > div{
   display: flex;
   flex-wrap: nowrap;
@@ -337,32 +353,19 @@ div>figure figcaption{
   background-color: #e6e1d3;
   margin: 0 2em;
 }
+/*
+#####################################################
+#                  Sites marquants                  #
+#####################################################
+*/
 
 main:nth-of-type(1) section>div{
   width:80%;
   margin-left:auto;
   margin-right:auto;
 }
-main:nth-child(9) article{
-  margin-left:80em; 
-  margin-right:auto;
-  width:80%;
-}
-body > div{
-  padding-bottom: 25%;
-  background-image: url(../images/Img_Accueil/main_img.jpg);
-  background-repeat: no-repeat;
-  background-position: -10px;
-  background-size: 105%;
-}
 
 section:nth-child(2) div>h2{
-  
-  display:block;
-  font-family: "Ubuntu";
-  color: #03196c;
-  width:auto;
-
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
   border-bottom-width: 5px;
@@ -373,8 +376,6 @@ section:nth-child(2) div>h2{
   border-top: 0;
   border-right: 0;
 
-  padding-right: 10px;
-  padding-bottom: 10px;
 }
 section div article p{
   display: none;
@@ -386,6 +387,15 @@ section div article{
   height: 40em;
   padding: 1em;
   margin: 10px;
+}
+section div h3{
+  padding: 1em;
+  background-color: #304aab;
+  margin: 2em 40%;
+  text-align: center;
+}
+section div h3 a{
+  color:#e6e1d3;
 }
 
 section:nth-child(2) div article div{
@@ -408,7 +418,19 @@ section:nth-child(2) div{
 section div article p{
   display: none;
 }
-
+section>div, span > div{
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  border-radius: 20px;
+}
+article > div img{
+  margin: 0.5em;
+}
+/*
+#####################################################
+#                    Interactions                   #
+#####################################################
+*/
 section div article:hover p{
   display: inline;
 }
@@ -423,11 +445,26 @@ section div div article img{
 }
 
 
+/*
+#####################################################
+#                    Sponsors                       #
+#####################################################
+*/
 
-section>div, span > div{
-  background-color: #d5c46c;
-  border: solid 10px #03196c;
-  border-radius: 20px;
+
+main > article > div{
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+main > article{
+  margin-left:auto; 
+  margin-right:auto;
+  width:80%;
+}
+main > article h2{
+  width:250px;
 }
 
 
