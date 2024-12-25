@@ -388,6 +388,19 @@ section div article{
   padding: 1em;
   margin: 10px;
 }
+
+section div div article h3{
+  padding:0;
+  text-align: left;
+  color:#03196c;
+  margin:0;
+}
+section div div article li{
+  padding:0;
+  text-align: left;
+  color:#03196c;
+  margin:0;
+}
 section div h3{
   padding: 1em;
   background-color: #304aab;
