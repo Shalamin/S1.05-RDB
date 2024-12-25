@@ -294,6 +294,9 @@ main>div section:nth-child(2) h2{
 #                                                   #
 #####################################################
 */
+span{
+  display:flex;
+}
 h1 {
   font-size: 300%;
   color: #e6e1d3;
@@ -302,7 +305,27 @@ h1 {
   text-align: center;
   margin: 0;
 }
+div > div{
+  display: flex;
+  flex-wrap: nowrap;
+  }
 
+div > div > figure > img{
+  margin: 0;
+  width: 80%;
+  height: 80%;
+}
+
+div > div > figure{
+  margin: 0;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+div>figure figcaption{
+  background-color: #e6e1d3;
+  margin: 0 2em;
+}
 body > div{
   padding-bottom: 25%;
   background-image: url(../images/Img_Accueil/main_img.jpg);
