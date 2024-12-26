@@ -1,0 +1,328 @@
+/*
+#####################################################
+#                                                   #
+#                      Polices                      #
+#                                                   #
+#####################################################
+*/
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Bold.woff2') format('woff2'),
+      url('fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Light.woff2') format('woff2'),
+      url('fonts/Poppins-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Italic.woff2') format('woff2'),
+      url('fonts/Poppins-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Medium.woff2') format('woff2'),
+      url('fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.woff2') format('woff2'),
+      url('fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Thin.woff2') format('woff2'),
+      url('fonts/Poppins-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-SemiBold.woff2') format('woff2'),
+      url('Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+font-family: "Poppins", "Ubuntu", sans-serif;
+background-color: #e6e1d3;
+color:#03196c;
+margin:0;
+}
+
+/*
+#####################################################
+#                                                   #
+#                       Header                      #
+#                                                   #
+#####################################################
+*/
+header {
+  background-color: #03196c;
+  height: 150px;
+  padding: 40px 0 40px 230px;
+  display: flex;
+  align-items: center;
+  
+}
+header img {
+  display: inline-block;
+  margin: 0px 25px 0px 75px;
+}
+header nav {
+  width: 980px;
+  height: 70px;
+  margin: 0;
+  background-size: 980px 90px;
+  background-image: url(../images/Image_general/bannière1jpg.jpg);
+}
+header nav a {
+  width: 180px;
+  height: 44px;
+  border-radius: 20px;
+  margin: 10px;
+  color: #03196c;
+  background-color: #d5c46c;
+  font-size: 32px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+
+
+
+/*
+#####################################################
+#                                                   #
+#                       Body                        #
+#                                                   #
+#####################################################
+*/
+ 
+
+article, main > span > div{
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  margin: 20px;
+  border-radius: 20px;
+}
+span{
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+}
+/********************************************************/
+
+aside , section{
+  display: flex;
+  margin: 20px;
+}
+aside article
+{
+  display: inline-block;
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  margin: auto;
+  width: 35%;
+  height: 100px ;
+  border-radius: 20px;
+  background-image: url(images/image.png) ;
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+
+aside article h2{
+  display: block;
+  text-align: center;  
+}
+/********************************************************/
+section article{
+
+  display: inline-block;
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  margin: auto;
+  width: 45%;
+  height: 500px;
+  
+  border-radius: 20px;
+}
+h2 {
+  font-family: "Ubuntu";
+  margin: 15px;
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+  width:200px;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+aside h3 {
+  font-family: "Ubuntu";
+  color: #03196c;
+  width:150px;
+  text-align: center;
+  margin: auto;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 4px;
+}
+
+
+/*
+#####################################################
+#                                                   #
+#              TABLEAU DES MEDAILLES                #
+#                                                   #
+#####################################################
+*/
+table
+{
+  background-color: #03196c;
+  width: 95%;
+  border: solid 15px   #03196c;
+  border-radius: 15px;
+
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  margin: auto;
+}
+table thead th
+{
+  margin-top: 0px;
+  color: #e6e1d3;
+  background-color: #03196c;
+  padding: 5px;
+}
+
+table tbody tr td
+ {
+  padding: 10px;
+  background-color: #e6e1d3;
+  border: 0px solid ;
+  color: black ;
+}
+
+
+/*
+#####################################################
+#                                                   #
+#                       Footer                      #
+#                                                   #
+#####################################################
+*/
+footer {
+  background-color: #304AAB;
+  padding: 20px;
+  display: flex;
+
+}
+footer img{
+  display: inline-block;
+
+}
+footer article {
+  background-color: #e6e1d3;
+  margin: 0 20px;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  
+
+}
+footer article h1{
+  color: #03196c;
+  align-items: left;
+
+}
+footer article p:nth-last-child(1) em{
+  color: #304AAB;
+  text-align: right;
+} 
+footer article p:nth-last-child(1) em:nth-last-child(1) {
+  text-align: right;
+  color: #304AAB;
+  font-size: 10px;
+  
+}
+
+footer li a {
+  color: #03196c;
+  text-decoration: none;
+}
+footer li a:hover {
+  color: #304AAB;
+}
+footer li{
+  list-style-type: none;
+}
+footer li:before{
+  content:"• ";
+}
+footer img{
+  margin : 0 5px;
+}
+footer section {
+  display: flex;
+  margin-left :100px;
+ 
+}
+footer section article:nth-child(1){
+  background-color: #d5c46c;
+  color :#d5c46c;
+  width: 10px;
+  height: 20px;
+  margin : 0 20px;
+}
+footer section article:nth-of-type(2), footer section article:nth-of-type(3){
+  background-color: #d5c46c;
+  color :#03196c;
+  width: 10em;
+  height: 20px;
+  margin : 0 20px;
+}
