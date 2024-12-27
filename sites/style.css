@@ -527,12 +527,20 @@ main>article {
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  height: 15em;
 }
 
 main>article h2 {
   width: 250px;
 }
 
+main > article > div{
+  background-color: #304AAB;
+  border: solid #03196c 10px;
+  border-radius: 20px;
+  height: 5em;
+
+}
 
 /*
 #####################################################
@@ -686,7 +694,6 @@ footer {
 
 footer img {
   display: inline-block;
-
 }
 
 footer article {
