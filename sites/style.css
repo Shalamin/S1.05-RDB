@@ -169,8 +169,8 @@ section div article:hover p{
 }
 
 section div article:hover{
-  transition-duration: 2s;
-  width: 45em;
+  transition-duration: 0.5s;
+  width: 40%;
 }
 
 article img{
@@ -178,9 +178,9 @@ article img{
 }
 
 section div article{
-  transition-duration: 2s;
+  transition-duration: 0.5s;
   background-color: #304aab;
-  width: 30em;
+  width: 33%;
   height: 40em;
   padding: 1em;
   margin: 10px;
