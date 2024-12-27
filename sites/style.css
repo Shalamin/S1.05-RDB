@@ -407,7 +407,7 @@ div>figure figcaption {
   padding: 2em;
 }
 
-section:nth-child(2) div>h2 {
+section:nth-child(2) div div>h2 {
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
   border-bottom-width: 5px;
@@ -417,7 +417,12 @@ section:nth-child(2) div>h2 {
   /*bordure DROITE et HAUT des titres*/
   border-top: 0;
   border-right: 0;
+}
 
+section div div:nth-child(1){
+  width: 150em;
+  text-align: right;
+  justify-content: flex-start;
 }
 
 section div article p {
@@ -447,18 +452,30 @@ section div div article li {
   margin: 0;
 }
 
+
 section div h3 {
   padding: 1em;
-  background-color: #304aab;
-  margin: 2em 40%;
+  width: 51%;
   text-align: center;
+  background-color: #304aab;
 }
 
 section div h3 a {
   color: #e6e1d3;
 }
 
-section:nth-child(2) article div {
+
+
+
+
+/*
+#####################################################
+#              Images sites marquants               #
+#####################################################
+*/
+
+
+section div:nth-child(2) article div {
   width: 185px;
   height: 127px;
   flex-shrink: 0;
@@ -469,7 +486,7 @@ section:nth-child(2) article div {
 
 }
 
-section:nth-child(2) article:hover div {
+section div:nth-child(2) article:hover div {
   width: 370px;
   height: 254px;
   flex-shrink: 0;
@@ -479,7 +496,7 @@ section:nth-child(2) article:hover div {
 }
 
 
-section:nth-child(3) article div {
+section div:nth-child(3) article div {
   width: 185px;
   height: 127px;
   flex-shrink: 0;
@@ -490,7 +507,7 @@ section:nth-child(3) article div {
 
 }
 
-section:nth-child(3) div article:hover div {
+section div:nth-child(3) article:hover div {
   width: 370px;
   height: 254px;
   flex-shrink: 0;
@@ -498,6 +515,73 @@ section:nth-child(3) div article:hover div {
   border-radius: 20px;  
 
 }
+
+section div:nth-child(4) article div {
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  transition-duration: 0.5s;
+
+}
+
+section div:nth-child(4) article:hover div {
+  width: 370px;
+  height: 254px;
+  flex-shrink: 0;
+  transition-duration: 0.5s;
+  border-radius: 20px;  
+
+}
+
+section div:nth-child(5) article div {
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  transition-duration: 0.5s;
+
+}
+
+section div:nth-child(5) article:hover div {
+  width: 370px;
+  height: 254px;
+  flex-shrink: 0;
+  transition-duration: 0.5s;
+  border-radius: 20px;  
+
+}
+
+section div:nth-child(6) article div {
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  transition-duration: 0.5s;
+
+}
+
+section div:nth-child(6) article:hover div {
+  width: 370px;
+  height: 254px;
+  flex-shrink: 0;
+  transition-duration: 0.5s;
+  border-radius: 20px;  
+
+}
+
+
+/*
+############################
+############################
+############################
+*/
 
 section:nth-child(2) div {
   display: flex;
