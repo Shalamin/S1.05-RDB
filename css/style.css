@@ -1,0 +1,740 @@
+/*
+#####################################################
+#                                                   #
+#                      Polices                      #
+#                                                   #
+#####################################################
+*/
+@font-face {
+   font-family: 'Ubuntu';
+   src: url('fonts/ubuntu.woff2') format('woff2'),
+       url('fonts/ubuntu.woff') format('woff');
+   font-weight: medium;
+   font-style: normal;
+   font-display: swap;
+ }
+   @font-face {
+     font-family: 'Poppins';
+     src: url('fonts/Poppins-Bold.woff2') format('woff2'),
+         url('fonts/Poppins-Bold.woff') format('woff');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+   }
+   @font-face {
+     font-family: 'Poppins';
+     src: url('fonts/Poppins-Light.woff2') format('woff2'),
+         url('fonts/Poppins-Light.woff') format('woff');
+     font-weight: 300;
+     font-style: normal;
+     font-display: swap;
+   }
+   @font-face {
+     font-family: 'Poppins';
+     src: url('fonts/Poppins-Italic.woff2') format('woff2'),
+         url('fonts/Poppins-Italic.woff') format('woff');
+     font-weight: normal;
+     font-style: italic;
+     font-display: swap;
+   }
+   @font-face {
+     font-family: 'Poppins';
+     src: url('fonts/Poppins-Medium.woff2') format('woff2'),
+         url('fonts/Poppins-Medium.woff') format('woff');
+     font-weight: 500;
+     font-style: normal;
+     font-display: swap;
+   }
+   @font-face {
+     font-family: 'Poppins';
+     src: url('fonts/Poppins-Regular.woff2') format('woff2'),
+         url('fonts/Poppins-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+   }
+   @font-face {
+     font-family: 'Poppins';
+     src: url('fonts/Poppins-Thin.woff2') format('woff2'),
+         url('fonts/Poppins-Thin.woff') format('woff');
+     font-weight: 100;
+     font-style: normal;
+     font-display: swap;
+   }
+   @font-face {
+     font-family: 'Poppins';
+     src: url('fonts/Poppins-SemiBold.woff2') format('woff2'),
+         url('Poppins-SemiBold.woff') format('woff');
+     font-weight: 600;
+     font-style: normal;
+     font-display: swap;
+   }
+
+body {
+ font-family: "Poppins", "Ubuntu", sans-serif;
+ background-color: #e6e1d3;
+ color:#03196c;
+ margin:0;
+}
+
+/*
+#####################################################
+#                                                   #
+#                       Header                      #
+#                                                   #
+#####################################################
+*/
+header {
+ background-color: #03196c;
+ height: 150px;
+ width:auto;
+ padding: 40px 0 40px 150px;
+ display: flex;  
+}
+header img {
+ flex-direction: row;
+ margin: 0px 25px 0px 85px;
+}
+header nav {
+ display:flex;
+ width: 1300px;
+ height: 70px;
+ margin: 0;
+ background-image: url("../images/Image_general/bannière\ 1.png");
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+
+}
+header nav a {
+ width: 300px;
+ height: 50px;
+ border-radius: 20px;
+ margin: 10px;
+ color: #03196c;
+ background-color: #d5c46c;
+ font-size: 32px;
+ text-decoration: none;
+ text-align: center;
+ display: inline-block;
+ 
+}
+
+
+
+/*
+#####################################################
+#                                                   #
+#                       Body                        #
+#                                                   #
+#####################################################
+*/
+section{
+ position:relative;
+ display:flex;
+ justify-content:space-between;
+ margin:2em;
+
+}
+article {
+ background-color: #d5c46c;
+ border: solid 10px #03196c;
+ margin: 20px;
+ border-radius: 20px;
+ padding: 2em;
+ width: 784px;
+ height:171px;
+ z-index:10;
+}
+
+h2 {
+ font-family: "Ubuntu";
+ color: #03196c;
+ /*bordure GAUCHE des titres*/
+ border-left: #304aab solid 3px;
+ border-left-width: 5px;
+ width:200px;
+ height:1.5em;
+
+ /*bordure BAS des titres*/
+ border-bottom: #304aab solid 3px;
+ border-bottom-width: 5px;
+
+ /*bordure DROITE et HAUT des titres*/
+ border-top: 0;
+ border-right: 0;
+
+ padding-left: 10px;
+ padding-bottom: 10px;
+ margin-left:0.5em;
+}
+
+section>#interaction>p, section>#interaction>div>ul, section>#interaction>table, section>#interaction>div>p{
+ display:none;
+}
+main>div{
+ display:flex;
+ justify-content: row;
+}
+div h2{
+ display: block;
+}
+section>article{
+ transition: all 2s ease;
+}
+
+
+
+/*
+#####################################################
+#                                                   #
+#                     Palmarès                      #
+#                                                   #
+#####################################################
+*/
+section:nth-child(2){
+ justify-content:space-between;
+ margin-left:50px;
+ margin-right:80px;
+}
+
+section:nth-child(2) #interaction img{
+ margin-top:2em;
+ margin-left:2em;
+ display:block;
+}
+section:nth-child(2) h2{
+ display:block;
+ float: right;
+ font-family: "Ubuntu";
+ color: #03196c;
+ /*bordure GAUCHE des titres*/
+ border-left: 0;
+ width:auto;
+
+ /*bordure BAS des titres*/
+ border-bottom: #304aab solid 3px;
+ border-bottom-width: 5px;
+
+ /*bordure DROITE et HAUT des titres*/
+ border-top: 0;
+ border-right: #304aab solid 3px;
+ border-right-width: 5px;
+ text-align: right;
+ padding-right: 10px;
+ padding-bottom: 10px;
+
+}
+section:nth-child(2) figure{
+ justify-self:flex-start;
+ margin-left:5px;
+}
+section:nth-child(2) #interaction{
+ height:265px;
+}
+/*
+#####################################################
+#                                                   #
+#                       Actus                       #
+#                                                   #
+#####################################################
+*/
+
+main>div section:nth-child(1) article{
+ width: 700px;;
+ height:163px;
+ margin-right:4em;
+}
+
+section:nth-child(1) img{
+ padding-right:2em;
+}
+/*
+#####################################################
+#                                                   #
+#                     Réseaux                       #
+#                                                   #
+#####################################################
+*/
+main>div section:nth-child(2) article{
+ width:700px;
+ height:250px;
+}
+
+main div section:nth-child(2) article nav{
+ margin-top:6em;
+ display:flex;
+ flex-direction: row;
+ align-items: flex-start;
+ justify-content: space-between;
+
+}
+main div section:nth-child(2) article nav figure{
+ display:flex;
+ flex-direction:column;
+ align-items:center; 
+}
+main div section:nth-child(2) article nav figcaption{
+ width:150px;
+ text-align: center;
+}
+
+
+section:nth-child(4) img{
+ display:block;
+}
+
+main>div section:nth-child(2) h2{
+ width:auto;
+}
+/*
+#####################################################
+#                                                   #
+#                     CSS Elouan                    #
+#                                                   #
+#####################################################
+*/
+/*
+#####################################################
+#                     Titre                         #
+#####################################################
+*/
+div h1 {
+ font-size: 300%;
+ color: #e6e1d3;
+ background-color: #03196c;
+ padding: 1em;
+ text-align: center;
+ margin: 0;
+}
+body > div{
+ padding-bottom: 25%;
+ background-image: url(../images/Img_Accueil/main_img.jpg);
+ background-repeat: no-repeat;
+ background-position: -10px;
+ background-size: 105%;
+}
+/*
+#####################################################
+#             Médailles + Moments forts             #
+#####################################################
+*/
+div > div{
+ display: flex;
+ flex-wrap: nowrap;
+}
+
+span{
+   display: flex;
+   justify-content: space-between;
+   margin: 3em 13em;
+   align-items: flex-start;
+}
+span > div{
+   margin: 0;
+}
+ 
+span > div:nth-child(2){
+   margin-left: 2em;
+}
+div > div > figure > img{
+ margin: 0;
+ width: 80%;
+ height: 80%;
+}
+
+div > div > figure{
+ margin: 0;
+ margin-bottom: 5em;
+ text-align: center;
+}
+
+div>figure figcaption{
+ background-color: #e6e1d3;
+ margin: 0 2em;
+}
+/*
+#####################################################
+#                  Sites marquants                  #
+#####################################################
+*/
+
+main:nth-of-type(1) section>div{
+ width:80%;
+ margin-left:auto;
+ margin-right:auto;
+}
+
+section:nth-child(2) div>h2{
+ /*bordure BAS des titres*/
+ border-bottom: #304aab solid 3px;
+ border-bottom-width: 5px;
+ border-left: #304aab solid 3px;
+ border-left-width: 5px;
+
+ /*bordure DROITE et HAUT des titres*/
+ border-top: 0;
+ border-right: 0;
+
+}
+section div article p{
+ display: none;
+}
+section div article{
+ transition-duration: 2s;
+ background-color: #304aab;
+ width: 30em;
+ height: 40em;
+ padding: 1em;
+ margin: 10px;
+}
+
+section div div article h3{
+ padding:0;
+ text-align: left;
+ color:#03196c;
+ margin:0;
+}
+section div div article li{
+ padding:0;
+ text-align: left;
+ color:#03196c;
+ margin:0;
+}
+section div h3{
+ padding: 1em;
+ background-color: #304aab;
+ margin: 2em 40%;
+ text-align: center;
+}
+section div h3 a{
+ color:#e6e1d3;
+}
+
+section:nth-child(2) div article div{
+ width: 185px;
+ height: 127px;
+ flex-shrink: 0;
+ 
+ border-radius: 360px;
+ background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+
+}
+
+section:nth-child(2) div{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-around;
+  
+}
+
+section div article p{
+ display: none;
+}
+section>div, span > div{
+ background-color: #d5c46c;
+ border: solid 10px #03196c;
+ border-radius: 20px;
+}
+article > div img{
+ margin: 0.5em;
+}
+/*
+#####################################################
+#                    Interactions                   #
+#####################################################
+*/
+section div article:hover p{
+ display: inline;
+}
+
+section div article:hover{
+ transition-duration: 2s;
+ width: 45em;
+}
+
+section div div article img{
+ width: 70%;
+}
+
+
+/*
+#####################################################
+#                    Sponsors                       #
+#####################################################
+*/
+
+
+main > article > div{
+ display: flex;
+ justify-content: space-around;
+ padding: 1em;
+}
+
+main > article{
+ margin-left:auto; 
+ margin-right:auto;
+ width:80%;
+}
+main > article h2{
+ width:250px;
+}
+
+
+/*
+#####################################################
+#                                                   #
+#                  Interactions                     #
+#                                                   #
+#####################################################
+*/
+section:nth-child(1) #interaction:hover{
+ position:relative;
+ display:flex;
+ flex-direction: row;
+ height:450px;
+ width:1200px;
+}
+
+
+section:nth-child(1) #interaction:hover ul img{
+ display:flex;
+ flex-direction:column;
+ justify-content: flex-start;
+ height:50px;
+ width:50px;
+}
+section:nth-child(1) #interaction:hover ul p{
+ display:flex;
+ width:auto;
+}
+section:nth-child(1) #interaction:hover ul{
+ display:flex;
+ flex-direction: column;
+ padding-left:0;
+ margin-left:0;
+}
+section:nth-child(1) #interaction:hover ul li{
+ display:flex;
+ flex-direction: row;
+ padding: 20px 0 20px 0;
+}
+section:nth-child(1) #interaction:hover div{
+ display:flex;
+ flex-direction: column;
+}
+section:nth-child(1) #interaction:hover div>p{
+ display:block;
+ justify-self:flex-end;
+ margin-left:2em;
+ margin-top:5em;
+}
+
+
+section:nth-child(2) #interaction:hover{
+ display:flex;
+ flex-direction:row-reverse;
+ height:368px;
+ width:1100px;
+}
+
+section:nth-child(2) #interaction:hover img{
+ display:none;
+}
+
+
+section:nth-child(2) #interaction:hover table{
+ margin-top:3.8em;
+ display:inline-block;
+ text-align:center;  
+}
+section:nth-child(2) #interaction:hover table th, section:nth-child(2) #interaction:hover table td {
+ padding-right:4em;
+ padding-left:4em;
+ border-right:solid #304aab 5px;   
+}
+
+section:nth-child(2) #interaction:hover table td {
+ height:50px;
+ text-align: center;
+}
+section:nth-child(2) #interaction:hover table td::before{
+ content:"- "
+}
+main>div>section:nth-child(1) #interaction:hover{
+ width:700px;
+ height:400px;
+}
+
+
+/*
+#####################################################
+#                                                   #
+#              Tableau des médailles                #
+#                                                   #
+#####################################################
+*/
+
+span div table, tr{
+ padding: 10px;
+ border: solid 20px #304aab;
+ border-collapse: collapse;
+ border-radius: 15px;
+}
+
+span div table{
+ margin: 1em;
+ width: 33%;
+}
+
+span div td{
+ background-color: #e6e1d3;
+ padding: 10px;
+}
+/*
+#####################################################
+#                                                   #
+#              Tableau des médailles   interactif   #
+#                                                   #
+#####################################################
+*/
+
+table #tableau_interactif
+{
+  background-color: #03196c;
+  width: 95%;
+  border: solid 15px   #03196c;
+  border-radius: 15px;
+
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  margin: auto;
+}
+table thead th
+{
+  margin-top: 0px;
+  color: #e6e1d3;
+  background-color: #03196c;
+  padding: 5px;
+}
+
+table tbody tr td
+ {
+  padding: 10px;
+  background-color: #e6e1d3;
+  border: 0px solid ;
+  color: black ;
+}
+
+/*
+#####################################################
+#                                                   #
+#                       Footer                      #
+#                                                   #
+#####################################################
+*/
+aside , section{
+   display: flex;
+   margin: 20px;
+ }
+
+aside article
+{
+  display: inline-block;
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  margin: auto;
+  width: 35%;
+  height: 100px ;
+  border-radius: 20px;
+  background-image: url(images/image.png) ;
+  background-repeat: no-repeat;
+  background-position: 5%;
+}
+
+aside article h2{
+  display: block;
+  text-align: center;  
+}
+
+/*
+#####################################################
+#                                                   #
+#                       Footer                      #
+#                                                   #
+#####################################################
+*/
+footer {
+ background-color: #304AAB;
+ padding: 20px;
+ display: flex;
+
+}
+footer img{
+ display: inline-block;
+
+}
+footer article {
+ background-color: #e6e1d3;
+ margin: 0 20px;
+ width: 50%;
+ height: auto;
+ padding: 20px;
+ border-radius: 20px;
+
+}
+footer article h1{
+ color: #03196c;
+ align-items: left;
+ 
+
+}
+footer article p:nth-last-child(1) em{
+ color: #304AAB;
+ text-align: right;
+} 
+footer article p:nth-last-child(1) em:nth-last-child(1) {
+ text-align: right;
+ color: #304AAB;
+ font-size: 10px;
+ 
+}
+
+footer li a {
+ color: #03196c;
+ text-decoration: none;
+}
+footer li a:hover {
+ color: #304AAB;
+}
+footer li{
+ list-style-type: none;
+}
+footer li:before{
+ content:"• ";
+}
+footer img{
+ margin : 0 5px;
+}
+footer section {
+ display: flex;
+ margin-left :100px;
+
+}
+footer section article:nth-child(1){
+ background-color: #d5c46c;
+ color :#d5c46c;
+ width: 10px;
+ height: 20px;
+ margin : 0 20px;
+}
+footer section article:nth-of-type(2), footer section article:nth-of-type(3){
+ display:flex;
+ background-color: #d5c46c;
+ color :#03196c;
+ width: 10em;
+ height: 20px;
+ margin : 0 20px;
+ align-items: center;
+ justify-content: center;
+}
