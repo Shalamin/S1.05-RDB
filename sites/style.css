@@ -374,9 +374,11 @@ span>div {
 }
 
 span>div:nth-child(1) {
+  overflow: hidden;
   width: 40%;
   margin: 0 0 0 auto;
 }
+
 span>div:nth-child(2) {
   margin-left: 2em;
   width: 60%;
@@ -774,8 +776,30 @@ main>div>section:nth-child(1) #interaction:hover {
 #####################################################
 */
 
+
+span > div{
+  text-align: center;
+
+}
+
+input:checked ~ #plus{
+  display: none;
+}
+#plus{
+  display: inline;
+}
+
+
+input:checked ~ #moins{
+  display: inline;
+}
+#moins{
+  display: none;
+}
+
 table
 {
+
   background-color: #03196c;
   width: 95%;
   border: solid 15px   #03196c;
@@ -786,6 +810,47 @@ table
   margin: auto;
   text-align: center;
 }
+
+table tr:nth-child(6),
+table tr:nth-child(7),
+table tr:nth-child(8),
+table tr:nth-child(9),
+table tr:nth-child(10) {
+
+  animation: fadeOut 0.5s ease forwards;
+}
+
+input:checked ~ table tr:nth-child(6),
+input:checked ~ table tr:nth-child(7),
+input:checked ~ table tr:nth-child(8),
+input:checked ~ table tr:nth-child(9),
+input:checked ~ table tr:nth-child(10) {
+
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    visibility: collapse;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: collapse;
+  }
+}
+
 table thead th
 {
   margin-top: 0px;
