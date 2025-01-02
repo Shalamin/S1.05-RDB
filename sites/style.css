@@ -182,6 +182,40 @@ div h2{
 section>article{
   transition: all 2s ease;
 }
+section div article {
+  transition-duration: 0.5s;
+  background-color: #304aab;
+  width: 33%;
+  height: 40em;
+  padding: 1em;
+  margin: 10px;
+}
+
+section div div article h3 {
+  padding: 0;
+  text-align: left;
+  color: #e6e1d3;
+  margin: 0;
+}
+
+section div div article li {
+  padding: 0;
+  text-align: left;
+  color: #e6e1d3;
+  margin: 0;
+}
+
+
+section div h3 {
+  padding: 1em;
+  width: 51%;
+  text-align: center;
+  background-color: #304aab;
+}
+
+section div h3 a {
+  color: #e6e1d3;
+}
 
 
 
