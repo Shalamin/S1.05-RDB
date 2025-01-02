@@ -33,7 +33,7 @@
     <span>
 
       <div>
-        
+
         <input type="checkbox" id="agrandir"></td>
         <label for="agrandir" id="plus">voir plus</label>
         <label for="agrandir" id="moins">voir moins</label>
@@ -161,26 +161,29 @@
       <div>
         <h2>Moments forts</h2>
 
-        <div>
+        <div class="carrousel">
+          
+          <span id="img_1"></span>
+          <span id="img_2"></span>
+          <span id="img_3"></span>
 
-          <figure>
-            <img src="../images/Img_Accueil/leon_marchand_moment_marquant.jpg" alt="Victoire de Leon Marchand"
-              width="290" height="190">
+          <div class="cadre img_1">
+            <a href="#img_3" class="fleche precedent"></a>
+            <a href="#img_2" class="fleche suivant"></a>
+            <p>Léon Marchand</p>
+          </div>
 
-            <figcaption>Léon Marchand</figcaption>
-          </figure>
+          <div class="cadre img_2">
+            <a href="#img_1" class="fleche precedent"></a>
+            <a href="#img_3" class="fleche suivant"></a>
+            <p>Cassandre Beaugrand</p>
+          </div>
 
-          <figure>
-            <img src="../images/Img_Accueil/teddy_riner_moment_marquant.jpg" alt="Final de Teddy Riner" width="290"
-              height="190">
-            <figcaption>Teddy Riner</figcaption>
-          </figure>
-
-          <figure>
-            <img src="../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg"
-              alt="Victoire de Cassandre Beaugrand" width="290" height="190">
-            <figcaption>Cassandre Beaugrand</figcaption>
-          </figure>
+          <div class="cadre img_3">
+            <a href="#img_2" class="fleche precedent"></a>
+            <a href="#img_1" class="fleche suivant"></a>
+            <p>Teddy Riner</p>
+          </div>
 
         </div>
 

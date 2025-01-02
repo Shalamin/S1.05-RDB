@@ -349,6 +349,108 @@ body > div:hover{
 
 }
 
+
+
+/*
+#####################################################
+#                     carrousel                     #
+#####################################################
+*/
+
+.carrousel{
+  height: 20em;
+  width: 45em;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carrousel p{
+  position: absolute;
+  bottom: 1em;
+  left: 20%;
+
+  color: #03196c;
+  padding: 0;
+  margin: 0;
+  border-bottom: #03196c solid;
+}
+
+.cadre{
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.fleche{
+  border:solid #03196c;
+  padding: 10px;
+  border-width: 0 5px 5px 0;
+}
+
+.suivant, .precedent{
+  position: absolute;
+  top: 200px;
+}
+
+.precedent{
+  left: -45px;
+  transform: rotate(135deg);
+}
+
+.suivant{
+  right: -45px;
+  transform: rotate(-45deg);
+}
+
+.img_1{
+  z-index: 2;
+  opacity: 1;
+  background-image: url(../images/Img_Accueil/leon_marchand_moment_marquant.jpg),                  
+                    url(../images/Img_Accueil/teddy_riner_moment_marquant.jpg),
+                    url(../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+.img_2{
+  background-image: url(../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg),                   
+                    url(../images/Img_Accueil/leon_marchand_moment_marquant.jpg),
+                    url(../images/Img_Accueil/teddy_riner_moment_marquant.jpg);
+                    
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+
+.img_3{
+  background-image: url(../images/Img_Accueil/teddy_riner_moment_marquant.jpg),                
+                    url(../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg),
+                    url(../images/Img_Accueil/leon_marchand_moment_marquant.jpg);
+                    
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+:target ~ .img_1{
+  opacity: 0;
+}
+
+#img_1:target ~  .img_1{
+  opacity: 1;
+}
+
+#img_2:target ~  .img_2, #img_3:target ~  .img_3{
+  z-index: 2;
+  opacity: 1;
+}
+
 /*
 #####################################################
 #             Médailles + Moments forts             #
