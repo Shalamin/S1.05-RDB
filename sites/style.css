@@ -495,18 +495,20 @@ article>div img {
 #                    Interactions                   #
 #####################################################
 */
-section div article:hover p{
+section div article:hover p {
+  color: #e6e1d3;
   display: inline;
 }
 
-section div article:hover{
-  transition-duration: 2s;
-  width: 45em;
+section div article:hover {
+  transition-duration: 0.5s;
+  width: 40%;
 }
 
-section div div article img{
+section div div article img {
   width: 70%;
 }
+
 
 
 /*
