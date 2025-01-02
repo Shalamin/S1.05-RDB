@@ -354,19 +354,25 @@ div>div {
 
 span {
   display: flex;
-  width: 80%;
-  justify-content: space-between;
+  width: 95%;
+  justify-content: space-around;
   margin: 2em auto;
   align-items: flex-start;
 }
 
 span>div {
-  margin: 0;
+  margin: 0 auto;
+  width: 80%;
   padding: 2em;
 }
 
+span>div:nth-child(1) {
+  width: 40%;
+  margin: 0 0 0 auto;
+}
 span>div:nth-child(2) {
   margin-left: 2em;
+  width: 60%;
 }
 
 div>div>figure>img {
@@ -377,7 +383,7 @@ div>div>figure>img {
 
 div>div>figure {
   margin: 0;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
@@ -771,6 +777,7 @@ table
   border-spacing: 0px 10px;
   border-collapse: separate;
   margin: auto;
+  text-align: center;
 }
 table thead th
 {
@@ -904,17 +911,18 @@ footer section article:nth-of-type(3) {
   */
   span {
     display: inline-block;
-    margin: 2em 7%;
+    width: 100%;
   }
 
   span > div:nth-child(1){
-    margin-bottom: 2em;
-    width: 100%;
+    margin: 2em auto;
+    width: 80%;
   }
 
   span > div:nth-child(2){
     margin-left: 0;
-    width: 100%;
+    margin: 2em auto;
+    width: 80%;
   }
 
 /*
