@@ -340,6 +340,13 @@ body>div {
   background-repeat: no-repeat;
   background-position: -10px;
   background-size: 105%;
+  transition-duration: 0.5s;
+}
+
+body > div:hover{
+  transition-duration: 0.5s;
+  padding-bottom: 40%;
+
 }
 
 /*
