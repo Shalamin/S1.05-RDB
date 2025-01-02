@@ -405,6 +405,7 @@ div>figure figcaption {
   height: 80%;
   margin: 0 auto;
   padding: 2em;
+  justify-content: space-around;
 }
 
 section:nth-child(2) div div>h2 {
@@ -755,42 +756,43 @@ main>div>section:nth-child(1) #interaction:hover {
 /*
 #####################################################
 #                                                   #
-#              Tableau des médailles                #
+#              Tableau des médailles   interactif   #
 #                                                   #
 #####################################################
 */
 
-table{
-  margin: 1em;
-  background-color: #304aab;
-  width: 95%;
-  border: solid 20px #304aab;
-  border-radius: 150px;
-  border-spacing: 0;
-  margin: auto;
-
-  border-spacing: 0;
-  border-collapse: separate;
-  border-radius: 15px;
-}
-table tr
+table
 {
-  border: 20px solid #304aab;
-}
- tr{
-  background-color: #e6e1d3;
-  padding: 10px;
-  border: solid 20px #304aab;
+  background-color: #03196c;
+  width: 95%;
+  border: solid 15px   #03196c;
   border-radius: 15px;
 
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  margin: auto;
+}
+table thead th
+{
+  margin-top: 0px;
+  color: #e6e1d3;
+  background-color: #03196c;
+  padding: 1em;
 }
 
-
-td{
-  background-color: #e6e1d3;
- 
+table tbody tr td
+ {
   padding: 10px;
-} 
+  background-color: #e6e1d3;
+  border: 0px solid ;
+  color: black ;
+}
+
+table tr td img, table tr img
+{
+ width: 2em;
+ height: 2em; 
+}
 
 
 /*
@@ -913,6 +915,23 @@ footer section article:nth-of-type(3) {
   span > div:nth-child(2){
     margin-left: 0;
     width: 100%;
+  }
+
+/*
+  #####################################################
+  #                                                   #
+  #                TABLEAU MEDAILLES                  #
+  #                   RESPONSIVE                      #
+  #                                                   #
+  #####################################################
+  */
+
+
+  table tr td img
+  {
+  width: 10%;
+  height: 10%; 
+
   }
 
 }
