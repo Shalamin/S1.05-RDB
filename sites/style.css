@@ -217,6 +217,10 @@ aside h3 {
   border-bottom-width: 4px;
 }
 
+#regles>h2::before{
+  content:url("../images/img_discipline/img_regle.png");
+}
+
 
 /*
 #####################################################
