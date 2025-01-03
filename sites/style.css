@@ -147,13 +147,14 @@ section {
 
 }
 
+
 article {
   background-color: #d5c46c;
   border: solid 10px #03196c;
   margin: 20px;
   border-radius: 20px;
   padding: 2em;
-  width: 784px;
+  width: 60%;
   height: 171px;
   z-index: 10;
 }
@@ -189,8 +190,11 @@ section>.interaction .carrousel{
 }
 
 main>div {
-  display: flex;
-  justify-content: row;
+  display:flex;
+  justify-content:space-between;
+}
+main>div>section article{
+  width:50%;
 }
 
 div h2 {
@@ -269,9 +273,7 @@ section:nth-child(2) .interaction {
 
 main>div section:nth-child(1) article {
   width: 700px;
-  ;
   height: 163px;
-  margin-right: 4em;
 }
 
 section:nth-child(1) img {
@@ -286,6 +288,7 @@ section:nth-child(1) img {
 main>div section:nth-child(1) .interaction:hover h2{
   margin-bottom:0;
 }
+
 
 /*
 #####################################################
