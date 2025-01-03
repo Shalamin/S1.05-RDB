@@ -952,10 +952,12 @@ input:checked ~ table tr:nth-child(10) {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    visibility: collapse;
+    visibility: hidden;
+    display: none;
   }
   to {
     visibility: visible;
+    display: table-row;
     opacity: 1;
   }
 }
@@ -964,10 +966,12 @@ input:checked ~ table tr:nth-child(10) {
   from {
     opacity: 1;
     visibility: visible;
+    display: table-row;
   }
   to {
     opacity: 0;
-    visibility: collapse;
+    visibility: hidden;
+    display: none;
   }
 }
 
