@@ -31,9 +31,15 @@
   <main>
 
     <span>
-      <div>
-        <table>
 
+      <div>
+
+        <input type="checkbox" id="agrandir"></td>
+        <label for="agrandir" id="plus">voir plus</label>
+        <label for="agrandir" id="moins">voir moins</label>
+        
+        
+        <table for="agrandir">
           <thead>
             <tr>
               <th>Médaillé(e.s)</th>
@@ -94,32 +100,90 @@
             <td>22</td>
             <td>64</td>
           </tr>
+
+
+
+
+
+          <tr>
+            <td>6</td>
+            <td><img src="../images/Img_Accueil/logo_pays/pays-bas.png" alt="logo chine"></td>
+            <td>PaysBas</td>
+            <td>15</td>
+            <td>7</td>
+            <td>12</td>
+            <td>34</td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td><img src="../images/Img_Accueil/logo_pays/royaume-uni.png" alt="logo chine"></td>
+            <td>GB</td>
+            <td>14</td>
+            <td>22</td>
+            <td>29</td>
+            <td>65</td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td><img src="../images/Img_Accueil/logo_pays/coree-du-sud.png" alt="logo chine"></td>
+            <td>Corée</td>
+            <td>13</td>
+            <td>9</td>
+            <td>10</td>
+            <td>32</td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td><img src="../images/Img_Accueil/logo_pays/italie.png" alt="logo chine"></td>
+            <td>Italie</td>
+            <td>12</td>
+            <td>13</td>
+            <td>15</td>
+            <td>40</td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td><img src="../images/Img_Accueil/logo_pays/allemagne.png" alt="logo chine"></td>
+            <td>Allemagne</td>
+            <td>12</td>
+            <td>13</td>
+            <td>15</td>
+            <td>40</td>
+          </tr>
         </table>
+
       </div>
 
       <div>
         <h2>Moments forts</h2>
 
-        <div>
+        <div class="carrousel">
+          
+          <span id="img_1"></span>
+          <span id="img_2"></span>
+          <span id="img_3"></span>
 
-          <figure>
-            <img src="../images/Img_Accueil/leon_marchand_moment_marquant.jpg" alt="Victoire de Leon Marchand"
-              width="290" height="190">
+          <div class="cadre img_1">
+            <a href="#img_3" class="fleche precedent"></a>
+            <a href="#img_2" class="fleche suivant"></a>
+            <p>Léon Marchand</p>
+          </div>
 
-            <figcaption>Léon Marchand</figcaption>
-          </figure>
+          <div class="cadre img_2">
+            <a href="#img_1" class="fleche precedent"></a>
+            <a href="#img_3" class="fleche suivant"></a>
+            <p>Cassandre Beaugrand</p>
+          </div>
 
-          <figure>
-            <img src="../images/Img_Accueil/teddy_riner_moment_marquant.jpg" alt="Final de Teddy Riner" width="290"
-              height="190">
-            <figcaption>Teddy Riner</figcaption>
-          </figure>
-
-          <figure>
-            <img src="../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg"
-              alt="Victoire de Cassandre Beaugrand" width="290" height="190">
-            <figcaption>Cassandre Beaugrand</figcaption>
-          </figure>
+          <div class="cadre img_3">
+            <a href="#img_2" class="fleche precedent"></a>
+            <a href="#img_1" class="fleche suivant"></a>
+            <p>Teddy Riner</p>
+          </div>
 
         </div>
 

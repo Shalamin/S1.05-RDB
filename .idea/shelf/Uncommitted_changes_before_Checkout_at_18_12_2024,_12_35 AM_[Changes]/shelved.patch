@@ -1,0 +1,70 @@
+Index: sites/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*\n#####################################################\n#                                                   #\n#                      Polices                      #\n#                                                   #\n#####################################################\n*/\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Bold.woff2') format('woff2'),\n          url('fonts/Poppins-Bold.woff') format('woff');\n      font-weight: bold;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Light.woff2') format('woff2'),\n          url('fonts/Poppins-Light.woff') format('woff');\n      font-weight: 300;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Italic.woff2') format('woff2'),\n          url('fonts/Poppins-Italic.woff') format('woff');\n      font-weight: normal;\n      font-style: italic;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Medium.woff2') format('woff2'),\n          url('fonts/Poppins-Medium.woff') format('woff');\n      font-weight: 500;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Regular.woff2') format('woff2'),\n          url('fonts/Poppins-Regular.woff') format('woff');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Thin.woff2') format('woff2'),\n          url('fonts/Poppins-Thin.woff') format('woff');\n      font-weight: 100;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-SemiBold.woff2') format('woff2'),\n          url('Poppins-SemiBold.woff') format('woff');\n      font-weight: 600;\n      font-style: normal;\n      font-display: swap;\n    }\n\nbody {\n  font-family: \"Poppins\", \"Ubuntu\", sans-serif;\n  background-color: #e6e1d3;\n  color:#03196c;\n}\n/*\n#####################################################\n#                                                   #\n#                       Header                      #\n#                                                   #\n#####################################################\n*/\nheader {\n  background-color: #03196c;\n  height: 150px;\n  padding: 40px 0 40px 230px;\n  display: flex;\n  align-items: center;\n  \n}\nheader img {\n  display: inline-block;\n  margin: 0px 25px 0px 75px;\n}\nheader nav {\n  width: 980px;\n  height: 70px;\n  margin: 0;\n  background-size: 980px 90px;\n  background-image: url(../images/Image_general/bannière1jpg.jpg);\n}\nheader nav a {\n  width: 180px;\n  height: 44px;\n  border-radius: 20px;\n  margin: 10px;\n  color: #03196c;\n  background-color: #d5c46c;\n  font-size: 32px;\n  text-decoration: none;\n  text-align: center;\n  display: inline-block;\n}\n\n\n/*\n#####################################################\n#                                                   #\n#                       Body                        #\n#                                                   #\n#####################################################\n*/\nmain section {\n  display: flex;\n}\nmain article {\n  background-color: #d5c46c;\n  border: solid 1px #03196c;\n  margin: 20px;\n  border-radius: 20px;\n}\nh2 {\n  font-family: \"Ubuntu\";\n  color: #03196c;\n  /*bordure GAUCHE des titres*/\n  border-left: #304aab solid 3px;\n  border-left-width: 5px;\n\n  /*bordure BAS des titres*/\n  border-bottom: #304aab solid 3px;\n  border-bottom-width: 5px;\n\n  /*bordure DROITE et HAUT des titres*/\n  border-top: 0;\n  border-right: 0;\n}\nsection article:nth-of-type(1), section:nth-of-type(2) article:nth-of-type(2) {\n  width: 70%;\n}\nsection article:nth-of-type(2), section:nth-of-type(2) article:nth-of-type(1) {\n  width: 30%;\n}\n\n/*\n#####################################################\n#                                                   #\n#                       Footer                      #\n#                                                   #\n#####################################################\n*/\nfooter {\n  background-color: #304AAB;\n  padding: 20px;\n  display: flex;\n\n}\nfooter img{\n  display: inline-block;\n\n}\nfooter article {\n  background-color: #e6e1d3;\n  margin: 0 20px;\n  width: 50%;\n  height: auto;\n  padding: 20px;\n  border-radius: 20px;\n  \n\n}\nfooter article h1{\n  color: #03196c;\n  align-items: left;\n\n}\nfooter article p:nth-last-child(1) em{\n  color: #304AAB;\n  text-align: right;\n} \nfooter article p:nth-last-child(1) em:nth-last-child(1) {\n  text-align: right;\n  color: #304AAB;\n  font-size: 10px;\n  \n}\n\nfooter li a {\n  color: #03196c;\n  text-decoration: none;\n}\nfooter li a:hover {\n  color: #304AAB;\n}\nfooter li{\n  list-style-type: none;\n}\nfooter li:before{\n  content:\"• \";\n}\nfooter img{\n  margin : 0 5px;\n}\nfooter section {\n  display: flex;\n  margin-left :100px;\n \n}\nfooter section article:nth-child(1){\n  background-color: #d5c46c;\n  color :#d5c46c;\n  width: 10px;\n  height: 20px;\n  margin : 0 20px;\n}\nfooter section article:nth-of-type(2), footer section article:nth-of-type(3){\n  background-color: #d5c46c;\n  color :#03196c;\n  width: 10em;\n  height: 20px;\n  margin : 0 20px;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sites/style.css b/sites/style.css
+--- a/sites/style.css	(revision 42f087b9d592cfeb43309972bf2912521fe49dcb)
++++ b/sites/style.css	(date 1734478492277)
+@@ -144,7 +144,58 @@
+ section article:nth-of-type(2), section:nth-of-type(2) article:nth-of-type(1) {
+   width: 30%;
+ }
+-
++/*
++#####################################################
++#                                                   #
++#           CAROUSSEL + MOMENTS FORTS               #
++#                                                   #
++#####################################################
++*/
++
++span{
++  display: flex;
++  justify-content: space-between;
++  margin: 3em 13em;
++  align-items: flex-start;
++}
++span > div{
++  margin: 0;
++}
++
++span > div:nth-child(2){
++  margin-left: 2em;
++}
++
++
++/*
++#####################################################
++#                                                   #
++#                CAROUSSEL CSS                      #
++#                                                   #
++#####################################################
++*/
++
++div > div{
++  display: flex;
++  flex-wrap: nowrap;
++}
++
++div > div > figure > img{
++  margin: 0;
++  width: 80%;
++  height: 80%;
++}
++
++div > div > figure{
++  margin: 0;
++  margin-bottom: 5em;
++  text-align: center;
++}
++
++figcaption{
++  background-color: #e6e1d3;
++  margin: 0 2em;
++}
+ /*
+ #####################################################
+ #                                                   #

@@ -1,0 +1,126 @@
+Index: sites/epreuve.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr\" lang=\"fr\">\n\n<head>\n  <meta charset=\"utf-8\" />\n  <title></title>\n  <meta name=\"auhor\" content=\"\" />\n  <meta name=\"description\" content=\"\" />\n  <meta name=\"keywords\" content=\"\" />\n\n  <!--Liens vers le fichier CSS de Bootstrap-->\n  <link rel=\"stylesheet\" href=\"bootstrap/css/bootstrap.css\" />\n  <!--Liens vers le fichier JS de Bootstrap-->\n  <script src=\"bootstrap/js/bootstrap.bundle.js\"></script>\n  <!--Liens vers le fichier CSS-->\n  <link rel=\"stylesheet\" href=\"style.css\" />\n</head>\n\n<body>\n  <header>\n    <nav>\n      <a href=\"./Accueil.html\">Lien</a>\n      <a href=\"./Discipline.html\">Lien</a>\n      <a href=\"./Joueur.html\">Lien</a>\n    </nav>\n\n    <img src=\"../images/Image_general/image 1.png\" alt=\"Logo jo 2024\" width=\"61\" height=\"61\" />\n\n  </header>\n  <main>\n    <section>\n      <article>\n        <h2>VolleyBall<br />Homme</h2>\n        <p>Paragraphe d'essai</p>\n        <img src=\"../images/images_epreuve/balle.png\" width=\"42\" height=\"42\" />\n      </article>\n      <article>\n        <h2>Champions</h2>\n        <ul>\n          <li>\n            <h3>Equipe les plus titrées</h3>\n            <ol>\n              <li>URSS <img src=\"../images/images_epreuve/urss.png\" width=\"25\" height=\"15\" /> 3 victoires</li>\n              <ul>\n                <li>1964</li>\n                <li>1968</li>\n                <li>1980</li>\n              </ul>\n              <li>Brésil <img src=\"../images/images_epreuve/brésil.png\" width=\"25\" height=\"15\" /> 3 victoires</li>\n              <ul>\n                <li>1992</li>\n                <li>2004</li>\n                <li>2016</li>\n              </ul>\n            </ol>\n          </li>\n          <li>\n            <h3>5 derniers Champions</h3>\n            <ul>\n              <li>\n                <p>France <img src=\"../images/images_epreuve/drapeau france.png\" width=\"25\" height=\"15\" /> 2024</p>\n              </li>\n              <li>\n                <p>France <img src=\"../images/images_epreuve/drapeau france.png\" width=\"25\" height=\"15\" /> 2021</p>\n              </li>\n              <li>\n                <p>Brésil <img src=\"../images/images_epreuve/brésil.png\" width=\"25\" height=\"15\" /> 2016</p>\n              </li>\n              <li>\n                <p>Russie <img src=\"../images/images_epreuve/russie.png\" width=\"25\" height=\"15\" /> 2012</p>\n              </li>\n              <li>\n                <p>État-Unis <img src=\"../images/images_epreuve/usa.png\" width=\"25\" height=\"15\" /> 2008</p>\n              </li>\n            </ul>\n          </li>\n        </ul>\n      </article>\n    </section>\n    <section>\n      <article>\n        <h2>MVP 2024</h2>\n        <h3>Earvin NGAPETH</h3>\n        <img src=\"../images/images_epreuve/earvin-ngapeth-1.png\" width=\"300\" height=\"300\" />\n        <p><em><a href=\"./Joueur.html\">En savoir plus...</a></em></p>\n      </article>\n      <article>\n        <h2>Planning</h2>\n      </article>\n    </section>\n    <section>\n      <h2>Moments forts</h2>\n    </section>\n  </main>\n  <footer>\n\n    <img src=\"../images/Image_general/image 1.png\" alt=\"Logo jo 2024\" width=\"61\" height=\"61\" />\n\n    <article>\n      <h1>\n        Mentions légales\n      </h1>\n\n      <p>Le site à été réalisé par :</p>\n      <li><a href=\"mailto:johan.keruadren@etudiant.univ-rennes.fr\">Keraudren Johan</a></li>\n      <li><a href=\"mailto:bernard.michel.1@etudiant.univ-rennes.fr\">Michel Bernard</a></li>\n      <li><a href=\"mailto:elouan.dhennin@etudiant.univ-rennes.fr\">Dhennin Elouan</a></li>\n      <li><a href=\"mailto:sofiane.scharwz@etudiant.univ-rennes.fr\">Schwarz Sofiane</a></li>\n      <br />\n      <p><em>Site réalisé dans le cadre de la SAE1.05, Recueil des besoins</em></p>\n      <p>\n        <em>©Copyright 2024. Tous droits réservés</em>\n        <br>\n        <em>Site non-officiel des Jeux Olympiques de Paris 2024</em>\n      </p>\n    </article>\n    <section>\n      <article>.\n      </article>\n      <article>\n        <p>\n          Support\n        </p>\n      </article>\n      <article>\n        <p>\n          Sponsors\n        </p>\n      </article>\n    </section>\n  </footer>\n</body>\n\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sites/epreuve.html b/sites/epreuve.html
+--- a/sites/epreuve.html	(revision 42f087b9d592cfeb43309972bf2912521fe49dcb)
++++ b/sites/epreuve.html	(date 1733911659230)
+@@ -30,7 +30,7 @@
+   <main>
+     <section>
+       <article>
+-        <h2>VolleyBall<br />Homme</h2>
++        <h2>VolleyBall Homme</h2>
+         <p>Paragraphe d'essai</p>
+         <img src="../images/images_epreuve/balle.png" width="42" height="42" />
+       </article>
+@@ -119,7 +119,7 @@
+       </article>
+       <article>
+         <p>
+-          Support
++          Nous contacter
+         </p>
+       </article>
+       <article>
+Index: sites/style.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/*\n#####################################################\n#                                                   #\n#                      Polices                      #\n#                                                   #\n#####################################################\n*/\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Bold.woff2') format('woff2'),\n          url('fonts/Poppins-Bold.woff') format('woff');\n      font-weight: bold;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Light.woff2') format('woff2'),\n          url('fonts/Poppins-Light.woff') format('woff');\n      font-weight: 300;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Italic.woff2') format('woff2'),\n          url('fonts/Poppins-Italic.woff') format('woff');\n      font-weight: normal;\n      font-style: italic;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Medium.woff2') format('woff2'),\n          url('fonts/Poppins-Medium.woff') format('woff');\n      font-weight: 500;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Regular.woff2') format('woff2'),\n          url('fonts/Poppins-Regular.woff') format('woff');\n      font-weight: normal;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-Thin.woff2') format('woff2'),\n          url('fonts/Poppins-Thin.woff') format('woff');\n      font-weight: 100;\n      font-style: normal;\n      font-display: swap;\n    }\n    @font-face {\n      font-family: 'Poppins';\n      src: url('fonts/Poppins-SemiBold.woff2') format('woff2'),\n          url('Poppins-SemiBold.woff') format('woff');\n      font-weight: 600;\n      font-style: normal;\n      font-display: swap;\n    }\n\nbody {\n  font-family: \"Poppins\", \"Ubuntu\", sans-serif;\n  background-color: #e6e1d3;\n  color:#03196c;\n}\n/*\n#####################################################\n#                                                   #\n#                       Header                      #\n#                                                   #\n#####################################################\n*/\nheader {\n  background-color: #03196c;\n  height: 150px;\n  padding: 40px 0 40px 230px;\n  display: flex;\n  align-items: center;\n  \n}\nheader img {\n  display: inline-block;\n  margin: 0px 25px 0px 75px;\n}\nheader nav {\n  width: 980px;\n  height: 70px;\n  margin: 0;\n  background-size: 980px 90px;\n  background-image: url(../images/Image_general/bannière1jpg.jpg);\n}\nheader nav a {\n  width: 180px;\n  height: 44px;\n  border-radius: 20px;\n  margin: 10px;\n  color: #03196c;\n  background-color: #d5c46c;\n  font-size: 32px;\n  text-decoration: none;\n  text-align: center;\n  display: inline-block;\n}\n\n\n/*\n#####################################################\n#                                                   #\n#                       Body                        #\n#                                                   #\n#####################################################\n*/\nmain section {\n  display: flex;\n}\nmain article {\n  background-color: #d5c46c;\n  border: solid 1px #03196c;\n  margin: 20px;\n  border-radius: 20px;\n}\nh2 {\n  font-family: \"Ubuntu\";\n  color: #03196c;\n  /*bordure GAUCHE des titres*/\n  border-left: #304aab solid 3px;\n  border-left-width: 5px;\n\n  /*bordure BAS des titres*/\n  border-bottom: #304aab solid 3px;\n  border-bottom-width: 5px;\n\n  /*bordure DROITE et HAUT des titres*/\n  border-top: 0;\n  border-right: 0;\n}\nsection article:nth-of-type(1), section:nth-of-type(2) article:nth-of-type(2) {\n  width: 70%;\n}\nsection article:nth-of-type(2), section:nth-of-type(2) article:nth-of-type(1) {\n  width: 30%;\n}\n\n/*\n#####################################################\n#                                                   #\n#                       Footer                      #\n#                                                   #\n#####################################################\n*/\nfooter {\n  background-color: #304AAB;\n  padding: 20px;\n  display: flex;\n\n}\nfooter img{\n  display: inline-block;\n\n}\nfooter article {\n  background-color: #e6e1d3;\n  margin: 0 20px;\n  width: 50%;\n  height: auto;\n  padding: 20px;\n  border-radius: 20px;\n  \n\n}\nfooter article h1{\n  color: #03196c;\n  align-items: left;\n\n}\nfooter article p:nth-last-child(1) em{\n  color: #304AAB;\n  text-align: right;\n} \nfooter article p:nth-last-child(1) em:nth-last-child(1) {\n  text-align: right;\n  color: #304AAB;\n  font-size: 10px;\n  \n}\n\nfooter li a {\n  color: #03196c;\n  text-decoration: none;\n}\nfooter li a:hover {\n  color: #304AAB;\n}\nfooter li{\n  list-style-type: none;\n}\nfooter li:before{\n  content:\"• \";\n}\nfooter img{\n  margin : 0 5px;\n}\nfooter section {\n  display: flex;\n  margin-left :100px;\n \n}\nfooter section article:nth-child(1){\n  background-color: #d5c46c;\n  color :#d5c46c;\n  width: 10px;\n  height: 20px;\n  margin : 0 20px;\n}\nfooter section article:nth-of-type(2), footer section article:nth-of-type(3){\n  background-color: #d5c46c;\n  color :#03196c;\n  width: 10em;\n  height: 20px;\n  margin : 0 20px;\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/sites/style.css b/sites/style.css
+--- a/sites/style.css	(revision 42f087b9d592cfeb43309972bf2912521fe49dcb)
++++ b/sites/style.css	(date 1734465981261)
+@@ -119,30 +119,35 @@
+ }
+ main article {
+   background-color: #d5c46c;
+-  border: solid 1px #03196c;
++  border: solid 10px #03196c;
+   margin: 20px;
+-  border-radius: 20px;
++  
+ }
+ h2 {
+   font-family: "Ubuntu";
+   color: #03196c;
+   /*bordure GAUCHE des titres*/
+-  border-left: #304aab solid 3px;
+-  border-left-width: 5px;
++  border-left: #304aab solid 5px;
+ 
+   /*bordure BAS des titres*/
+-  border-bottom: #304aab solid 3px;
+-  border-bottom-width: 5px;
++  border-bottom: #304aab solid 5px;
++  
+ 
+   /*bordure DROITE et HAUT des titres*/
+   border-top: 0;
+   border-right: 0;
++  width : 300px;
++  height: 80px;
+ }
+ section article:nth-of-type(1), section:nth-of-type(2) article:nth-of-type(2) {
+   width: 70%;
++  padding :12px;
++  border-radius: 20px 0 0 20px;
+ }
+ section article:nth-of-type(2), section:nth-of-type(2) article:nth-of-type(1) {
+   width: 30%;
++  padding :12px;
++  border-radius: 0 20px 20px 0;
+ }
+ 
+ /*
+@@ -168,13 +173,12 @@
+   width: 50%;
+   height: auto;
+   padding: 20px;
+-  border-radius: 20px;
+-  
++  border-radius: 20px;  
+ 
+ }
+ footer article h1{
+   color: #03196c;
+-  align-items: left;
++  align-items: flex-end;
+ 
+ }
+ footer article p:nth-last-child(1) em{
+@@ -212,14 +216,22 @@
+ footer section article:nth-child(1){
+   background-color: #d5c46c;
+   color :#d5c46c;
+-  width: 10px;
+-  height: 20px;
+-  margin : 0 20px;
++ width: 2em;
++  height: 2em;
++  margin : 0 15px;
++  padding :12px ;
+ }
+-footer section article:nth-of-type(2), footer section article:nth-of-type(3){
++footer section article:nth-of-type(2),
++footer section article:nth-of-type(3){
+   background-color: #d5c46c;
+   color :#03196c;
+   width: 10em;
+-  height: 20px;
+-  margin : 0 20px;
++  height: 3em;
++  margin : 0 15px;
++  padding :12px ;
++}
++footer section article:nth-of-type(2) p,
++footer section article:nth-of-type(3) p{
++  text-align: center;
++  align-items: center;
+ }
+\ No newline at end of file
