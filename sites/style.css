@@ -949,27 +949,60 @@ input:checked ~ table tr:nth-child(10) {
   animation: fadeIn 0.5s ease forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    visibility: collapse;
+@supports (-webkit-appearance: none) {
+  /* Styles spécifiques à Safari */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
+    to {
+      visibility: visible;
+      display: table-row;
+      opacity: 1;
+    }
   }
-  to {
-    visibility: visible;
-    opacity: 1;
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      visibility: visible;
+      display: table-row;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
   }
 }
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    visibility: visible;
+@-moz-document url-prefix() {
+  /* Styles spécifiques à Firefox */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      visibility: collapse;
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
   }
-  to {
-    opacity: 0;
-    visibility: collapse;
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      visibility: visible;
+    }
+    to {
+      opacity: 0;
+      visibility: collapse;
+    }
   }
 }
+
 
 span div > table thead th
 {
