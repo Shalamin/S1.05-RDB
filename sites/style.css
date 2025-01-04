@@ -622,16 +622,6 @@ section div:nth-child(2) article div {
 
 }
 
-section div:nth-child(2) article:hover div {
-  width: 370px;
-  height: 254px;
-  flex-shrink: 0;
-  transition-duration: 0.5s;
-  border-radius: 20px;  
-
-}
-
-
 section div:nth-child(3) article div {
   width: 185px;
   height: 127px;
@@ -640,15 +630,6 @@ section div:nth-child(3) article div {
   border-radius: 360px;
   background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
   transition-duration: 0.5s;
-
-}
-
-section div:nth-child(3) article:hover div {
-  width: 370px;
-  height: 254px;
-  flex-shrink: 0;
-  transition-duration: 0.5s;
-  border-radius: 20px;  
 
 }
 
@@ -663,15 +644,6 @@ section div:nth-child(4) article div {
 
 }
 
-section div:nth-child(4) article:hover div {
-  width: 370px;
-  height: 254px;
-  flex-shrink: 0;
-  transition-duration: 0.5s;
-  border-radius: 20px;  
-
-}
-
 section div:nth-child(5) article div {
   width: 185px;
   height: 127px;
@@ -680,15 +652,6 @@ section div:nth-child(5) article div {
   border-radius: 360px;
   background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
   transition-duration: 0.5s;
-
-}
-
-section div:nth-child(5) article:hover div {
-  width: 370px;
-  height: 254px;
-  flex-shrink: 0;
-  transition-duration: 0.5s;
-  border-radius: 20px;  
 
 }
 
@@ -703,7 +666,7 @@ section div:nth-child(6) article div {
 
 }
 
-section div:nth-child(6) article:hover div {
+section div article:hover div {
   width: 370px;
   height: 254px;
   flex-shrink: 0;
@@ -719,7 +682,7 @@ section div:nth-child(6) article:hover div {
 ############################
 */
 
-section:nth-child(2) div {
+#siteM:nth-child(2) div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -767,6 +730,9 @@ section div div article img {
 #####################################################
 */
 
+main > article > div > h3 > a{
+  display: none;
+}
 
 main>article>div {
   display: flex;
@@ -1211,8 +1177,6 @@ footer section article:nth-of-type(3) {
   justify-content: center;
 }
 
-
-
 @media screen and (max-width: 1700px) {
 
 
@@ -1255,6 +1219,162 @@ footer section article:nth-of-type(3) {
   width: 10%;
   height: 10%; 
 
+  }
+
+}
+
+
+@media screen and (max-width: 528px) {
+  /*
+  #####################################################
+  #                                                   #
+  #                       Header                      #
+  #                                                   #
+  #####################################################
+  */
+  header {
+    height: 50px;
+  }
+
+
+  header img {
+    flex-direction: row;
+    margin: 0px 25px 0px 85px;
+  }
+
+
+
+  header nav a {
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+
+  }
+
+
+  span {
+    display: inline-block;
+    width: 40%;
+  }
+
+  span > div:nth-child(1){
+    margin: 1em auto;
+    width: 60%;
+  }
+
+  span > div:nth-child(2){
+    margin-left: 0;
+    margin: 2em auto;
+    width: 80%;
+  }
+
+
+    /*
+  #####################################################
+  #                     Titre                         #
+  #####################################################
+  */
+  div h1 {
+    font-size: 250%;
+
+  }
+
+  body > div:hover{
+    transition-duration: 0.5s;
+    padding-bottom: 25%;
+
+  }
+
+  /*
+  #####################################################
+  #             Médailles + Moments forts             #
+  #####################################################
+  */
+ 
+
+  h3 a{
+    text-transform: none;
+    text-decoration: none;
+    color: #03196c;
+  }
+
+  span {
+    width: 100%;
+    display: inline;
+  }
+
+
+  span>div:nth-child(1) {
+    width: 80%;
+    margin: 1em auto;
+  }
+
+  span>div:nth-child(2) {
+    width: 80%;
+    height: 25em;
+  }
+
+  div>div>figure>img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  span div > table thead th
+  {
+    margin-top: 0px;
+    color: #e6e1d3;
+    background-color: #03196c;
+    padding: 2px;
+  }
+
+  span div > table tbody tr td
+  {
+    padding: 2px;
+    background-color: #e6e1d3;
+  }
+
+  table tr img{
+    width: 2em;
+    height: 2em;
+  }
+
+
+
+  section > div > div > article > ul{
+    display: none;
+  }
+
+  section > div > div > article:hover > p{
+    display: none;
+  }
+
+  section > div > div > article{
+    height: 12em;
+  }
+
+  section > div > div > article:hover img{
+    height: 10em;
+  }
+
+  section div article:hover div {
+    width: 270px;
+    height: 154px;
+    flex-shrink: 0;
+    transition-duration: 0.5s;
+    border-radius: 20px;  
+  
+  }
+
+  main > article > div > img{
+    display: none;
+  }
+
+  main > article > div > h3 > a{
+    display: inline;
+    color: #e6e1d3;
   }
 
 }
