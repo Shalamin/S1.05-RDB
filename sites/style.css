@@ -601,11 +601,11 @@ section div h3 a {
 }
 
 li > img{
-  width: 20%;
+  width: 2em;
   transition-duration: 0.5s;
 }
 li {
-  font-size: 180%;
+  font-size: 3em;
   transition-duration: 0.5s;
 }
 
