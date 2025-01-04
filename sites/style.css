@@ -600,7 +600,13 @@ section div h3 a {
   color: #e6e1d3;
 }
 
+li > img{
+  width: 8%;
+}
 
+li{
+  list-style: none;
+}
 
 
 
@@ -719,7 +725,7 @@ section div article:hover {
   width: 40%;
 }
 
-section div div article img {
+section div div article > img {
   width: 70%;
 }
 
