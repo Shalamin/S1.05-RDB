@@ -154,6 +154,14 @@ article {
   margin: 20px;
   border-radius: 20px;
   padding: 2em;
+  z-index: 10;
+}
+.interaction{
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 2em;
   width: 60%;
   height: 171px;
   z-index: 10;
@@ -219,7 +227,7 @@ section>.interaction h4{
 #                                                   #
 #####################################################
 */
-section:nth-child(2) {
+.palmares {
   justify-content: space-between;
   margin-left: 50px;
   margin-right: 80px;
@@ -231,7 +239,7 @@ section:nth-child(2) .interaction img {
   display: block;
 }
 
-section:nth-child(2) h2 {
+section:nth-child(2)>article>h2 {
   display: block;
   float: right;
   font-family: "Ubuntu";
@@ -253,7 +261,10 @@ section:nth-child(2) h2 {
   padding-bottom: 10px;
 
 }
-
+section:nth-child(2) > .interaction:nth-child(2){
+  display: flex;
+  flex-direction: row-reverse;
+}
 section:nth-child(2) figure {
   justify-self: flex-start;
   margin-left: 5px;
@@ -276,7 +287,7 @@ main>div section:nth-child(1) article {
   height: 163px;
 }
 
-section:nth-child(1) img {
+.presentation img {
   padding-right: 2em;
 }
 
@@ -366,7 +377,9 @@ body > div:hover{
   padding-bottom: 40%;
 
 }
-
+main div  div  h2 {
+  width: 250px;
+}
 
 
 /*
@@ -543,7 +556,7 @@ div>figure figcaption {
   justify-content: space-around;
 }
 
-section:nth-child(2) div div>h2 {
+section:nth-child(2) > div > div>h2 {
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
   border-bottom-width: 5px;
@@ -589,7 +602,7 @@ section div div article li {
 }
 
 
-section div h3 {
+section > div > h3 {
   padding: 1em;
   width: 51%;
   text-align: center;
@@ -1100,8 +1113,307 @@ span div > table tr td img, table tr img
  width: 2em;
  height: 2em; 
 }
+/*
+#####################################################
+#                                                   #
+#                     CSS Johan                     #
+#                                                   #
+#####################################################
+*/
+main  section {
+  display: flex;
+}
+main > section > article
+{
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3em 1em;
+}
+main > section:nth-child(1) > article:nth-of-type(1),
+main > section:nth-of-type(2) > article:nth-of-type(2) {
+  width: 70%;
+  padding : 1em;
+ 
+}
+main > section:nth-child(1) > article:nth-of-type(2),
+main > section:nth-of-type(2) > article:nth-of-type(1) {
+  width: 30%;
+  padding : 1em;
+ 
+}
+main > section:nth-child(2) > article:nth-child(1) img{
+  width: 90%;
+ @media screen and (max-width: 768px) {
+  width: 100%;
+  height: auto;
+  display: none;
+  
+ }
+ }
+ /*----------Présentation Volleyball----------*/
+ main > section:nth-child(1) > article:nth-of-type(1){
+  display: inline-block;
+ }
+ main > section:nth-child(1) > article:nth-of-type(1) img{
+
+  top : 2em;
+  left : 30%;
+ }
+  main > section:nth-child(1) > article:nth-of-type(1) h2{
+    text-align: center;
+    width: 300px;
+  }
+ /*
+#####################################################
+#                                                   #
+#                     Champions                     #
+#                                                   #
+#####################################################
+*/
+/* Image de puce URSS */
+main > section:nth-child(1) > article:nth-child(2) ul li ol > li:nth-child(1){
+  list-style: url(../images/images_epreuve/urss.png);
+}
+/* Image de puce BRESIL */
+main > section:nth-child(1) > article:nth-child(2) ul li ol > li:nth-child(3){
+  list-style: url(../images/images_epreuve/br2.png);
+}
+/* Image de puce VICTOIRE des deux nation ci-dessus */
+main section:nth-child(1) > article:nth-child(2) ul li ol ul li{
+  list-style: url(../images/images_epreuve/tropheeNoir.png);
+}
+/*------------Image de puce différents drapeaux------------*/
+                          /* France 2024 & 2021 */
+main > section:nth-child(1) > article:nth-child(2) ul li:nth-child(2) ul > li:nth-child(1),
+main > section:nth-child(1) > article:nth-child(2) ul li:nth-child(2) ul > li:nth-child(2){
+  list-style: url(../images/images_epreuve/fr.png);
+}
+                          /* Brésil 2016 */
+main > section:nth-child(1) > article:nth-child(2) ul li:nth-child(2) ul > li:nth-child(3){
+  list-style: url(../images/images_epreuve/br2.png);
+                            /* Russie 2012 */
+}
+main > section:nth-child(1) > article:nth-child(2) ul li:nth-child(2) ul > li:nth-child(4){
+  list-style: url(../images/images_epreuve/ru.png);
+}
+                          /* État-Unis 2008 */
+main > section:nth-child(1) > article:nth-child(2) ul li:nth-child(2) ul > li:nth-child(5){
+  list-style: url(../images/images_epreuve/us.png);
+}
+
+/*
+#####################################################
+#                                                   #
+#                       Planning                    #
+#                                                   #
+#####################################################
+*/
+main> section:nth-child(2) > article:nth-child(2){
+  position: relative;
+}
+
+/*-----------------Bouton "Phase de jeu"-------------------*/
+
+main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > h2{
+  margin: 150;
+
+  justify-content: none;
+}
+
+main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > label{
+  
+  position: absolute;
+  width: 12%;
+  min-width: 120px;
+  height: 6.5em;
+  top: 20px;
+  right: 20px;
+  padding: 0.25em;
+  border : solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #03196c;
+  color : white;
+}
+main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > input{
+  appearance: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  
+}
+/*-----------------Liste des phases de jeu-------------------*/
+main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > nav > ul{
+  list-style-type: none;
+
+}
+.planning > ul > li > a{
+  color : white;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-variant: small-caps;
+
+}
+.planning{
+  display: none;
+  position: absolute;
+  top: 7.5em;
+  right: 20px;
+  padding: 0;
+  border : solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #03196c;
+  color : white;
+  
+}
+.menu-plan:checked ~ .planning{ 
+  display: block;
+}
+
+/*-----------------Différents match-------------------*/
+main > section:nth-child(2) > article:nth-child(2) > div:nth-child(2){
+  width: 100%;
+  height: 100%;
+  max-height: 25em;
+}
+main > section:nth-child(2) > article:nth-child(2) div:nth-child(2) div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+
+}
+
+main > section:nth-child(2) > article:nth-child(2) div h3{
+  text-align: center;
+  background-color: none;
+}
+
+main > section:nth-child(2) > article:nth-child(2) div div img{
+  width : 100px;
+  height : 75px;
+}
+main > section:nth-child(2) > article:nth-child(2) div div{
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+main > section:nth-child(2) > article:nth-child(2) div div table{
+    text-align: center;
+    margin: auto;
+}
+main > section:nth-child(2) > article:nth-child(2) div div table td{
+  width: 8em;
+  height: 2em;
+ 
+}
+/*-----------------Finale & Demi-finale-------------------*/
+
+#finale:target{
+  visibility: visible;
+  display: flex;
+}
+#finale:target ,#demi-finale:target{
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  
+}
+#finale, #demi-finale{
+  visibility: hidden;
+  display: none;
+}
+/*-----------------Quart & Huitième-------------------*/
+#quart-finale1, #quart-finale2,
+#huitieme-finale1,#huitieme-finale2,
+#huitieme-finale3,#huitieme-finale4{
+  display: none;
+  visibility: hidden;
+}
+#quart-finale1:target, #quart-finale2:target,
+#huitieme-finale1:target, #huitieme-finale2:target,
+#huitieme-finale3:target, #huitieme-finale4:target{
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+#####################################################
+#                                                   #
+#                 Moments forts                     #
+#                                                   #
+#####################################################
+*/
+.moments{
+  width: 100%;
+  margin: 32px;
+  height: auto;
+  background-color: none;
+}
+.moments .carrousel{
+  width: 80%;
+  background-color: #d5c46c;
+  border: none;
+}
+.moments .carrousel p{
+  position: absolute;
+  left: 5%;
+  bottom: 0.25em;
+
+  color: #03196c;
+  padding: 0;
+  margin: 0;
+  border-bottom: #03196c solid;
+}
+.moments_1{
+  z-index: 2;
+  opacity: 1;
+  background-image: url(../images/images_epreuve/Unknown.jpeg),                  
+                    url(../images/images_epreuve/victoire\ slovenie.jpg),
+                    url(../images/images_epreuve/retourner\ NGAPETH.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+.moments_2{
+  background-image: url(../images/images_epreuve/retourner\ NGAPETH.jpg),                   
+                    url(../images/images_epreuve/Unknown.jpeg),
+                    url(../images/images_epreuve/victoire\ slovenie.jpg);
+                    
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
 
 
+.moments_3{
+  background-image: url(../images/images_epreuve/victoire\ slovenie.jpg),                
+                    url(../images/images_epreuve/retourner\ NGAPETH.jpg),
+                    url(../images/images_epreuve/Unknown.jpeg);
+                    
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+:target ~ .moments_1{
+  opacity: 0;
+}
+
+#moments_1:target ~  .moments_1{
+  opacity: 1;
+}
+
+#moments_2:target ~  .moments_2, #moments_3:target ~  .moments_3{
+  z-index: 2;
+  opacity: 1;
+}
 /*
 #####################################################
 #                                                   #
