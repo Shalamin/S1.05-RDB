@@ -551,12 +551,12 @@ nav section article a{
   width:90%;
   margin:0;
   text-align: center;  
+  font-size:100%;
 }
 nav section>div article a{
   display:flex;
   flex-direction: column;
   justify-content: center;
-  font-size:larger;
   width:10%;
 }
 nav section article img{
@@ -565,7 +565,7 @@ nav section article img{
   padding-right:0;
 }
 nav section>div article img{
-  width:90%;
+  width:80%;
 }
 nav section:nth-child(2), nav section:nth-child(4){
   flex-direction: row-reverse;
