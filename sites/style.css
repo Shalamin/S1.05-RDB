@@ -227,7 +227,7 @@ section>.interaction h4{
 #                                                   #
 #####################################################
 */
-section:nth-child(2) {
+.palmares {
   justify-content: space-between;
   margin-left: 50px;
   margin-right: 80px;
@@ -261,7 +261,7 @@ section:nth-child(2)>article>h2 {
   padding-bottom: 10px;
 
 }
-section:nth-child(2) > article:nth-child(2){
+section:nth-child(2) > .interaction:nth-child(2){
   display: flex;
   flex-direction: row-reverse;
 }
@@ -287,7 +287,7 @@ main>div section:nth-child(1) article {
   height: 163px;
 }
 
-section:nth-child(1) img {
+.presentation img {
   padding-right: 2em;
 }
 
@@ -732,7 +732,7 @@ section div:nth-child(6) article:hover div {
 ############################
 */
 
-section:nth-child(2) div {
+#siteM div{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -1061,7 +1061,6 @@ main > section > article
 main > section:nth-child(1) > article:nth-of-type(1),
 main > section:nth-of-type(2) > article:nth-of-type(2) {
   width: 70%;
-
   padding : 1em;
  
 }
@@ -1080,6 +1079,19 @@ main > section:nth-child(2) > article:nth-child(1) img{
   
  }
  }
+ /*----------Présentation Volleyball----------*/
+ main > section:nth-child(1) > article:nth-of-type(1){
+  display: inline-block;
+ }
+ main > section:nth-child(1) > article:nth-of-type(1) img{
+
+  top : 2em;
+  left : 30%;
+ }
+  main > section:nth-child(1) > article:nth-of-type(1) h2{
+    text-align: center;
+    width: 300px;
+  }
  /*
 #####################################################
 #                                                   #
@@ -1128,10 +1140,13 @@ main > section:nth-child(1) > article:nth-child(2) ul li:nth-child(2) ul > li:nt
 main> section:nth-child(2) > article:nth-child(2){
   position: relative;
 }
+
 /*-----------------Bouton "Phase de jeu"-------------------*/
 
 main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > h2{
-  margin: 0;
+  margin: 150;
+
+  justify-content: none;
 }
 
 main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > label{
@@ -1141,7 +1156,7 @@ main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > label{
   min-width: 120px;
   height: 6.5em;
   top: 20px;
-  left: 20px;
+  right: 20px;
   padding: 0.25em;
   border : solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
@@ -1151,7 +1166,7 @@ main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > input{
   appearance: none;
   position: absolute;
   top: 20px;
-  left: 20px;
+  right: 20px;
   
 }
 /*-----------------Liste des phases de jeu-------------------*/
@@ -1171,7 +1186,7 @@ main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > nav > ul
   display: none;
   position: absolute;
   top: 7.5em;
-  left: 20px;
+  right: 20px;
   padding: 0;
   border : solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
@@ -1181,6 +1196,7 @@ main > section:nth-child(2) > article:nth-child(2) > div:nth-child(1) > nav > ul
 .menu-plan:checked ~ .planning{ 
   display: block;
 }
+
 /*-----------------Différents match-------------------*/
 main > section:nth-child(2) > article:nth-child(2) > div:nth-child(2){
   width: 100%;
@@ -1191,13 +1207,12 @@ main > section:nth-child(2) > article:nth-child(2) div:nth-child(2) div{
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-  margin-top: 2em;
+
 }
 
 main > section:nth-child(2) > article:nth-child(2) div h3{
   text-align: center;
   background-color: none;
-  margin-top: 1em;
 }
 
 main > section:nth-child(2) > article:nth-child(2) div div img{
@@ -1252,8 +1267,78 @@ main > section:nth-child(2) > article:nth-child(2) div div table td{
   flex-direction: column;
 }
 
+/*
+#####################################################
+#                                                   #
+#                 Moments forts                     #
+#                                                   #
+#####################################################
+*/
+.moments{
+  width: 100%;
+  margin: 32px;
+  height: auto;
+  background-color: none;
+}
+.moments .carrousel{
+  width: 80%;
+  background-color: #d5c46c;
+  border: none;
+}
+.moments .carrousel p{
+  position: absolute;
+  left: 5%;
+  bottom: 0.25em;
+
+  color: #03196c;
+  padding: 0;
+  margin: 0;
+  border-bottom: #03196c solid;
+}
+.moments_1{
+  z-index: 2;
+  opacity: 1;
+  background-image: url(../images/images_epreuve/Unknown.jpeg),                  
+                    url(../images/images_epreuve/victoire\ slovenie.jpg),
+                    url(../images/images_epreuve/retourner\ NGAPETH.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+.moments_2{
+  background-image: url(../images/images_epreuve/retourner\ NGAPETH.jpg),                   
+                    url(../images/images_epreuve/Unknown.jpeg),
+                    url(../images/images_epreuve/victoire\ slovenie.jpg);
+                    
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
 
 
+.moments_3{
+  background-image: url(../images/images_epreuve/victoire\ slovenie.jpg),                
+                    url(../images/images_epreuve/retourner\ NGAPETH.jpg),
+                    url(../images/images_epreuve/Unknown.jpeg);
+                    
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+:target ~ .moments_1{
+  opacity: 0;
+}
+
+#moments_1:target ~  .moments_1{
+  opacity: 1;
+}
+
+#moments_2:target ~  .moments_2, #moments_3:target ~  .moments_3{
+  z-index: 2;
+  opacity: 1;
+}
 /*
 #####################################################
 #                                                   #
