@@ -601,14 +601,27 @@ section div h3 a {
 }
 
 li > img{
-  width: 8%;
+  width: 20%;
+  transition-duration: 0.5s;
+}
+li {
+  font-size: 180%;
+  transition-duration: 0.5s;
 }
 
 li{
   list-style: none;
 }
 
+article:hover li > img{
+  transition-duration: 0.5s;
+  width: 8%;
+}
 
+article:hover li {
+  transition-duration: 0.5s;
+  font-size: 100%;
+}
 
 /*
 #####################################################
