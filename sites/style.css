@@ -1711,14 +1711,17 @@ footer section article:nth-of-type(3) {
 #                                                   #
 #####################################################
 */
-
+main article {
+  height: auto;
+  width: 94%;
+}
 /*###################################################
 #                                                   #
 #               Bouton volley                       #
 #                                                   #
 ###################################################*/
 
-aside , section{
+aside{
   display: flex;
   margin: 20px;
 }
