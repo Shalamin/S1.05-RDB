@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <title></title>
-  <meta name="auhor" content="" />
+  <title>Discipline</title>
+  <meta name="auhor" content="moi" />
   <meta name="description" content="" />
   <meta name="keywords" content="" />
 
@@ -17,18 +17,28 @@
 </head>
 
 <body>
+   <!----------------------------
+  
+            HEADER
+  
+  ------------------------------>
   <header>
     <nav>
-      <a href="./Accueil.html">Acceuil</a>
-      <a href="./Sports.html">Discipline</a>
-      <a href="./Joueur.html">Joueur</a>
+      <a href="./Accueil.html">Accueil</a>
+      <a href="./Sports.html">Sports</a>
+      <a href="./Joueur.html">Qui somme nous</a>  
     </nav>
 
     <img src="../images/Image_general/image 1.png" alt="Logo jo 2024" width="61" height="61" />
 
   </header>
+  <!----------------------------
+  
+            MAIN
+  
+  ------------------------------>
   <main>
-    <article id="presentation">
+    <article class="presentationvolley">
       <h2>VOLLEYBALL</h2>
       <figure>
         <img src="../images/img_discipline/volleyball.jpg" title="volleyball" height="225" width="350">
@@ -92,7 +102,7 @@
       </article>
       <article>
         <figure>
-          <h2>Liste des épreuves</h2>
+          <span class="discipline_img"><h2>Liste des épreuves</h2></span>
           <img src="../images/img_discipline/Ellipse 1.svg">
 
         </figure>
@@ -122,7 +132,13 @@
       </article>
 
     </section>
-    <table id="tableau_interactif">
+
+  <!----------------------------
+  
+            TABLEAU
+  
+  ------------------------------>
+    <table class="tableau_interactif">
       <thead>
         <tr>
           <th>Médaillé(e.s)</th>
@@ -134,10 +150,12 @@
       <tbody>
         <tr>
         <tr>
-          <td>nom + prénom </td>
-          <td>0</td>
-          <td>0</td>
-          <td>0</td>
+          <td><p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" height="1000" width="1000" >
+            <img src="../images/img_discipline/logo_pays/third.png">
+            <a href="./Joueur.html"> Earvin</a></td>
+          <td><p>0</p></td>
+          <td><p>0</p></td>
+          <td><p>0</p></td>
         </tr>
         <tr>
           <td>nom + prénom </td>
@@ -185,7 +203,7 @@
     </table>
 
     <article id="regles">
-      <h2> REGLE DU VOLLEYBALL</h2>
+      <span class="discipline_img"><h2>REGLE DU VOLLEYBALL</h2></span>
       <img src="../images/img_discipline/img_regle.png">
       <p>
         1. Composition des équipes<br>
@@ -227,6 +245,11 @@
     </article>
 
   </main>
+   <!----------------------------
+  
+            FOOTER
+  
+  ------------------------------>
   <footer>
 
     <img src="../images/Image_general/image 1.png" alt="Logo jo 2024" width="61" height="61" />
