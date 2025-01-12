@@ -1778,10 +1778,7 @@ footer section article:nth-of-type(3) {
 #                     CSS Sofiane                   #
 #                                                   #
 ###################################################*/
-main>article {
-  height: auto;
-  width: 94%;
-}
+
 
 /*###################################################
 #                                                   #
@@ -1833,7 +1830,9 @@ main > div > article {
   display: flex;
   align-items: flex-start;
   align-items: right;
-
+  height: auto;
+  width: 94%;
+  
 
 }
 
