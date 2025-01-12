@@ -616,6 +616,7 @@ section div h3 a {
 
 div > article > ul > li > img {
   width: 2em;
+  padding: 0 15%;
   transition-duration: 0.5s;
 }
 
@@ -626,6 +627,13 @@ div > article > ul > li {
 
 div > article > ul > li {
   list-style: none;
+  text-align: center;
+}
+div > article > ul > li > br{
+  display: none;
+}
+div > article:hover > ul > li > br{
+  display: inline;
 }
 
 article:hover div > article > ul > li > img {
@@ -635,7 +643,12 @@ article:hover div > article > ul > li > img {
 
 article:hover li {
   transition-duration: 0.5s;
-  font-size: 100%;
+  font-size: 130%;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 0 auto;
+  width: 22%;
+  text-align: center;
 }
 
 /*
@@ -701,8 +714,8 @@ section div:nth-child(6) article div {
 }
 
 section div article:hover div {
-  width: 370px;
-  height: 254px;
+  width: 100%;
+  height: 50%;
   flex-shrink: 0;
   transition-duration: 0.5s;
   border-radius: 20px;
