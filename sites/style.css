@@ -1829,7 +1829,7 @@ aside article a {
 #                                                   #
 ###################################################*/
 
-main>article {
+main > div > article {
   display: flex;
   align-items: flex-start;
   align-items: right;
@@ -1837,13 +1837,13 @@ main>article {
 
 }
 
-main>article h2 {
+main > div > article h2 {
   display: flex;
   order: 1;
 
 }
 
-main>article figure {
+main > div > article figure {
   float: right;
   align-content: flex-start;
   order: 3;
@@ -1852,7 +1852,7 @@ main>article figure {
 
 }
 
-main>article p {
+main > div > article p {
   margin-left: 200px;
   display: flex;
   order: 2;
@@ -1958,11 +1958,28 @@ height: 32em;
 padding: 1px;
 align-self: left;
 }
-.DetL article figure{
 
+/***********************************/
+
+.RULE{
+  background-color: #6c0303;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.DetL article h2{
-
+.RULE > article{
+  display: grid; 
+  grid-template-columns: 1fr 3px 1fr;
+  place-items: center;
+  width: 2000px;
+}
+.RULE p{
+  align-self: start;
+}
+.RULE b{
+  align-self: start;
+  padding: 2px;
+  background-color: #03196c;
+  height: 62em;
 }
 
 /***********************************/
