@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <title></title>
-  <meta name="auhor" content="" />
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
+  <meta name="auhor" content="Johan" />
+  <meta name="description" content="Page de présentation du volley masculin au JO 2024" />
+  <meta name="keywords" content="JO2024 VolleyBall Homme" />
 
   <!--Liens vers le fichier CSS de Bootstrap-->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
@@ -19,9 +19,9 @@
 <body>
   <header>
     <nav>
-      <a href="./Accueil.html">Lien</a>
-      <a href="./Discipline.html">Lien</a>
-      <a href="./Joueur.html">Lien</a>
+      <a href="./Accueil.html">Accueil</a>
+      <a href="./Discipline.html">Discipline</a>
+      <a href="./Joueur.html">Joueur</a>
     </nav>
 
     <img src="../images/Image_general/image 1.png" alt="Logo jo 2024" width="61" height="61" />
@@ -30,7 +30,7 @@
   <main>
     <section>
       <article>
-        <h2>VolleyBall<br />Homme</h2>
+        <h2>VolleyBall Homme</h2>
         <p>Paragraphe d'essai</p>
         <img src="../images/images_epreuve/balle.png" width="42" height="42" />
       </article>
@@ -40,13 +40,15 @@
           <li>
             <h3>Equipe les plus titrées</h3>
             <ol>
-              <li>URSS <img src="../images/images_epreuve/urss.png" width="25" height="15" /> 3 victoires</li>
+              <li>
+                URSS 3 victoires
+              </li>
               <ul>
                 <li>1964</li>
                 <li>1968</li>
                 <li>1980</li>
               </ul>
-              <li>Brésil <img src="../images/images_epreuve/brésil.png" width="25" height="15" /> 3 victoires</li>
+              <li>Brésil 3 victoires</li>
               <ul>
                 <li>1992</li>
                 <li>2004</li>
@@ -58,19 +60,19 @@
             <h3>5 derniers Champions</h3>
             <ul>
               <li>
-                <p>France <img src="../images/images_epreuve/drapeau france.png" width="25" height="15" /> 2024</p>
+                <p>France 2024</p>
               </li>
               <li>
-                <p>France <img src="../images/images_epreuve/drapeau france.png" width="25" height="15" /> 2021</p>
+                <p>France 2021</p>
               </li>
               <li>
-                <p>Brésil <img src="../images/images_epreuve/brésil.png" width="25" height="15" /> 2016</p>
+                <p>Brésil 2016</p>
               </li>
               <li>
-                <p>Russie <img src="../images/images_epreuve/russie.png" width="25" height="15" /> 2012</p>
+                <p>Russie 2012</p>
               </li>
               <li>
-                <p>État-Unis <img src="../images/images_epreuve/usa.png" width="25" height="15" /> 2008</p>
+                <p>État-Unis 2008</p>
               </li>
             </ul>
           </li>
@@ -79,54 +81,449 @@
     </section>
     <section>
       <article>
-        <h2>MVP 2024</h2>
+        <div style="display: flex; justify-content: flex-start;">
+          <h2>MVP 2024</h2>
+        </div>
         <h3>Earvin NGAPETH</h3>
-        <img src="../images/images_epreuve/earvin-ngapeth-1.png" width="300" height="300" />
+        <img src="../images/images_epreuve/earvin-ngapeth-1.png" />
         <p><em><a href="./Joueur.html">En savoir plus...</a></em></p>
       </article>
       <article>
-        <h2>Planning</h2>
+        <!--Menu déroulant-->
+        <div>
+
+          <h2>Planning</h2>
+          <label for="menu">
+            <span>Phase de jeu</span>
+
+          </label>
+          <input type="checkbox" id="menu" class="menu-plan" />
+
+          <nav class="planning">
+            <ul>
+              <li><a href="#finale">Finale</a></li>
+              <li><a href="#demi-finale">Demi Finale</a></li>
+              <li><a href="#quart-finale1">1/4 Finale</a></li>
+              <li><a href="#huitieme-finale1">1/8 Finale</a></li>
+            </ul>
+
+          </nav>
+        </div>
+
+        <!--Tableau des matchs-->
+        <div>
+          <h3> Match</h3>
+          <!--------Finale et Petite finale--------->
+          <div id="finale">
+            <table>
+              <tbody>
+                <thead>
+                  <tr>
+                    <th colspan="5">Finale</th>
+                  </tr>
+                  <tr>
+                    <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                    <td>France </td>
+                    <td> </td>
+                    <td>Brésil</td>
+                    <td><img src="../images/images_epreuve/brésil.png"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>25</td>
+                    <td>-</td>
+                    <td>23</td>
+                    <td></td>
+                  </tr>
+              </tbody>
+            </table>
+            <table>
+              <tbody>
+                <thead>
+                  <tr>
+                    <th colspan="5">Petite-Finale</th>
+                  </tr>
+                  <tr>
+                    <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                    <td>Bretagne </td>
+                    <td> </td>
+                    <td>Russie</td>
+                    <td><img src="../images/images_epreuve/brésil.png"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>25</td>
+                    <td>-</td>
+                    <td>23</td>
+                    <td></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!--------------1/2 finale------------->
+          <div id="demi-finale">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="5">Demi Finale</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                  <td>France </td>
+                  <td> </td>
+                  <td>Brésil</td>
+                  <td><img src="../images/images_epreuve/brésil.png"></td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td>25</td>
+                  <td>-</td>
+                  <td>23</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <p> </p>
+                  </td>
+
+                </tr>
+                <tr>
+                  <td><img src="../images/images_epreuve/russie.png"> </td>
+                  <td>Russie </td>
+                  <td>-</td>
+                  <td>Bretagne</td>
+                  <td><img src="../images/images_epreuve/drapeau breton.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>18</td>
+                  <td> </td>
+                  <td>25</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+          <!--------------1/4 finale------------->
+          <div id="quart-finale1">
+            <table>
+              <tbody>
+                <thead>
+                  <tr>
+                    <th colspan="5">1/4 Finale
+                  </tr>
+                </thead>
+                <tr>
+                  <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                  <td>France </td>
+                  <td> </td>
+                  <td>Brésil</td>
+                  <td><img src="../images/images_epreuve/brésil.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>25</td>
+                  <td>-</td>
+                  <td>23</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <p> </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/images_epreuve/russie.png"> </td>
+                  <td>Russie </td>
+                  <td>-</td>
+                  <td>Bretagne</td>
+                  <td><img src="../images/images_epreuve/drapeau breton.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>18</td>
+                  <td> </td>
+                  <td>25</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#quart-finale2" class="fleche suivant"></a>
+          </div>
+          <div id="quart-finale2">
+            <table>
+              <tbody>
+                <thead>
+                  <tr>
+                    <th colspan="5">1/4 Finale
+                  </tr>
+                </thead>
+                <tr>
+                  <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                  <td>France </td>
+                  <td> </td>
+                  <td>Brésil</td>
+                  <td><img src="../images/images_epreuve/brésil.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>25</td>
+                  <td>-</td>
+                  <td>23</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <p> </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/images_epreuve/russie.png"> </td>
+                  <td>test </td>
+                  <td>-</td>
+                  <td>Bretagne</td>
+                  <td><img src="../images/images_epreuve/drapeau breton.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>18</td>
+                  <td> </td>
+                  <td>25</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#quart-finale1" class="fleche precedent"></a>
+          </div>
+
+
+          <!--1/8 de finale-->
+          <div id="huitieme-finale1">
+            <table>
+              <tbody>
+                <thead>
+                  <tr>
+                    <th colspan="5">1/8 Finale
+                  </tr>
+                </thead>
+                <tr>
+                  <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                  <td>France </td>
+                  <td> </td>
+                  <td>Brésil</td>
+                  <td><img src="../images/images_epreuve/brésil.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>25</td>
+                  <td>-</td>
+                  <td>23</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <p> </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/images_epreuve/russie.png"> </td>
+                  <td>test </td>
+                  <td>-</td>
+                  <td>Bretagne</td>
+                  <td><img src="../images/images_epreuve/drapeau breton.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>18</td>
+                  <td> </td>
+                  <td>25</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#huitieme-finale2" class="fleche suivant"></a>
+          </div>
+
+          <div id="huitieme-finale2">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="5">1/8 Finale
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                  <td>France </td>
+                  <td> </td>
+                  <td>Brésil</td>
+                  <td><img src="../images/images_epreuve/brésil.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>25</td>
+                  <td>-</td>
+                  <td>23</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <p> </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/images_epreuve/russie.png"> </td>
+                  <td>test </td>
+                  <td>-</td>
+                  <td>Bretagne</td>
+                  <td><img src="../images/images_epreuve/drapeau breton.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>18</td>
+                  <td> </td>
+                  <td>25</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#huitieme-finale1" class="fleche precedent"></a>
+            <a href="#huitieme-finale3" class="fleche suivant"></a>
+          </div>
+          <div id="huitieme-finale3">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="5">1/8 Finale
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                  <td>France </td>
+                  <td> </td>
+                  <td>Brésil</td>
+                  <td><img src="../images/images_epreuve/brésil.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>25</td>
+                  <td>-</td>
+                  <td>23</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <p> </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/images_epreuve/russie.png"> </td>
+                  <td>test </td>
+                  <td>-</td>
+                  <td>Bretagne</td>
+                  <td><img src="../images/images_epreuve/drapeau breton.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>18</td>
+                  <td> </td>
+                  <td>25</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#huitieme-finale2" class="fleche precedent"></a>
+            <a href="#huitieme-finale4" class="fleche suivant"></a>
+          </div>
+          <div id="huitieme-finale4">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="5">1/8 Finale
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="../images/images_epreuve/drapeau france.png"> </td>
+                  <td>France </td>
+                  <td> </td>
+                  <td>Brésil</td>
+                  <td><img src="../images/images_epreuve/brésil.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>25</td>
+                  <td>-</td>
+                  <td>23</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td colspan="5">
+                    <p> </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td><img src="../images/images_epreuve/russie.png"> </td>
+                  <td>test </td>
+                  <td>-</td>
+                  <td>Bretagne</td>
+                  <td><img src="../images/images_epreuve/drapeau breton.png"></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>18</td>
+                  <td> </td>
+                  <td>25</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="#huitieme-finale3" class="fleche precedent"></a>
+          </div>
+        </div>
+
       </article>
     </section>
-    </span>
-    <div>
+    <article class="moments">
       <h2>Moments forts</h2>
 
-      <div>
+      <div class="carrousel">
 
-        <figure>
-          <img
-                  src="../images/Img_Accueil/leon_marchand_moment_marquant.jpg"
-                  alt="Victoire de Leon Marchand"
-                  width="290"
-                  height="190"
-          >
+        <span id="moments_1"></span>
+        <span id="moments_2"></span>
+        <span id="moments_3"></span>
 
-          <figcaption>Léon marchant</figcaption>
-        </figure>
+        <div class="cadre moments_1">
+          <a href="#moments_3" class="fleche precedent"></a>
+          <a href="#moments_2" class="fleche suivant"></a>
+          <p>Victoire de la france</p>
+        </div>
 
-        <figure>
-          <img src="../images/Img_Accueil/teddy_riner_moment_marquant.jpg"
-               alt="Final de Teddy Riner"
-               width="290"
-               height="190"
-          >
-          <figcaption>Teddy Riner</figcaption>
-        </figure>
+        <div class="cadre moments_2">
+          <a href="#moments_1" class="fleche precedent"></a>
+          <a href="#moments_3" class="fleche suivant"></a>
+          <p>Attaque de NGAPETH</p>
+        </div>
 
-        <figure>
-          <img src="../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg"
-               alt="Victoire de Cassandre Beaugrand"
-               width="290"
-               height="190"
-          >
-          <figcaption>Cassandre Beaugrand</figcaption>
-        </figure>
+        <div class="cadre moments_3">
+          <a href="#moments_2" class="fleche precedent"></a>
+          <a href="#moments_1" class="fleche suivant"></a>
+          <p>Slovenie contre la France</p>
+        </div>
+
+
 
       </div>
-
-    </div>
-    </span>
+    </article>
   </main>
   <footer>
 
