@@ -1148,15 +1148,15 @@ main section {
   display: flex;
 }
 
-main>section>article {
-  background-color: #d5c46c;
-  border: solid 10px #03196c;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 3em 1em;
-}
+  main>section>article {
+    background-color: #d5c46c;
+    border: solid 10px #03196c;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3em 1em;
+  }
 
 main>section:nth-child(1)>article:nth-of-type(1),
 main>section:nth-of-type(2)>article:nth-of-type(2) {
@@ -1958,11 +1958,28 @@ height: 32em;
 padding: 1px;
 align-self: left;
 }
-.DetL article figure{
 
+/***********************************/
+
+.RULE{
+  background-color: #6c0303;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-.DetL article h2{
-
+.RULE > article{
+  display: grid; 
+  grid-template-columns: 1fr 3px 1fr;
+  place-items: center;
+  width: 2000px;
+}
+.RULE p{
+  align-self: start;
+}
+.RULE b{
+  align-self: start;
+  padding: 2px;
+  background-color: #03196c;
+  height: 62em;
 }
 
 /***********************************/
