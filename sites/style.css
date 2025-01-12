@@ -595,19 +595,20 @@ section div div article h3 {
   margin: 0;
 }
 
-section div div article li {
-  padding: 0;
-  text-align: left;
-  color: #e6e1d3;
-  margin: 0;
-}
-
-
 section>div>h3 {
   padding: 1em;
   width: 51%;
   text-align: center;
   background-color: #304aab;
+  border-radius: 15px;
+  border: #03196c solid 10px;
+}
+
+section div div article li {
+  padding: 0;
+  text-align: left;
+  color: #e6e1d3;
+  margin: 0;
 }
 
 section div h3 a {
@@ -641,13 +642,16 @@ article:hover div > article > ul > li > img {
   width: 8%;
 }
 
-article:hover li {
+main:nth-child(3) article:hover li {
   transition-duration: 0.5s;
   font-size: 130%;
   display: inline-block;
   justify-content: space-around;
   padding: 0 auto;
   width: 22%;
+  text-align: center;
+}
+div > article:hover > h3{
   text-align: center;
 }
 
@@ -714,8 +718,9 @@ section div:nth-child(6) article div {
 }
 
 section div article:hover div {
-  width: 100%;
-  height: 50%;
+  width: 35em;
+  height: 23em;
+  margin: 0 auto;
   flex-shrink: 0;
   transition-duration: 0.5s;
   border-radius: 20px;
