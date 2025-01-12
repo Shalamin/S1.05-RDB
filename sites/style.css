@@ -1823,6 +1823,45 @@ aside article a {
 
 }
 
+/*###################################################
+#                                                   #
+#              Volley Ball                          #
+#                                                   #
+###################################################*/
+
+main>article {
+  display: flex;
+  align-items: flex-start;
+  align-items: right;
+
+
+}
+
+main>article h2 {
+  display: flex;
+  order: 1;
+
+}
+
+main>article figure {
+  float: right;
+  align-content: flex-start;
+  order: 3;
+  border: solid 10px #03196c;
+  border-radius: 5px;
+
+}
+
+main>article p {
+  margin-left: 200px;
+  display: flex;
+  order: 2;
+  width: 45%;
+  height: auto;
+  font-size: 20px;
+
+}
+
 /*
 #####################################################
 #                                                   #
@@ -1830,9 +1869,9 @@ aside article a {
 #                                                   #
 #####################################################
 */
-main > table {
+main>table {
   background-color: #03196c;
-  width: 94% ;
+  width: 94%;
   border: solid 15px #03196c;
   border-radius: 15px;
 
@@ -1841,32 +1880,35 @@ main > table {
   margin: auto;
 }
 
-main > table thead th {
+main>table thead th {
   margin-top: 0px;
   color: #e6e1d3;
   background-color: #03196c;
   padding: 5px;
 }
 
-main > table tbody tr td {
+main>table tbody tr td {
   padding: 10px;
   background-color: #e6e1d3;
   border: 0px solid;
   color: black;
 }
+
 /*###################################################
 #                                                   #
 #               Animation tableau                   #
 #                                                   #
 ###################################################*/
 
-main > table .interaciviter img, main > table .interaciviter a{
-  display:none;
+main>table .interaciviter img,
+main>table .interaciviter a {
+  display: none;
   transition: all ease-out;
   transition-delay: 0.5s;
 
 }
-main > table .interaciviter:hover a{
+
+main>table .interaciviter:hover a {
   display: inline-block;
   height: 175px;
   color: #03196c;
@@ -1880,18 +1922,20 @@ main > table .interaciviter:hover a{
   transition: ease-out, 0.5s;
   transition-delay: 0.5s;
 }
-main > table .interaciviter:hover img{
+
+main>table .interaciviter:hover img {
   display: inline-block;
   width: 10%;
   padding-left: 5%;
 }
-main > table .interaciviter:hover img:nth-child(2){
+
+main>table .interaciviter:hover img:nth-child(2) {
   display: inline-block;
   width: 20%;
 }
 
-main > table .interaciviter:hover p{
-  display:none;
+main>table .interaciviter:hover p {
+  display: none;
   transition: ease-out;
   transition-delay: 0.5s;
 }
@@ -1899,8 +1943,26 @@ main > table .interaciviter:hover p{
 
 /***********************************/
 
-main section>article {
-  display: flex;
+.DetL article{
+  display: grid; 
+  grid-template-columns: 1fr 3px 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  width: 47%;
+
+}
+.DetL article b{
+background-color: #03196c;
+width: 1px;
+height: 32em;
+padding: 1px;
+align-self: left;
+}
+.DetL article figure{
+
+}
+.DetL article h2{
+
 }
 
 /***********************************/
@@ -1926,4 +1988,3 @@ main section>article {
   padding-bottom: 10px;
   margin-left: 0.5em;
 }
-
