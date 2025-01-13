@@ -5,76 +5,83 @@
 #                                                   #
 #####################################################
 */
-  @font-face {
-    font-family: 'Ubuntu';
-    src: url('fonts/ubuntu.woff2') format('woff2'),
-        url('fonts/ubuntu.woff') format('woff');
-    font-weight: medium;
-    font-style: normal;
-    font-display: swap;
-  }
-    @font-face {
-      font-family: 'Poppins';
-      src: url('fonts/Poppins-Bold.woff2') format('woff2'),
-          url('fonts/Poppins-Bold.woff') format('woff');
-      font-weight: bold;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Poppins';
-      src: url('fonts/Poppins-Light.woff2') format('woff2'),
-          url('fonts/Poppins-Light.woff') format('woff');
-      font-weight: 300;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Poppins';
-      src: url('fonts/Poppins-Italic.woff2') format('woff2'),
-          url('fonts/Poppins-Italic.woff') format('woff');
-      font-weight: normal;
-      font-style: italic;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Poppins';
-      src: url('fonts/Poppins-Medium.woff2') format('woff2'),
-          url('fonts/Poppins-Medium.woff') format('woff');
-      font-weight: 500;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Poppins';
-      src: url('fonts/Poppins-Regular.woff2') format('woff2'),
-          url('fonts/Poppins-Regular.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Poppins';
-      src: url('fonts/Poppins-Thin.woff2') format('woff2'),
-          url('fonts/Poppins-Thin.woff') format('woff');
-      font-weight: 100;
-      font-style: normal;
-      font-display: swap;
-    }
-    @font-face {
-      font-family: 'Poppins';
-      src: url('fonts/Poppins-SemiBold.woff2') format('woff2'),
-          url('Poppins-SemiBold.woff') format('woff');
-      font-weight: 600;
-      font-style: normal;
-      font-display: swap;
-    }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('fonts/ubuntu.woff2') format('woff2'),
+    url('fonts/ubuntu.woff') format('woff');
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Bold.woff2') format('woff2'),
+    url('fonts/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Light.woff2') format('woff2'),
+    url('fonts/Poppins-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Italic.woff2') format('woff2'),
+    url('fonts/Poppins-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Medium.woff2') format('woff2'),
+    url('fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Regular.woff2') format('woff2'),
+    url('fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-Thin.woff2') format('woff2'),
+    url('fonts/Poppins-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins-SemiBold.woff2') format('woff2'),
+    url('Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
   font-family: "Poppins", "Ubuntu", sans-serif;
   background-color: #e6e1d3;
-  color:#03196c;
-  margin:0;
+  color: #03196c;
+  margin: 0;
 }
 
 /*
@@ -87,25 +94,28 @@ body {
 header {
   background-color: #03196c;
   height: 150px;
-  width:auto;
+  width: auto;
   padding: 40px 0 40px 150px;
-  display: flex;  
+  display: flex;
 }
+
 header img {
   flex-direction: row;
   margin: 0px 25px 0px 85px;
 }
+
 header nav {
-  display:flex;
+  display: flex;
   width: 1300px;
   height: 70px;
   margin: 0;
-  background-image: url("../images/Image_general/bannière\ 1.png");
+  background-image: url("../images/Image_general/bannière.webp");
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 
 }
+
 header nav a {
   width: 300px;
   height: 50px;
@@ -117,7 +127,7 @@ header nav a {
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  
+
 }
 
 
@@ -129,22 +139,33 @@ header nav a {
 #                                                   #
 #####################################################
 */
-section{
-  position:relative;
-  display:flex;
-  justify-content:space-between;
-  margin:2em;
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em;
 
 }
+
+
 article {
   background-color: #d5c46c;
   border: solid 10px #03196c;
   margin: 20px;
   border-radius: 20px;
   padding: 2em;
-  width: 784px;
-  height:171px;
-  z-index:10;
+  z-index: 10;
+}
+
+.interaction {
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 2em;
+  width: 60%;
+  height: 171px;
+  z-index: 10;
 }
 
 h2 {
@@ -153,8 +174,8 @@ h2 {
   /*bordure GAUCHE des titres*/
   border-left: #304aab solid 3px;
   border-left-width: 5px;
-  width:200px;
-  height:1.5em;
+  width: 200px;
+  height: 1.5em;
 
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
@@ -166,24 +187,40 @@ h2 {
 
   padding-left: 10px;
   padding-bottom: 10px;
-  margin-left:0.5em;
+  margin-left: 0.5em;
 }
 
-section>#interaction>p, section>#interaction>div>ul, section>#interaction>table, section>#interaction>div>p{
-  display:none;
+section>.interaction>p,
+section>.interaction>div>ul,
+section>.interaction>table,
+section>.interaction>div>p,
+section>.interaction .carrousel {
+  display: none;
 }
-main>div{
-  display:flex;
-  justify-content: row;
+
+main>div {
+  display: flex;
+  justify-content: space-between;
 }
-div h2{
+
+main>div>section article {
+  width: 50%;
+}
+
+div h2 {
   display: block;
 }
-section>article{
+
+section>.interaction {
   transition: all 2s ease;
 }
 
-
+section>.interaction h4 {
+  float: right;
+  margin-right: 12%;
+  border-bottom: #304AAB solid;
+  width: auto;
+}
 
 /*
 #####################################################
@@ -192,25 +229,26 @@ section>article{
 #                                                   #
 #####################################################
 */
-section:nth-child(2){
-  justify-content:space-between;
-  margin-left:50px;
-  margin-right:80px;
+.palmares {
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 80px;
 }
 
-section:nth-child(2) #interaction img{
-  margin-top:2em;
-  margin-left:2em;
-  display:block;
+section:nth-child(2) .interaction img {
+  margin-top: 2em;
+  margin-left: 2em;
+  display: block;
 }
-section:nth-child(2) h2{
-  display:block;
+
+section:nth-child(2)>article>h2 {
+  display: block;
   float: right;
   font-family: "Ubuntu";
   color: #03196c;
   /*bordure GAUCHE des titres*/
   border-left: 0;
-  width:auto;
+  width: auto;
 
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
@@ -225,13 +263,21 @@ section:nth-child(2) h2{
   padding-bottom: 10px;
 
 }
-section:nth-child(2) figure{
-  justify-self:flex-start;
-  margin-left:5px;
+
+section:nth-child(2)>.interaction:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
 }
-section:nth-child(2) #interaction{
-  height:265px;
+
+section:nth-child(2) figure {
+  justify-self: flex-start;
+  margin-left: 5px;
 }
+
+section:nth-child(2) .interaction {
+  height: 265px;
+}
+
 /*
 #####################################################
 #                                                   #
@@ -240,15 +286,26 @@ section:nth-child(2) #interaction{
 #####################################################
 */
 
-main>div section:nth-child(1) article{
-  width: 700px;;
-  height:163px;
-  margin-right:4em;
+main>div section:nth-child(1) article {
+  width: 700px;
+  height: 163px;
 }
 
-section:nth-child(1) img{
-  padding-right:2em;
+.presentation img {
+  padding-right: 2em;
 }
+
+.interaction:hover .carrousel {
+  display: block;
+  margin-top: 5%;
+  margin-right: 20%;
+}
+
+main>div section:nth-child(1) .interaction:hover h2 {
+  margin-bottom: 0;
+}
+
+
 /*
 #####################################################
 #                                                   #
@@ -256,44 +313,42 @@ section:nth-child(1) img{
 #                                                   #
 #####################################################
 */
-main>div section:nth-child(2) article{
-  width:700px;
-  height:250px;
+main>div section:nth-child(2) article {
+  width: 700px;
+  height: 250px;
 }
 
-main div section:nth-child(2) article nav{
-  margin-top:6em;
-  display:flex;
+main div section:nth-child(2) article nav {
+  margin-top: 6em;
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
 
 }
-main div section:nth-child(2) article nav figure{
-  display:flex;
-  flex-direction:column;
-  align-items:center; 
+
+main div section:nth-child(2) article nav figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-main div section:nth-child(2) article nav figcaption{
-  width:150px;
+
+main div section:nth-child(2) article nav figcaption {
+  width: 150px;
   text-align: center;
 }
 
 
-section:nth-child(4) img{
-  display:block;
+section:nth-child(4) img {
+  display: block;
 }
 
-main>div section:nth-child(2) h2{
-  width:auto;
+main>div section:nth-child(2) h2 {
+  width: auto;
 }
-/*
-#####################################################
-#                                                   #
-#                     CSS Elouan                    #
-#                                                   #
-#####################################################
-*/
+
+
+
 /*
 #####################################################
 #                     Titre                         #
@@ -307,65 +362,204 @@ div h1 {
   text-align: center;
   margin: 0;
 }
-body > div{
+
+body>div {
   padding-bottom: 25%;
   background-image: url(../images/Img_Accueil/main_img.jpg);
   background-repeat: no-repeat;
   background-position: -10px;
   background-size: 105%;
+  transition-duration: 0.5s;
 }
+
+body>div:hover {
+  transition-duration: 0.5s;
+  padding-bottom: 40%;
+
+}
+
+main div div h2 {
+  width: 250px;
+}
+
+
+/*
+#####################################################
+#                     carrousel                     #
+#####################################################
+*/
+
+.carrousel {
+  height: 20em;
+  width: 45em;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carrousel p {
+  position: absolute;
+  bottom: 1em;
+  left: 20%;
+
+  color: #03196c;
+  padding: 0;
+  margin: 0;
+  border-bottom: #03196c solid;
+}
+
+.cadre {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.fleche {
+  border: solid #03196c;
+  padding: 10px;
+  border-width: 0 5px 5px 0;
+}
+
+.suivant,
+.precedent {
+  position: absolute;
+  top: 200px;
+}
+
+.precedent {
+  left: -45px;
+  transform: rotate(135deg);
+}
+
+.suivant {
+  right: -45px;
+  transform: rotate(-45deg);
+}
+
+.img_1 {
+  z-index: 2;
+  opacity: 1;
+  background-image: url(../images/Img_Accueil/leon_marchand_moment_marquant.jpg),
+    url(../images/Img_Accueil/teddy_riner_moment_marquant.jpg),
+    url(../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+.img_2 {
+  background-image: url(../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg),
+    url(../images/Img_Accueil/leon_marchand_moment_marquant.jpg),
+    url(../images/Img_Accueil/teddy_riner_moment_marquant.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+
+.img_3 {
+  background-image: url(../images/Img_Accueil/teddy_riner_moment_marquant.jpg),
+    url(../images/Img_Accueil/cassandre_beaugrand_moment_marquant.jpeg),
+    url(../images/Img_Accueil/leon_marchand_moment_marquant.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+:target~.img_1 {
+  opacity: 0;
+}
+
+#img_1:target~.img_1 {
+  opacity: 1;
+}
+
+#img_2:target~.img_2,
+#img_3:target~.img_3 {
+  z-index: 2;
+  opacity: 1;
+}
+
 /*
 #####################################################
 #             Médailles + Moments forts             #
 #####################################################
 */
-div > div{
+div>div {
   display: flex;
   flex-wrap: nowrap;
 }
 
-span{
-    display: flex;
-    justify-content: space-between;
-    margin: 3em 13em;
-    align-items: flex-start;
+span {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+  margin: 2em auto;
+  align-items: flex-start;
 }
-span > div{
-    margin: 0;
+
+span>div {
+  margin: 0 auto;
+  width: 80%;
+  padding: 2em;
 }
-  
-span > div:nth-child(2){
-    margin-left: 2em;
+
+span>div:nth-child(1) {
+  overflow: hidden;
+  width: 40%;
+  margin: 0 0 0 auto;
 }
-div > div > figure > img{
+
+span>div:nth-child(2) {
+  margin-left: 2em;
+  width: 60%;
+}
+
+div>div>figure>img {
   margin: 0;
   width: 80%;
   height: 80%;
 }
 
-div > div > figure{
+div>div>figure {
   margin: 0;
-  margin-bottom: 5em;
+  margin-bottom: 1em;
   text-align: center;
 }
 
-div>figure figcaption{
+div>figure figcaption {
   background-color: #e6e1d3;
   margin: 0 2em;
 }
+
 /*
 #####################################################
 #                  Sites marquants                  #
 #####################################################
 */
 
-main:nth-of-type(1) section>div{
-  width:80%;
-  margin-left:auto;
-  margin-right:auto;
+
+#siteM {
+  justify-content: space-between;
+  display: inline;
+  width: 100%;
+
 }
 
-section:nth-child(2) div>h2{
+#siteM>div {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 2em;
+  justify-content: space-around;
+}
+
+section:nth-child(2)>div>div>h2 {
   /*bordure BAS des titres*/
   border-bottom: #304aab solid 3px;
   border-bottom-width: 5px;
@@ -375,85 +569,193 @@ section:nth-child(2) div>h2{
   /*bordure DROITE et HAUT des titres*/
   border-top: 0;
   border-right: 0;
-
 }
-section div article p{
+
+section div div:nth-child(1) {
+  width: 150em;
+  text-align: right;
+  justify-content: flex-start;
+}
+
+section div article p {
   display: none;
 }
-section div article{
-  transition-duration: 2s;
+
+section div article {
+  transition-duration: 0.5s;
   background-color: #304aab;
-  width: 30em;
+  width: 33%;
   height: 40em;
   padding: 1em;
   margin: 10px;
 }
 
-section div div article h3{
-  padding:0;
+section div div article h3 {
+  padding: 0;
   text-align: left;
-  color:#03196c;
-  margin:0;
-}
-section div div article li{
-  padding:0;
-  text-align: left;
-  color:#03196c;
-  margin:0;
-}
-section div h3{
-  padding: 1em;
-  background-color: #304aab;
-  margin: 2em 40%;
-  text-align: center;
-}
-section div h3 a{
-  color:#e6e1d3;
+  color: #e6e1d3;
+  margin: 0;
 }
 
-section:nth-child(2) div article div{
+section div div article li {
+  padding: 0;
+  text-align: left;
+  color: #e6e1d3;
+  margin: 0;
+}
+
+
+section>div>h3 {
+  padding: 1em;
+  width: 51%;
+  text-align: center;
+  background-color: #304aab;
+}
+
+section div h3 a {
+  color: #e6e1d3;
+}
+
+div > article > ul > li > img {
+  width: 2em;
+  transition-duration: 0.5s;
+}
+
+div > article > ul > li {
+  font-size: 3em;
+  transition-duration: 0.5s;
+}
+
+div > article > ul > li {
+  list-style: none;
+}
+
+article:hover div > article > ul > li > img {
+  transition-duration: 0.5s;
+  width: 8%;
+}
+
+article:hover li {
+  transition-duration: 0.5s;
+  font-size: 100%;
+}
+
+/*
+#####################################################
+#              Images sites marquants               #
+#####################################################
+*/
+
+
+section div:nth-child(2) article div {
   width: 185px;
   height: 127px;
   flex-shrink: 0;
-  
+
   border-radius: 360px;
   background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  transition-duration: 0.5s;
 
 }
 
-section:nth-child(2) div{
+section div:nth-child(3) article div {
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  transition-duration: 0.5s;
+
+}
+
+section div:nth-child(4) article div {
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  transition-duration: 0.5s;
+
+}
+
+section div:nth-child(5) article div {
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  transition-duration: 0.5s;
+
+}
+
+section div:nth-child(6) article div {
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  transition-duration: 0.5s;
+
+}
+
+section div article:hover div {
+  width: 370px;
+  height: 254px;
+  flex-shrink: 0;
+  transition-duration: 0.5s;
+  border-radius: 20px;
+
+}
+
+
+/*
+############################
+############################
+############################
+*/
+
+#siteM:nth-child(2) div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-   
+
 }
 
-section div article p{
+section div article p {
   display: none;
 }
-section>div, span > div{
+
+section>div,
+span>div {
   background-color: #d5c46c;
   border: solid 10px #03196c;
   border-radius: 20px;
 }
-article > div img{
+
+article>div img {
   margin: 0.5em;
 }
+
 /*
 #####################################################
 #                    Interactions                   #
 #####################################################
 */
-section div article:hover p{
+section div article:hover p {
+  color: #e6e1d3;
   display: inline;
 }
 
-section div article:hover{
-  transition-duration: 2s;
-  width: 45em;
+section div article:hover {
+  transition-duration: 0.5s;
+  width: 40%;
 }
 
-section div div article img{
+section div div article>img {
   width: 70%;
 }
 
@@ -464,22 +766,138 @@ section div div article img{
 #####################################################
 */
 
+main>article>div>h3>a {
+  display: none;
+}
 
-main > article > div{
+main>article>div {
   display: flex;
   justify-content: space-around;
   padding: 1em;
 }
 
-main > article{
-  margin-left:auto; 
-  margin-right:auto;
-  width:80%;
-}
-main > article h2{
-  width:250px;
+main>article {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 15em;
 }
 
+main>article h2 {
+  width: 250px;
+}
+
+main>article>div {
+  background-color: #304AAB;
+  border: solid #03196c 10px;
+  border-radius: 20px;
+  height: 5em;
+
+}
+
+/*
+#####################################################
+#                                                   #
+#                    Sport                          #
+#                                                   #
+#####################################################
+*/
+
+nav section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 20%;
+  margin-top: 2%;
+  padding: 0;
+}
+
+nav section>article {
+  width: 30%;
+}
+
+nav section div {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: fit-content;
+}
+
+nav section div article {
+  flex-direction: row;
+  margin-bottom: 2%;
+  height: 50%;
+  width: 70%;
+
+}
+
+nav section>div article {
+  width: 70%;
+}
+
+nav section article {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 5%;
+  background-color: #304AAB;
+  border-radius: 0;
+  height: auto;
+  transition: none;
+}
+
+nav section:nth-child(1)>article:hover {
+  width: 30%;
+}
+
+nav section>div article:hover {
+  width: 70%;
+}
+
+nav section article a {
+  padding: 5%;
+  background-color: #d5c46c;
+  border: #304AAB solid;
+  width: max-content;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: capitalize;
+  width: 90%;
+  margin: 0;
+  text-align: center;
+  font-size: 100%;
+}
+
+nav section>div article a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10%;
+}
+
+nav section article img {
+  border: #03196c solid;
+  width: 100%;
+  padding-right: 0;
+}
+
+nav section>div article img {
+  width: 80%;
+}
+
+nav section:nth-child(2),
+nav section:nth-child(4) {
+  flex-direction: row-reverse;
+}
 
 /*
 #####################################################
@@ -488,110 +906,578 @@ main > article h2{
 #                                                   #
 #####################################################
 */
-section:nth-child(1) #interaction:hover{
-  position:relative;
-  display:flex;
+section:nth-child(1) .interaction:hover {
+  position: relative;
+  display: flex;
   flex-direction: row;
-  height:450px;
-  width:1200px;
+  height: 450px;
+  width: 1200px;
 }
 
 
-section:nth-child(1) #interaction:hover ul img{
-  display:flex;
-  flex-direction:column;
-  justify-content: flex-start;
-  height:50px;
-  width:50px;
-}
-section:nth-child(1) #interaction:hover ul p{
-  display:flex;
-  width:auto;
-}
-section:nth-child(1) #interaction:hover ul{
-  display:flex;
+section:nth-child(1) .interaction:hover ul img {
+  display: flex;
   flex-direction: column;
-  padding-left:0;
-  margin-left:0;
+  justify-content: flex-start;
+  height: 50px;
+  width: 50px;
 }
-section:nth-child(1) #interaction:hover ul li{
-  display:flex;
+
+section:nth-child(1) .interaction:hover ul p {
+  display: flex;
+  width: auto;
+}
+
+section:nth-child(1) .interaction:hover ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+section:nth-child(1) .interaction:hover ul li {
+  display: flex;
   flex-direction: row;
   padding: 20px 0 20px 0;
 }
-section:nth-child(1) #interaction:hover div{
-  display:flex;
+
+section:nth-child(1) .interaction:hover div {
+  display: flex;
   flex-direction: column;
 }
-section:nth-child(1) #interaction:hover div>p{
-  display:block;
-  justify-self:flex-end;
-  margin-left:2em;
-  margin-top:5em;
+
+section:nth-child(1) .interaction:hover div>p {
+  display: block;
+  justify-self: flex-end;
+  margin-left: 2em;
+  margin-top: 5em;
 }
 
 
-section:nth-child(2) #interaction:hover{
-  display:flex;
-  flex-direction:row-reverse;
-  height:368px;
-  width:1100px;
+section:nth-child(2) .interaction:hover {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 368px;
+  width: 1100px;
 }
 
-section:nth-child(2) #interaction:hover img{
-  display:none;
+section:nth-child(2) .interaction:hover img {
+  display: none;
 }
 
 
-section:nth-child(2) #interaction:hover table{
-  margin-top:3.8em;
-  display:inline-block;
-  text-align:center;  
-}
-section:nth-child(2) #interaction:hover table th, section:nth-child(2) #interaction:hover table td {
-  padding-right:4em;
-  padding-left:4em;
-  border-right:solid #304aab 5px;   
-}
-
-section:nth-child(2) #interaction:hover table td {
-  height:50px;
+section:nth-child(2) .interaction:hover table {
+  margin-top: 3.8em;
+  display: inline-block;
   text-align: center;
 }
-section:nth-child(2) #interaction:hover table td::before{
-  content:"- "
+
+section:nth-child(2) .interaction:hover table th,
+section:nth-child(2) .interaction:hover table td {
+  padding-right: 4em;
+  padding-left: 4em;
+  border-right: solid #304aab 5px;
 }
-main>div>section:nth-child(1) #interaction:hover{
-  width:700px;
-  height:400px;
+
+section:nth-child(2) .interaction:hover table td {
+  height: 50px;
+  text-align: center;
+}
+
+section:nth-child(2) .interaction:hover table td::before {
+  content: "- "
+}
+
+main>div>section:nth-child(1) .interaction:hover {
+  width: 700px;
+  height: 400px;
 }
 
 
 /*
 #####################################################
 #                                                   #
-#              Tableau des médailles                #
+#              Tableau des médailles   interactif   #
 #                                                   #
 #####################################################
 */
 
-span div table, tr{
-  padding: 10px;
-  border: solid 20px #304aab;
-  border-collapse: collapse;
+
+span>div {
+  text-align: center;
+
+}
+
+input:checked~#plus {
+  display: none;
+}
+
+#plus {
+  display: inline;
+}
+
+
+input:checked~#moins {
+  display: inline;
+}
+
+#moins {
+  display: none;
+}
+
+span div>table {
+
+  background-color: #03196c;
+  width: 95%;
+  border: solid 15px #03196c;
   border-radius: 15px;
+
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  margin: auto;
+  text-align: center;
 }
 
-span div table{
-  margin: 1em;
-  width: 33%;
+span>div table tr:nth-child(6),
+span>div table tr:nth-child(7),
+span>div table tr:nth-child(8),
+span>div table tr:nth-child(9),
+span>div table tr:nth-child(10) {
+
+  animation: fadeOut 0.5s ease forwards;
 }
 
-span div td{
-  background-color: #e6e1d3;
+input:checked~table tr:nth-child(6),
+input:checked~table tr:nth-child(7),
+input:checked~table tr:nth-child(8),
+input:checked~table tr:nth-child(9),
+input:checked~table tr:nth-child(10) {
+
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@supports (-webkit-appearance: none) {
+
+  /* Styles spécifiques à Safari */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
+
+    to {
+      visibility: visible;
+      display: table-row;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      visibility: visible;
+      display: table-row;
+    }
+
+    to {
+      opacity: 0;
+      visibility: hidden;
+      display: none;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+
+  /* Styles spécifiques à Firefox */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      visibility: collapse;
+    }
+
+    to {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    to {
+      opacity: 0;
+      visibility: collapse;
+    }
+  }
+}
+
+
+span div>table thead th {
+  margin-top: 0px;
+  color: #e6e1d3;
+  background-color: #03196c;
+  padding: 1em;
+}
+
+span div>table tbody tr td {
   padding: 10px;
+  background-color: #e6e1d3;
+  border: 0px solid;
+  color: black;
 }
 
+span div>table tr td img,
+table tr img {
+  width: 2em;
+  height: 2em;
+}
+
+/*
+#####################################################
+#                                                   #
+#                     CSS Johan                     #
+#                                                   #
+#####################################################
+*/
+main section {
+  display: flex;
+}
+
+main>section>article {
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3em 1em;
+}
+
+main>section:nth-child(1)>article:nth-of-type(1),
+main>section:nth-of-type(2)>article:nth-of-type(2) {
+  width: 70%;
+  padding: 1em;
+
+}
+
+main>section:nth-child(1)>article:nth-of-type(2),
+main>section:nth-of-type(2)>article:nth-of-type(1) {
+  width: 30%;
+  padding: 1em;
+
+}
+
+main>section:nth-child(2)>article:nth-child(1) img {
+  width: 90%;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    display: none;
+
+  }
+}
+
+/*----------Présentation Volleyball----------*/
+main>section:nth-child(1)>article:nth-of-type(1) {
+  display: inline-block;
+}
+
+main>section:nth-child(1)>article:nth-of-type(1) img {
+
+  top: 2em;
+  left: 30%;
+}
+
+main>section:nth-child(1)>article:nth-of-type(1) h2 {
+  text-align: center;
+  width: 300px;
+}
+
+/*
+#####################################################
+#                                                   #
+#                     Champions                     #
+#                                                   #
+#####################################################
+*/
+/* Image de puce URSS */
+main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(1) {
+  list-style: url(../images/images_epreuve/urss.png);
+}
+
+/* Image de puce BRESIL */
+main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(3) {
+  list-style: url(../images/images_epreuve/br2.png);
+}
+
+/* Image de puce VICTOIRE des deux nation ci-dessus */
+main section:nth-child(1)>article:nth-child(2) ul li ol ul li {
+  list-style: url(../images/images_epreuve/tropheeNoir.png);
+}
+
+/*------------Image de puce différents drapeaux------------*/
+/* France 2024 & 2021 */
+main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(1),
+main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(2) {
+  list-style: url(../images/images_epreuve/fr.png);
+}
+
+/* Brésil 2016 */
+main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(3) {
+  list-style: url(../images/images_epreuve/br2.png);
+  /* Russie 2012 */
+}
+
+main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(4) {
+  list-style: url(../images/images_epreuve/ru.png);
+}
+
+/* État-Unis 2008 */
+main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(5) {
+  list-style: url(../images/images_epreuve/us.png);
+}
+
+/*
+#####################################################
+#                                                   #
+#                       Planning                    #
+#                                                   #
+#####################################################
+*/
+main>section:nth-child(2)>article:nth-child(2) {
+  position: relative;
+}
+
+/*-----------------Bouton "Phase de jeu"-------------------*/
+
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>h2 {
+  margin: 150;
+
+  justify-content: none;
+}
+
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>label {
+
+  position: absolute;
+  width: 12%;
+  min-width: 120px;
+  height: 6.5em;
+  top: 20px;
+  right: 20px;
+  padding: 0.25em;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #03196c;
+  color: white;
+}
+
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>input {
+  appearance: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+}
+
+/*-----------------Liste des phases de jeu-------------------*/
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
+  list-style-type: none;
+
+}
+
+.planning>ul>li>a {
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-variant: small-caps;
+
+}
+
+.planning {
+  display: none;
+  position: absolute;
+  top: 7.5em;
+  right: 20px;
+  padding: 0;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #03196c;
+  color: white;
+
+}
+
+.menu-plan:checked~.planning {
+  display: block;
+}
+
+/*-----------------Différents match-------------------*/
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  max-height: 25em;
+}
+
+main>section:nth-child(2)>article:nth-child(2) div:nth-child(2) div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+
+}
+
+main>section:nth-child(2)>article:nth-child(2) div h3 {
+  text-align: center;
+  background-color: none;
+}
+
+main>section:nth-child(2)>article:nth-child(2) div div img {
+  width: 100px;
+  height: 75px;
+}
+
+main>section:nth-child(2)>article:nth-child(2) div div {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+main>section:nth-child(2)>article:nth-child(2) div div table {
+  text-align: center;
+  margin: auto;
+}
+
+main>section:nth-child(2)>article:nth-child(2) div div table td {
+  width: 8em;
+  height: 2em;
+
+}
+
+/*-----------------Finale & Demi-finale-------------------*/
+
+#finale:target {
+  visibility: visible;
+  display: flex;
+}
+
+#finale:target,
+#demi-finale:target {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#finale,
+#demi-finale {
+  visibility: hidden;
+  display: none;
+}
+
+/*-----------------Quart & Huitième-------------------*/
+#quart-finale1,
+#quart-finale2,
+#huitieme-finale1,
+#huitieme-finale2,
+#huitieme-finale3,
+#huitieme-finale4 {
+  display: none;
+  visibility: hidden;
+}
+
+#quart-finale1:target,
+#quart-finale2:target,
+#huitieme-finale1:target,
+#huitieme-finale2:target,
+#huitieme-finale3:target,
+#huitieme-finale4:target {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+#####################################################
+#                                                   #
+#                 Moments forts                     #
+#                                                   #
+#####################################################
+*/
+.moments {
+  width: 100%;
+  margin: 32px;
+  height: auto;
+  background-color: none;
+}
+
+.moments .carrousel {
+  width: 80%;
+  background-color: #d5c46c;
+  border: none;
+}
+
+.moments .carrousel p {
+  position: absolute;
+  left: 5%;
+  bottom: 0.25em;
+
+  color: #03196c;
+  padding: 0;
+  margin: 0;
+  border-bottom: #03196c solid;
+}
+
+.moments_1 {
+  z-index: 2;
+  opacity: 1;
+  background-image: url(../images/images_epreuve/Unknown.jpeg),
+    url(../images/images_epreuve/victoire\ slovenie.jpg),
+    url(../images/images_epreuve/retourner\ NGAPETH.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+.moments_2 {
+  background-image: url(../images/images_epreuve/retourner\ NGAPETH.jpg),
+    url(../images/images_epreuve/Unknown.jpeg),
+    url(../images/images_epreuve/victoire\ slovenie.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+
+.moments_3 {
+  background-image: url(../images/images_epreuve/victoire\ slovenie.jpg),
+    url(../images/images_epreuve/retourner\ NGAPETH.jpg),
+    url(../images/images_epreuve/Unknown.jpeg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+:target~.moments_1 {
+  opacity: 0;
+}
+
+#moments_1:target~.moments_1 {
+  opacity: 1;
+}
+
+#moments_2:target~.moments_2,
+#moments_3:target~.moments_3 {
+  z-index: 2;
+  opacity: 1;
+}
 
 /*
 #####################################################
@@ -606,10 +1492,11 @@ footer {
   display: flex;
 
 }
-footer img{
-  display: inline-block;
 
+footer img {
+  display: inline-block;
 }
+
 footer article {
   background-color: #e6e1d3;
   margin: 0 20px;
@@ -619,58 +1506,501 @@ footer article {
   border-radius: 20px;
 
 }
-footer article h1{
+
+footer article h1 {
   color: #03196c;
   align-items: left;
-  
+
 
 }
-footer article p:nth-last-child(1) em{
+
+footer article p:nth-last-child(1) em {
   color: #304AAB;
   text-align: right;
-} 
+}
+
 footer article p:nth-last-child(1) em:nth-last-child(1) {
   text-align: right;
   color: #304AAB;
   font-size: 10px;
-  
+
 }
 
 footer li a {
   color: #03196c;
   text-decoration: none;
 }
+
 footer li a:hover {
   color: #304AAB;
 }
-footer li{
+
+footer li {
   list-style-type: none;
 }
-footer li:before{
-  content:"• ";
+
+footer li:before {
+  content: "• ";
 }
-footer img{
-  margin : 0 5px;
+
+footer img {
+  margin: 0 5px;
 }
+
 footer section {
   display: flex;
-  margin-left :100px;
- 
+  margin-left: 100px;
+
 }
-footer section article:nth-child(1){
+
+footer section article:nth-child(1) {
   background-color: #d5c46c;
-  color :#d5c46c;
+  color: #d5c46c;
   width: 10px;
   height: 20px;
-  margin : 0 20px;
+  margin: 0 20px;
 }
-footer section article:nth-of-type(2), footer section article:nth-of-type(3){
-  display:flex;
+
+footer section article:nth-of-type(2),
+footer section article:nth-of-type(3) {
+  display: flex;
   background-color: #d5c46c;
-  color :#03196c;
+  color: #03196c;
   width: 10em;
   height: 20px;
-  margin : 0 20px;
+  margin: 0 20px;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 1700px) {
+
+
+  /*
+  #####################################################
+  #                                                   #
+  #           CAROUSSEL + MOMENTS FORTS               #
+  #                   RESPONSIVE                      #
+  #                                                   #
+  #####################################################
+  */
+  span {
+    display: inline-block;
+    width: 100%;
+  }
+
+  span>div:nth-child(1) {
+    margin: 2em auto;
+    width: 80%;
+  }
+
+  span>div:nth-child(2) {
+    margin-left: 0;
+    margin: 2em auto;
+    width: 80%;
+  }
+
+  /*
+  #####################################################
+  #                                                   #
+  #                TABLEAU MEDAILLES                  #
+  #                   RESPONSIVE                      #
+  #                                                   #
+  #####################################################
+  */
+
+
+  table tr td img {
+    width: 10%;
+    height: 10%;
+
+  }
+
+}
+
+
+@media screen and (max-width: 528px) {
+
+  /*
+  #####################################################
+  #                                                   #
+  #                       Header                      #
+  #                                                   #
+  #####################################################
+  */
+  header {
+    height: 50px;
+  }
+
+
+  header img {
+    flex-direction: row;
+    margin: 0px 25px 0px 85px;
+  }
+
+
+
+  header nav a {
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+
+  }
+
+
+  span {
+    display: inline-block;
+    width: 40%;
+  }
+
+  span>div:nth-child(1) {
+    margin: 1em auto;
+    width: 60%;
+  }
+
+  span>div:nth-child(2) {
+    margin-left: 0;
+    margin: 2em auto;
+    width: 80%;
+  }
+
+
+  /*
+  #####################################################
+  #                     Titre                         #
+  #####################################################
+  */
+  div h1 {
+    font-size: 250%;
+
+  }
+
+  body>div:hover {
+    transition-duration: 0.5s;
+    padding-bottom: 25%;
+
+  }
+
+  /*
+  #####################################################
+  #             Médailles + Moments forts             #
+  #####################################################
+  */
+
+
+  h3 a {
+    text-transform: none;
+    text-decoration: none;
+    color: #03196c;
+  }
+
+  span {
+    width: 100%;
+    display: inline;
+  }
+
+
+  span>div:nth-child(1) {
+    width: 80%;
+    margin: 1em auto;
+  }
+
+  span>div:nth-child(2) {
+    width: 80%;
+    height: 25em;
+  }
+
+  div>div>figure>img {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  span div>table thead th {
+    margin-top: 0px;
+    color: #e6e1d3;
+    background-color: #03196c;
+    padding: 2px;
+  }
+
+  span div>table tbody tr td {
+    padding: 2px;
+    background-color: #e6e1d3;
+  }
+
+  table tr img {
+    width: 2em;
+    height: 2em;
+  }
+
+
+
+  section>div>div>article>ul {
+    display: none;
+  }
+
+  section>div>div>article:hover>p {
+    display: none;
+  }
+
+  section>div>div>article {
+    height: 12em;
+  }
+
+  section>div>div>article:hover img {
+    height: 10em;
+  }
+
+  section div article:hover div {
+    width: 270px;
+    height: 154px;
+    flex-shrink: 0;
+    transition-duration: 0.5s;
+    border-radius: 20px;
+
+  }
+
+  main>article>div>img {
+    display: none;
+  }
+
+  main>article>div>h3>a {
+    display: inline;
+    color: #e6e1d3;
+  }
+
+}
+
+/*###################################################
+#                                                   #
+#                     CSS Sofiane                   #
+#                                                   #
+###################################################*/
+
+
+/*###################################################
+#                                                   #
+#               Bouton volley                       #
+#                                                   #
+###################################################*/
+
+aside {
+  display: flex;
+  margin: 20px;
+}
+
+aside article {
+  display: flex;
+  background-color: #d5c46c;
+  border: solid 10px #03196c;
+  margin: auto;
+  width: 35%;
+  height: 100px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: 5%;
+  text-align: center;
+}
+
+aside article h2 {
+  display: block;
+  text-align: center;
+}
+
+aside article a {
+  width: 300px;
+  height: 50px;
+  color: #03196c;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+
+}
+
+/*###################################################
+#                                                   #
+#              Volley Ball                          #
+#                                                   #
+###################################################*/
+
+main > div > article {
+  display: flex;
+  align-items: flex-start;
+  align-items: right;
+  height: auto;
+  width: 94%;
+  
+
+}
+
+main > div > article h2 {
+  display: flex;
+  order: 1;
+
+}
+
+main > div > article figure {
+  float: right;
+  align-content: flex-start;
+  order: 3;
+  border: solid 10px #03196c;
+  border-radius: 5px;
+
+}
+
+main > div > article p {
+  margin-left: 200px;
+  display: flex;
+  order: 2;
+  width: 45%;
+  height: auto;
+  font-size: 20px;
+
+}
+
+/*
+#####################################################
+#                                                   #
+#              TABLEAU DES MEDAILLES                #
+#                                                   #
+#####################################################
+*/
+main>table {
+  background-color: #03196c;
+  width: 94%;
+  border: solid 15px #03196c;
+  border-radius: 15px;
+
+  border-spacing: 0px 10px;
+  border-collapse: separate;
+  margin: auto;
+}
+
+main>table thead th {
+  margin-top: 0px;
+  color: #e6e1d3;
+  background-color: #03196c;
+  padding: 5px;
+}
+
+main>table tbody tr td {
+  padding: 10px;
+  background-color: #e6e1d3;
+  border: 0px solid;
+  color: black;
+}
+
+/*###################################################
+#                                                   #
+#               Animation tableau                   #
+#                                                   #
+###################################################*/
+
+main>table .interaciviter img,
+main>table .interaciviter a {
+  display: none;
+  transition: all ease-out;
+  transition-delay: 0.5s;
+
+}
+
+main>table .interaciviter:hover a {
+  display: inline-block;
+  height: 175px;
+  color: #03196c;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #03196c;
+  margin-right: 250px;
+
+  transition: ease-out, 0.5s;
+  transition-delay: 0.5s;
+}
+
+main>table .interaciviter:hover img {
+  display: inline-block;
+  width: 10%;
+  padding-left: 5%;
+}
+
+main>table .interaciviter:hover img:nth-child(2) {
+  display: inline-block;
+  width: 20%;
+}
+
+main>table .interaciviter:hover p {
+  display: none;
+  transition: ease-out;
+  transition-delay: 0.5s;
+}
+
+
+/***********************************/
+
+.DetL article{
+  display: grid; 
+  grid-template-columns: 1fr 3px 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  width: 47%;
+
+}
+.DetL article b{
+background-color: #03196c;
+width: 1px;
+height: 32em;
+padding: 1px;
+align-self: left;
+}
+
+/***********************************/
+
+.RULE{
+  background-color: #6c0303;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.RULE > article{
+  display: grid; 
+  grid-template-columns: 1fr 3px 1fr;
+  place-items: center;
+  width: 2000px;
+}
+.RULE p{
+  align-self: start;
+}
+.RULE b{
+  align-self: start;
+  padding: 2px;
+  background-color: #03196c;
+  height: 62em;
+}
+
+/***********************************/
+
+.discipline_img h2 {
+  font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+  width: 200px;
+  height: auto;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 0.5em;
 }
