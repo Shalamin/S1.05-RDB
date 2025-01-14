@@ -1775,7 +1775,7 @@ footer section article:nth-of-type(3) {
 
 /*###################################################
 #                                                   #
-#                     CSS Sofiane                   #
+#                     CSS Discipline                #
 #                                                   #
 ###################################################*/
 
@@ -1827,40 +1827,39 @@ aside article a {
 ###################################################*/
 
 main > div > article {
-  display: flex;
-  align-items: flex-start;
-  align-items: right;
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  grid-template-rows: auto;
   height: auto;
-  width: 94%;
-  
-
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
 }
 
 main > div > article h2 {
-  display: flex;
-  order: 1;
-
+ align-items: center;
+ align-self: center;
 }
 
-main > div > article figure {
-  float: right;
-  align-content: flex-start;
-  order: 3;
+main > div > article img {
+  box-shadow: 0px 0px 6px #252730;
+
+  align-content: center;
   border: solid 10px #03196c;
   border-radius: 5px;
-
+}
+main > div > article > figure {
+align-self: right;
 }
 
-main > div > article p {
-  margin-left: 200px;
-  display: flex;
-  order: 2;
-  width: 45%;
-  height: auto;
-  font-size: 20px;
 
+main > div > article > b{
+  align-self: start;
+  padding: 1px;
+  background-color: #03196c;
+  height: 15em;
+  margin-right: 5px;
 }
-
 /*
 #####################################################
 #                                                   #
@@ -1869,8 +1868,10 @@ main > div > article p {
 #####################################################
 */
 main>table {
+  box-shadow: 0px 0px 6px #252730;
+
   background-color: #03196c;
-  width: 94%;
+  width: 85%;
   border: solid 15px #03196c;
   border-radius: 15px;
 
@@ -1893,6 +1894,7 @@ main>table tbody tr td {
   color: black;
 }
 
+
 /*###################################################
 #                                                   #
 #               Animation tableau                   #
@@ -1902,52 +1904,65 @@ main>table tbody tr td {
 main>table .interaciviter img,
 main>table .interaciviter a {
   display: none;
-  transition: all ease-out;
-  transition-delay: 0.5s;
-
+  transition:all .2s ease-in;
+  
 }
-
+main>table .interaciviter:hover {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px #e6e1d3;
+  transition:all .2s ease-in;
+  transform: scale(1.02);
+}
 main>table .interaciviter:hover a {
   display: inline-block;
-  height: 175px;
+  height: 125px;
   color: #03196c;
   font-size: 30px;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
   color: #03196c;
   margin-right: 250px;
-
-  transition: ease-out, 0.5s;
-  transition-delay: 0.5s;
 }
 
 main>table .interaciviter:hover img {
-  display: inline-block;
+  display: inline-block; 
   width: 10%;
   padding-left: 5%;
 }
 
 main>table .interaciviter:hover img:nth-child(2) {
   display: inline-block;
-  width: 20%;
+  width: 25%;
 }
 
 main>table .interaciviter:hover p {
   display: none;
-  transition: ease-out;
-  transition-delay: 0.5s;
+transition: all .2s ease-in;
+}
+main > table .interaciviter ,
+main > table .interaciviter td,
+main > table .interaciviter a,
+main > table .interaciviter img,
+main > table .interaciviter p{
+  transition: all .2s ease-in;
+  cursor: pointer;
+  
 }
 
 
 /***********************************/
 
+
+.DetL {
+  justify-content: space-evenly;
+}
 .DetL article{
   display: grid; 
   grid-template-columns: 1fr 3px 1fr;
   grid-template-rows: auto;
   place-items: center;
-  width: 47%;
+  width: 41%;
+  height: 52em;
 
 }
 .DetL article b{
@@ -1960,25 +1975,26 @@ align-self: left;
 
 /***********************************/
 
-.RULE{
-  background-color: #6c0303;
+.RULE {
   display: grid;
-  grid-template-columns: 1fr;
+  width: 85%;
+  margin: auto;
+  
 }
-.RULE > article{
+.RULE > span >article > div{
   display: grid; 
   grid-template-columns: 1fr 3px 1fr;
   place-items: center;
-  width: 2000px;
 }
-.RULE p{
+.RULE > span > article > div > p{
   align-self: start;
 }
-.RULE b{
+.RULE > span > article > div > b{
   align-self: start;
   padding: 2px;
   background-color: #03196c;
-  height: 62em;
+  height: 30em;
+  margin-right: 5px;
 }
 
 /***********************************/
