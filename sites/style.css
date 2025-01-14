@@ -129,7 +129,9 @@ header nav a {
   display: inline-block;
 
 }
-
+header .burger{
+  display:none;
+}
 
 
 /*
@@ -1669,15 +1671,17 @@ footer section article:nth-of-type(3) {
   */
   header {
     height: 50px;
+    padding-left:0;
   }
 
+  header .burger{
+    display:block;
+    justify-self: flex-start;
+  }
 
   header img {
-    flex-direction: row;
-    margin: 0px 25px 0px 85px;
+    display:none;
   }
-
-
 
   header nav a {
     width: 100%;
@@ -1685,7 +1689,6 @@ footer section article:nth-of-type(3) {
     margin: 10px;
 
   }
-
 
   span {
     display: inline-block;
@@ -1702,7 +1705,6 @@ footer section article:nth-of-type(3) {
     margin: 2em auto;
     width: 80%;
   }
-
 
   /*
   #####################################################
@@ -1820,6 +1822,12 @@ footer section article:nth-of-type(3) {
 
   .palmares img{
     display:none;
+  }
+  .palmares{
+    width:100%;
+  }
+  .palmares article:hover{
+    width:20%;
   }
   
 
