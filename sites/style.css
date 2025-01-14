@@ -1893,9 +1893,7 @@ main>table tbody tr td {
   border: 0px solid;
   color: black;
 }
-main>table tbody tr:hover  {
-  box-shadow: 0px 0px 6px #e6e1d3;
-}
+
 
 /*###################################################
 #                                                   #
@@ -1906,44 +1904,55 @@ main>table tbody tr:hover  {
 main>table .interaciviter img,
 main>table .interaciviter a {
   display: none;
-  transition: all ease-out;
-  transition-delay: 0.5s;
-
+  transition:all .2s ease-in;
+  
 }
-
+main>table .interaciviter:hover {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px #e6e1d3;
+  transition:all .2s ease-in;
+  transform: scale(1.02);
+}
 main>table .interaciviter:hover a {
   display: inline-block;
-  height: 175px;
+  height: 125px;
   color: #03196c;
   font-size: 30px;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
   color: #03196c;
   margin-right: 250px;
-
-  transition: ease-out, 0.5s;
-  transition-delay: 0.5s;
 }
 
 main>table .interaciviter:hover img {
-  display: inline-block;
+  display: inline-block; 
   width: 10%;
   padding-left: 5%;
 }
 
 main>table .interaciviter:hover img:nth-child(2) {
   display: inline-block;
-  width: 20%;
+  width: 25%;
 }
 
 main>table .interaciviter:hover p {
   display: none;
-  transition: ease-out;
-  transition-delay: 0.5s;
+transition: all .2s ease-in;
 }
+main > table .interaciviter ,
+main > table .interaciviter td,
+main > table .interaciviter a,
+main > table .interaciviter img,
+main > table .interaciviter p{
+  transition: all .2s ease-in;
+  cursor: pointer;
   
+}
+
+
 /***********************************/
+
+
 .DetL {
   justify-content: space-evenly;
 }
