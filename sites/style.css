@@ -1610,6 +1610,8 @@ footer section article:nth-of-type(3) {
   justify-content: center;
 }
 
+
+
 @media screen and (max-width: 1700px) {
 
 
@@ -1807,6 +1809,20 @@ footer section article:nth-of-type(3) {
     display: inline;
     color: #e6e1d3;
   }
+ /*###################################################
+#                                                   #
+#                 Bernard responsive                #
+#                                                   #
+###################################################*/
+  main>div{
+    display:block;
+  }
+
+  .palmares img{
+    display:none;
+  }
+  
+
 
 }
 
