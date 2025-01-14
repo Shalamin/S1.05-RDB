@@ -973,15 +973,19 @@ section:nth-child(1) .interaction:hover ul li {
 section:nth-child(1) .interaction:hover div {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width:100%;
+  
 }
 
 section:nth-child(1) .interaction:hover div>p {
   display: block;
-  justify-self: center;
-  margin-left: 2em;
-  margin-top: 5em;
+  position:relative;
+  float:left;
+  justify-self: flex-start;
   text-align:left; 
-  align-self:center;
+  align-self:flex-start;
+  width:60%;
   
 }
 
