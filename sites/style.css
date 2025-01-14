@@ -861,7 +861,7 @@ nav section article {
 }
 
 nav section:nth-child(1)>article:hover {
-  width: 30%;
+  width: 40%;
 }
 
 nav section>div article:hover {
@@ -988,6 +988,7 @@ section:nth-child(1) .interaction:hover div>p {
   width:60%;
   
 }
+
 
 
 section:nth-child(2) .interaction:hover {
