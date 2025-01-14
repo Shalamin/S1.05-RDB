@@ -549,12 +549,26 @@ div>figure figcaption {
 
 }
 
+section div > div:nth-child(1) {
+  width: 100%;
+}
+
+section div > div:nth-child(1) > span{
+  width: 18%;
+  margin-left: 0;
+
+}
+
+section div > div:nth-child(1) h2{
+  width: 100%;
+}
+
 #siteM>div {
   width: 80%;
   height: 80%;
   margin: 0 auto;
   padding: 2em;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 section:nth-child(2)>div>div>h2 {
@@ -567,12 +581,6 @@ section:nth-child(2)>div>div>h2 {
   /*bordure DROITE et HAUT des titres*/
   border-top: 0;
   border-right: 0;
-}
-
-section div div:nth-child(1) {
-  width: 150em;
-  text-align: right;
-  justify-content: flex-start;
 }
 
 section div article p {
@@ -609,6 +617,7 @@ section div div article li {
   text-align: left;
   color: #e6e1d3;
   margin: 0;
+  display: flex;
 }
 
 section div h3 a {
@@ -621,6 +630,10 @@ div > article > ul > li > img {
   transition-duration: 0.5s;
 }
 
+div > article > ul > li > p {
+  display: contents;
+}
+
 div > article > ul > li {
   font-size: 3em;
   transition-duration: 0.5s;
@@ -628,7 +641,6 @@ div > article > ul > li {
 
 div > article > ul > li {
   list-style: none;
-  text-align: center;
 }
 div > article > ul > li > br{
   display: none;
@@ -718,8 +730,8 @@ section div:nth-child(6) article div {
 }
 
 section div article:hover div {
-  width: 35em;
-  height: 23em;
+  width: 90%;
+  height: 50%;
   margin: 0 auto;
   flex-shrink: 0;
   transition-duration: 0.5s;
