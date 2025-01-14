@@ -97,6 +97,7 @@ header {
   width: auto;
   padding: 40px 0 40px 150px;
   display: flex;
+  z-index:-1;
 }
 
 header img {
@@ -104,7 +105,7 @@ header img {
   margin: 0px 25px 0px 85px;
 }
 
-header nav {
+header>nav {
   display: flex;
   width: 1300px;
   height: 70px;
@@ -116,7 +117,7 @@ header nav {
 
 }
 
-header nav a {
+header>nav a {
   width: 300px;
   height: 50px;
   border-radius: 20px;
@@ -131,6 +132,33 @@ header nav a {
 }
 header .burger{
   display:none;
+}
+header label li{
+  position: relative;
+  width: 12%;
+  min-width: 120px;
+  height: 6.5em;
+  padding: 0.25em;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #d5c46c;
+  color: #03196c;
+
+}
+header label ul{
+  list-style: none;
+}
+header input{
+  appearance: none;
+  position: relative;
+
+}
+header .planning{
+  display: none;
+  position: absolute;
+  padding: 0;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #d5c46c;
+  color: #03196c;
 }
 
 
@@ -1338,7 +1366,7 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
 
 }
 
-.planning {
+main >.planning {
   display: none;
   position: absolute;
   top: 7.5em;
