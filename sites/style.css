@@ -674,7 +674,7 @@ div > article:hover > h3{
 */
 
 
-section div:nth-child(2) article div {
+section div article:nth-child(1) div {
   width: 185px;
   height: 127px;
   flex-shrink: 0;
@@ -685,40 +685,51 @@ section div:nth-child(2) article div {
 
 }
 
-section div:nth-child(3) article div {
+section div article:nth-child(2) div {
   width: 185px;
   height: 127px;
   flex-shrink: 0;
 
   border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  background: url("../images/Img_Accueil/pont.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
   transition-duration: 0.5s;
 
 }
 
-section div:nth-child(4) article div {
+section div article:nth-child(3) div {
+  width: 185px;
+  height: 127px;
+  flex-shrink: 0;
+  border-radius: 360px;
+  background: url("../images/Img_Accueil/palais.png") lightgray 0 0  / 100.242% 100.628% no-repeat;
+  background-position: 0 0 75px 250px;
+  transition-duration: 0.5s;
+
+}
+
+section div article:nth-child(4) div {
   width: 185px;
   height: 127px;
   flex-shrink: 0;
 
   border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  background: url("../images/Img_Accueil/palais_eph.png") lightgray 0 0 / 100.242% 100.628% no-repeat;
   transition-duration: 0.5s;
 
 }
 
-section div:nth-child(5) article div {
+section div article:nth-child(5) div {
   width: 185px;
   height: 127px;
   flex-shrink: 0;
 
   border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
+  background: url("../images/Img_Accueil/stade.jpg") lightgray 0 0 / 100.242% 100.628% no-repeat;
   transition-duration: 0.5s;
 
 }
 
-section div:nth-child(6) article div {
+section div article:nth-child(6) div {
   width: 185px;
   height: 127px;
   flex-shrink: 0;
