@@ -2202,5 +2202,8 @@ main>table .interaciviter p {
     align-self: center;
     grid-template-columns: 1fr; 
    }
+   header #Question{
+    display: none;
+   }
 
 }
