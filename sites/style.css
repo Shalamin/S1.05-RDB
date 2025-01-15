@@ -1787,6 +1787,9 @@ footer section article:nth-of-type(3) {
     margin: 10px;
 
   }
+  main .interaction{
+    z-index: 1;
+  }
 
   span {
     display: inline-block;
