@@ -97,6 +97,7 @@ header {
   width: auto;
   padding: 40px 0 40px 150px;
   display: flex;
+  box-shadow: 5px -10px 30px #021145 ;
 }
 
 header img {
@@ -113,7 +114,11 @@ header nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
 
+header nav a:hover{
+  transform: scale(1.01);
+  box-shadow: -1px 1px 3px #304AAB ;
 }
 
 header nav a {
