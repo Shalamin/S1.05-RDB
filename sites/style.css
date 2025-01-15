@@ -130,6 +130,16 @@ header>nav a {
   display: inline-block;
 
 }
+header>nav a:hover{
+  background-color: #03196c;
+  color:#d5c46c;
+  border:#d5c46c solid;
+}
+header>nav a:active{
+  background-color: #010f41;
+  color:#887d45;
+}
+
 header .burger{
   display:none;
 }
