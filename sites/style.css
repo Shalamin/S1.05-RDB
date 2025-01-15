@@ -97,7 +97,7 @@ header {
   width: auto;
   padding: 40px 0 40px 150px;
   display: flex;
-  z-index:-1;
+  z-index:3;
 }
 
 header img {
@@ -133,6 +133,37 @@ header>nav a {
 header .burger{
   display:none;
 }
+.burger_deroule{
+  display:none;
+  z-index:2;
+}
+.burger_deroule ul{
+  list-style-type: none;
+}
+.burger_deroule>ul>li>a {
+  
+  color: #03196c;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  text-indent: 0%;
+}
+
+.burger_deroule {
+  display: none;
+  position: absolute;
+  top: 7.5em;
+  padding: 0;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+
+
+}
+
+.menu-plan:checked~.burger_deroule {
+  display: block;
+}
 header label li{
   position: relative;
   width: 12%;
@@ -152,7 +183,7 @@ header input{
   position: relative;
 
 }
-header .planning{
+.burger_deroule{
   display: none;
   position: absolute;
   padding: 0;
@@ -340,6 +371,39 @@ main>div section:nth-child(1) article {
 main>div section:nth-child(1) .interaction:hover h2 {
   margin-bottom: 0;
 }
+
+.interaction .carrousel .img_1{
+  z-index: 2;
+  opacity: 1;
+  background-image: url(../images/images_joueur/le_parisien.jpg),
+    url(../images/images_joueur/ouest_france.jpg),
+    url(../images/images_joueur/lequipe.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+.interaction .carrousel .img_2 {
+  background-image: url(../images/images_joueur/lequipe.jpg),
+    url(../images/images_joueur/le_parisien.jpg),
+    url(../images/images_joueur/ouest_france.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+
+.interaction .carrousel .img_3 {
+  background-image: url(../images/images_joueur/ouest_france.jpg),
+    url(../images/images_joueur/lequipe.jpg),
+    url(../images/images_joueur/le_parisien.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
 
 
 /*
@@ -1057,7 +1121,10 @@ section:nth-child(2) .interaction:hover table td::before {
 
 main>div>section:nth-child(1) .interaction:hover {
 
-  height: 400px;
+  height: 60%;
+}
+main>div>section:nth-child(1) .interaction:hover p{
+  text-align: center;
 }
 
 
@@ -1705,8 +1772,11 @@ footer section article:nth-of-type(3) {
   header .burger{
     display:block;
     justify-self: flex-start;
+    z-index: 2;
   }
-
+  .burger .planning{
+    height:10em;
+  }
   header img {
     display:none;
   }
