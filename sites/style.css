@@ -495,17 +495,15 @@ div>div {
   flex-wrap: nowrap;
 }
 
-main > span {
+span {
   display: flex;
-  width: 95%;
+  width: 85%;
   justify-content: space-around;
   margin: 2em auto;
-  align-items: flex-start;
 }
 
 span>div {
   margin: 0 auto;
-  width: 80%;
   padding: 2em;
 }
 
@@ -536,7 +534,6 @@ div>figure figcaption {
   background-color: #e6e1d3;
   margin: 0 2em;
 }
-
 /*
 #####################################################
 #                  Sites marquants                  #
