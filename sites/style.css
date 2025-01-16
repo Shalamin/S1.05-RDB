@@ -2060,25 +2060,19 @@ aside {
 aside article {
   display: flex;
   background-color: #d5c46c;
-  border: solid 10px #03196c;
+  border: 7px solid #03196c;
   margin: auto;
-  width: 17%;
-  height: 90px;
+  width: 22%;
+  height: 50px;
   border-radius: 100px;
-  text-align: center;
+  align-items: center;
 }
 
 
 aside article h4 {
   display: block;
-  text-align: center;
-
   font-family: "Ubuntu";
   color: #03196c;
-  /*bordure GAUCHE des titres*/
-
-  width: 200px;
-  height: auto;
 }
 
 aside article a {
@@ -2088,8 +2082,8 @@ aside article a {
 }
 
 aside article img {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
 }
 
 /*###################################################
@@ -2412,7 +2406,7 @@ main>table .interaciviter p {
 
   aside>article {
     width: 30%;
-    border-radius: 50px;
+    border-radius: 100px;
     margin-bottom: 20px;
     height: 50px;
   }
