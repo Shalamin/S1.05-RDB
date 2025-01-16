@@ -495,7 +495,7 @@ div>div {
   flex-wrap: nowrap;
 }
 
-span {
+main > span {
   display: flex;
   width: 95%;
   justify-content: space-around;
@@ -1002,8 +1002,7 @@ main>div>section:nth-child(1) .interaction:hover {
 #####################################################
 */
 
-
-span>div {
+main span div {
   text-align: center;
 
 }
