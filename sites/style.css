@@ -1648,7 +1648,7 @@ footer section article:nth-of-type(3) {
   }
 
 
-  span {
+  main:nth-child(1) > span {
     display: inline-block;
     width: 40%;
   }
