@@ -273,7 +273,7 @@ section>.interaction .carrousel {
 
 main>div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 @media screen and (max-width : 1800px) {
@@ -307,6 +307,7 @@ section>.interaction div{
   justify-content: space-around;
   
 }
+
 /*
 #####################################################
 #                                                   #
@@ -389,8 +390,14 @@ section:nth-child(2) .interaction {
 */
 
 main>div section:nth-child(1) article {
-  width: 750px;
+  width: 100%;
   height: 163px;
+}
+
+main > div section:nth-child(1){
+  width: 35%;
+  margin: 0;
+
 }
 
 .presentation img {
@@ -402,14 +409,15 @@ main>div section:nth-child(1) article {
   margin-top: 5%;
   margin-right: 20%;
 }
-
+.interaction:hover .carrousel p{
+  top:-5em;
+}
 main>div section:nth-child(1) .interaction:hover h2 {
   margin-bottom: 0;
 }
 
 .interaction .carrousel .img_1{
-  z-index: 2;
-  opacity: 1;
+
   background-image: url(../images/images_joueur/le_parisien.jpg),
     url(../images/images_joueur/ouest_france.jpg),
     url(../images/images_joueur/lequipe.jpg);
@@ -449,8 +457,13 @@ main>div section:nth-child(1) .interaction:hover h2 {
 #####################################################
 */
 main>div section:nth-child(2) article {
-  width: 700px;
-  height: 250px;
+  width: 80%;
+  height: 60.69%;
+}
+
+main > div section:nth-child(2){
+  width: 50%;
+  margin: 0;
 }
 
 main div section:nth-child(2) article nav {
@@ -1097,11 +1110,10 @@ section:nth-child(1) .interaction:hover ul li {
   padding: 20px 0 20px 0;
 }
 
-section:nth-child(1) .interaction:hover div {
+section:nth-child(1) .interaction:hover:nth-child(2) div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width:100%;
   
 }
 
@@ -1112,7 +1124,6 @@ section:nth-child(1) .interaction:hover div>p {
   justify-self: flex-start;
   text-align:left; 
   align-self:flex-start;
-  width:60%;
   
 }
 
@@ -1338,6 +1349,7 @@ main>section:nth-of-type(2)>article:nth-of-type(2) {
 
 main>section:nth-child(1)>article:nth-of-type(2),
 main>section:nth-of-type(2)>article:nth-of-type(1) {
+  margin: 0;
   width: 30%;
   padding: 1em;
 
@@ -1966,7 +1978,7 @@ footer section article:nth-of-type(3) {
     display: inline;
     color: #e6e1d3;
   }
- /*###################################################
+/*###################################################
 #                                                   #
 #                 Bernard responsive                #
 #                                                   #
@@ -1974,18 +1986,64 @@ footer section article:nth-of-type(3) {
   main>div{
     display:block;
   }
+  section:nth-child(1) .interaction:hover + figure{
+    display:none;
+  }
+  section:nth-child(1) .interaction:hover{
+    width:90%;
+  }
 
   .palmares img{
     display:none;
   }
   .palmares{
-    width:100%;
+    width:90%;
+    justify-content: center;
   }
+
   .palmares article:hover{
     width:20%;
   }
+  .palmares article:hover h2{
+    display:none
+  }
   
 
+
+  footer{
+    display:inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  footer article {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  
+  }
+
+  footer img{
+    margin: 1em;
+  }
+  
+  footer section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  
+  footer section article:nth-of-type(1),  
+  footer section article:nth-of-type(2),
+  footer section article:nth-of-type(3) {
+    width: 10em;
+    height: 20px;
+    margin: 0 0 ;
+    align-items: center;
+    justify-content: center;
+  }
 
 }
 
