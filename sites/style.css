@@ -131,13 +131,17 @@ header>nav a {
 
 }
 header>nav a:hover{
-  background-color: #03196c;
-  color:#d5c46c;
-  border:#d5c46c solid;
+
+  transform: scale(1.01);
+  box-shadow: -1px 1px 3px #304AAB ;
+  
 }
 header>nav a:active{
-  background-color: #010f41;
-  color:#887d45;
+  background-color: #03196c;
+  color:#d5c46c;
+  border:solid #d5c46c;
+  transform: scale(1.01);
+  box-shadow: -1px 1px 3px #304AAB ;
 }
 
 header .burger{
@@ -387,7 +391,7 @@ section:nth-child(2) .interaction {
 */
 
 main>div section:nth-child(1) article {
-  width: 700px;
+  width: 750px;
   height: 163px;
 }
 
@@ -1066,7 +1070,6 @@ section:nth-child(1) .interaction:hover {
   position: relative;
   display: flex;
   flex-direction: row;
-  animation: resize 0.2s ease alternate;
   
 }
 
