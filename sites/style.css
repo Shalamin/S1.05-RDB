@@ -559,10 +559,6 @@ section div > div:nth-child(1) > span{
 
 }
 
-section div > div:nth-child(1) h2{
-  width: 100%;
-}
-
 #siteM>div {
   width: 80%;
   height: 80%;
@@ -583,15 +579,11 @@ section:nth-child(2)>div>div>h2 {
   border-right: 0;
 }
 
-section div article p {
-  display: none;
-}
-
 section div article {
   transition-duration: 0.5s;
   background-color: #304aab;
   width: 33%;
-  height: 40em;
+  height: 30em;
   padding: 1em;
   margin: 10px;
 }
@@ -635,7 +627,7 @@ div > article > ul > li > p {
 }
 
 div > article > ul > li {
-  font-size: 3em;
+  font-size: 2em;
   transition-duration: 0.5s;
 }
 
@@ -673,71 +665,38 @@ div > article:hover > h3{
 #####################################################
 */
 
-
-section div article:nth-child(1) div {
+section div article div{
   width: 185px;
   height: 127px;
   flex-shrink: 0;
-
   border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
   transition-duration: 0.5s;
 
+
+}
+
+section div article:nth-child(1) div {
+  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
 }
 
 section div article:nth-child(2) div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
   background: url("../images/Img_Accueil/pont.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
-
 }
 
 section div article:nth-child(3) div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-  border-radius: 360px;
   background: url("../images/Img_Accueil/palais.png") lightgray 0 0  / 100.242% 100.628% no-repeat;
-  background-position: 0 0 75px 250px;
-  transition-duration: 0.5s;
-
 }
 
 section div article:nth-child(4) div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
   background: url("../images/Img_Accueil/palais_eph.png") lightgray 0 0 / 100.242% 100.628% no-repeat;
-  transition-duration: 0.5s;
-
 }
 
 section div article:nth-child(5) div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
   background: url("../images/Img_Accueil/stade.jpg") lightgray 0 0 / 100.242% 100.628% no-repeat;
-  transition-duration: 0.5s;
-
 }
 
 section div article:nth-child(6) div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
-
+  background: url("../images/Img_Accueil/plage.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
 }
 
 section div article:hover div {
@@ -764,8 +723,9 @@ section div article:hover div {
 
 }
 
-section div article p {
+section div article > p {
   display: none;
+  font-size: 80%;
 }
 
 section>div,
@@ -786,12 +746,13 @@ article>div img {
 */
 section div article:hover p {
   color: #e6e1d3;
-  display: inline;
+  display: contents;
 }
 
 section div article:hover {
   transition-duration: 0.5s;
   width: 40%;
+  height: 40em;
 }
 
 section div div article>img {
