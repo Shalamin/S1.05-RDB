@@ -548,12 +548,22 @@ div>figure figcaption {
 
 }
 
+section div > div:nth-child(1) {
+  width: 100%;
+}
+
+section div > div:nth-child(1) > span{
+  width: 18%;
+  margin-left: 0;
+
+}
+
 #siteM>div {
   width: 80%;
   height: 80%;
   margin: 0 auto;
   padding: 2em;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 section:nth-child(2)>div>div>h2 {
@@ -568,21 +578,11 @@ section:nth-child(2)>div>div>h2 {
   border-right: 0;
 }
 
-section div div:nth-child(1) {
-  width: 150em;
-  text-align: right;
-  justify-content: flex-start;
-}
-
-section div article p {
-  display: none;
-}
-
 section div article {
   transition-duration: 0.5s;
   background-color: #304aab;
   width: 33%;
-  height: 40em;
+  height: 30em;
   padding: 1em;
   margin: 10px;
 }
@@ -594,19 +594,21 @@ section div div article h3 {
   margin: 0;
 }
 
-section div div article li {
-  padding: 0;
-  text-align: left;
-  color: #e6e1d3;
-  margin: 0;
-}
-
-
 section>div>h3 {
   padding: 1em;
   width: 51%;
   text-align: center;
   background-color: #304aab;
+  border-radius: 15px;
+  border: #03196c solid 10px;
+}
+
+section div div article li {
+  padding: 0;
+  text-align: left;
+  color: #e6e1d3;
+  margin: 0;
+  display: flex;
 }
 
 section div h3 a {
@@ -615,16 +617,27 @@ section div h3 a {
 
 div > article > ul > li > img {
   width: 2em;
+  padding: 0 15%;
   transition-duration: 0.5s;
 }
 
+div > article > ul > li > p {
+  display: contents;
+}
+
 div > article > ul > li {
-  font-size: 3em;
+  font-size: 2em;
   transition-duration: 0.5s;
 }
 
 div > article > ul > li {
   list-style: none;
+}
+div > article > ul > li > br{
+  display: none;
+}
+div > article:hover > ul > li > br{
+  display: inline;
 }
 
 article:hover div > article > ul > li > img {
@@ -632,9 +645,17 @@ article:hover div > article > ul > li > img {
   width: 8%;
 }
 
-article:hover li {
+main:nth-child(3) article:hover li {
   transition-duration: 0.5s;
-  font-size: 100%;
+  font-size: 130%;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 0 auto;
+  width: 22%;
+  text-align: center;
+}
+div > article:hover > h3{
+  text-align: center;
 }
 
 /*
@@ -643,65 +664,44 @@ article:hover li {
 #####################################################
 */
 
-
-section div:nth-child(2) article div {
+section div article div{
   width: 185px;
   height: 127px;
   flex-shrink: 0;
-
   border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
   transition-duration: 0.5s;
+
 
 }
 
-section div:nth-child(3) article div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
+section div article:nth-child(1) div {
   background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
-
 }
 
-section div:nth-child(4) article div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
-
+section div article:nth-child(2) div {
+  background: url("../images/Img_Accueil/pont.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
 }
 
-section div:nth-child(5) article div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
-
+section div article:nth-child(3) div {
+  background: url("../images/Img_Accueil/palais.png") lightgray 0 0  / 100.242% 100.628% no-repeat;
 }
 
-section div:nth-child(6) article div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
+section div article:nth-child(4) div {
+  background: url("../images/Img_Accueil/palais_eph.png") lightgray 0 0 / 100.242% 100.628% no-repeat;
+}
 
-  border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
+section div article:nth-child(5) div {
+  background: url("../images/Img_Accueil/stade.jpg") lightgray 0 0 / 100.242% 100.628% no-repeat;
+}
 
+section div article:nth-child(6) div {
+  background: url("../images/Img_Accueil/plage.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
 }
 
 section div article:hover div {
-  width: 370px;
-  height: 254px;
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
   flex-shrink: 0;
   transition-duration: 0.5s;
   border-radius: 20px;
@@ -722,8 +722,9 @@ section div article:hover div {
 
 }
 
-section div article p {
+section div article > p {
   display: none;
+  font-size: 80%;
 }
 
 section>div,
