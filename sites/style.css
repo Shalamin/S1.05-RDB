@@ -1684,6 +1684,19 @@ footer section article:nth-of-type(3) {
 
   /*
   #####################################################
+  #                    Site marquant                  #
+  #####################################################
+  */
+  section div article:hover {
+    height: 18em;
+  }
+
+  section div article {
+    height: 18em;
+  }
+
+  /*
+  #####################################################
   #             Médailles + Moments forts             #
   #####################################################
   */
@@ -1738,8 +1751,34 @@ footer section article:nth-of-type(3) {
 
 
 
-  section>div>div>article>ul {
+  section>div>div>article>ul li{
+    display:inline-block;
+    justify-content: space-around;
+    padding: 0 auto;
+    text-align: center;
+    width: 22%;
+  }
+  section>div>div>article>ul img {
+    width: 60%;
+    height: 40%;
+    padding: 0.1em;
+  }
+  section>div>div>article>ul p {
     display: none;
+    font-size: 10em;
+  }
+
+  section>div>div>article:hover>ul p {
+    display: inline;
+  }
+  main:nth-child(3) article:hover li {
+    transition-duration: 0.5s;
+    font-size: 10%;
+    display: inline-block;
+    justify-content: space-around;
+    padding: 0 auto;
+    width: 22%;
+    text-align: center;
   }
 
   section>div>div>article:hover>p {
@@ -1751,7 +1790,7 @@ footer section article:nth-of-type(3) {
   }
 
   section>div>div>article:hover img {
-    height: 10em;
+    height: 22em;
   }
 
   section div article:hover div {
