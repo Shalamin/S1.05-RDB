@@ -1984,7 +1984,11 @@ footer section article:nth-of-type(3) {
 #                                                   #
 ###################################################*/
   main>div{
-    display:block;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
   }
   section:nth-child(1) .interaction:hover + figure{
     display:none;
@@ -2008,7 +2012,25 @@ footer section article:nth-of-type(3) {
     display:none
   }
   
+  main>div section:nth-child(1) {
+    width: 80%;
+  }
+  main>div section:nth-child(1):hover {
 
+    height: 400px;
+  }
+  main>div section:nth-child(2) {
+    display:block;
+    width: 80%;
+    height: 400px;
+  }
+  main>div section:nth-child(2) article{
+    width:85%;
+  }
+  main>div section:nth-child(2) article figure{
+    margin:0;
+
+  }
 
   footer{
     display:inline-block;
