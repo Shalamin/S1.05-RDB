@@ -2161,22 +2161,21 @@ main>table thead th {
   margin-top: 0px;
   color: #e6e1d3;
   background-color: #03196c;
-  padding: 5px;
+  padding: 20px;
   transition: all .2s ease-in;
   transition: all .2s ease-out;
-
 }
 
 main>table tbody tr td {
-  padding: 10px;
+  padding: 5px;
+
   background-color: #e6e1d3;
   border: 0px solid;
   color: black;
   transition: all .2s ease-in;
   transition: all .2s ease-out;
-
-
 }
+
 
 
 /*###################################################
@@ -2189,9 +2188,8 @@ main>table .interaciviter img,
 main>table .interaciviter a {
   display: none;
   transition: all .2s ease-in;
-
-
 }
+
 
 main>table .interaciviter:hover {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
@@ -2209,7 +2207,6 @@ main>table .interaciviter:hover a {
   color: #03196c;
   margin-right: 250px;
   align-self: center;
-  background-color: #d5c46c;
 }
 
 main>table .interaciviter:hover img {
@@ -2377,183 +2374,7 @@ main>table .interaciviter p {
 }
 
 
-@media (max-width: 768px) {
-
-  main >div>article>b{
-    display: none;
-  }
-  main>div>article {
-    grid-template-columns: 1fr;
-    text-align: center;
-    width: 85%;
-  }
-  main>div>article>span{
-    border-left: none;
-    align-content: center;
-    width: 100%;
-   }
-
-  main>div>article img {
-    width: 90%;
-    height: auto;
-  }
-
-  /***************************************/
-
-  aside {
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-  }
-
-  aside>article {
-    width: 30%;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    height: 50px;
-  }
-
-  aside>article>h4 {
-    border: none;
-    align-self: center;
-  }
-
-  aside>article>img {
-    height: 50px;
-    width: 50px;
-  }
-
-  /***************************************/
-
-
-  main > table {
-    width: 95%;
-    font-size: 0.9em;
-    overflow-x: auto;
-  }
-
-  main > table thead th,
-  main > table tbody td {
-    padding: 5px;
-  }
-
-
-  /***************************************/
-  .RULE article{
-    align-self: center;
-    transition: all .5s ease-in;
-
-  }
-  .RULE {
-    width: 100%;
-    margin: auto;
-    display: inline-block;
-    align-items: center;
-    transition: all .5s ease-in;
-
-  }
-
-  .RULE h2 {
-    font-size: 1.5em;
-    border: none;
-    align-self: center;
-
-  }
-
-  .RULE:hover p,
-  .RULE:hover b {
-    display: inline;
-    transition: all 1.5s ease-in;
-
-  }
-  
-
-  .RULE p,
-  .RULE b{
-    display: none;
-    transition: all .75s ease-in;
-
-  }
-
-/*###################################################
-#                                                   #
-#      Date et Liste Responsive + animation         #
-#                                                   #
-###################################################*/
-
-  .DetL #ELISTE,
-  .DetL #EDATE{
-    display: block;
-    height: 100px;
-    align-content: start;
-    transition: all .5s ease-in;
-  }
-  .DetL #ELISTE:hover,
-  .DetL #EDATE:hover,
-  .DetL #ELISTE:hover p,
-  .DetL #EDATE:hover p{
-    transition: all 1.25s ease-in;
-    width: 75%;
-    display: inline-block;
-    height: auto;
-  }
-
-  .DetL #ELISTE:hover h2,
-  .DetL #EDATE:hover h2{
-    font-family: "Ubuntu";
-  color: #03196c;
-  /*bordure GAUCHE des titres*/
-  border-left: #304aab solid 3px;
-  border-left-width: 5px;
-  width: 250px;
-  height: 1.5em;
-
-  /*bordure BAS des titres*/
-  border-bottom: #304aab solid 3px;
-  border-bottom-width: 5px;
-
-  /*bordure DROITE et HAUT des titres*/
-  border-top: 0;
-  border-right: 0;
-
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-left: 0.5em;
-    
-  }
-
-
-  .DetL #ELISTE:hover img,
-  .DetL #EDATE:hover img{
-    display: flex;
-    width: 120px;
-    height: 120px;
-  }
-
-  .DetL #ELISTE img,
-  .DetL #EDATE img,
-  .DetL #ELISTE b,
-  .DetL #EDATE b,
-  .DetL #ELISTE p,
-  .DetL #EDATE p {
-    display: none;
-  }
-
-  .DetL #ELISTE h2,
-  .DetL #EDATE h2 {
-    transition: all .5s ease-in;
-    border: none;
-    align-self: center;
-    grid-template-columns: 1fr; 
-   }
-   header #Question{
-    display: none;
-   }
-
-}
-
+/****** Taille intermediaire *****/
 
 
 @media (max-width: 1480px) {
@@ -2727,8 +2548,5 @@ main>table .interaciviter p {
     align-self: center;
     grid-template-columns: 1fr; 
    }
-   header #Question{
-    display: none;
-   }
-
+   
 }
