@@ -724,7 +724,7 @@ section div article:hover div {
 
 section div article > p {
   display: none;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 section>div,
@@ -751,10 +751,11 @@ section div article:hover p {
 section div article:hover {
   transition-duration: 0.5s;
   width: 40%;
+  height: 40em;
 }
 
 section div div article>img {
-  width: 70%;
+  width: 80%;
 }
 
 
