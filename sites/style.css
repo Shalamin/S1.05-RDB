@@ -331,7 +331,7 @@ main section:nth-child(2) .interaction figure img {
   display: block;
 }
 main .palmares>.interaction>h2 {
-  width:20%;
+  
   text-align: right;
   justify-content: center;
 }
