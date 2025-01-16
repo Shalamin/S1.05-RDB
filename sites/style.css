@@ -2209,9 +2209,65 @@ main>table .interaciviter p {
 
 /*###################################################
 #                                                   #
-#                   Responsiviter                   #
+#                   Responsivité                    #
 #                                                   #
 ###################################################*/
+
+/*###################################################
+#                   Bernard                         #
+###################################################*/
+@media screen and (max-width:768px){
+  main>div{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  section:nth-child(1) .interaction:hover + figure{
+    display:none;
+  }
+  section:nth-child(1) .interaction:hover{
+    width:90%;
+  }
+
+  .palmares img{
+    display:none;
+  }
+  .palmares{
+    width:90%;
+    justify-content: center;
+  }
+
+  .palmares article:hover{
+    width:20%;
+  }
+  .palmares article:hover h2{
+    display:none
+  }
+  
+  main>div section:nth-child(1) {
+    width: 80%;
+  }
+  main>div section:nth-child(1):hover {
+
+    height: 400px;
+  }
+  main>div section:nth-child(2) {
+    display:block;
+    width: 80%;
+    height: 400px;
+  }
+  main>div section:nth-child(2) article{
+    width:85%;
+  }
+  main>div section:nth-child(2) article figure{
+    margin:0;
+
+  }
+
+
+}
 
 
 @media (max-width: 768px) {
