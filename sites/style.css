@@ -217,6 +217,7 @@ section {
   display: flex;
   justify-content: space-between;
   margin: 2em;
+  z-index:1;
 
 }
 
