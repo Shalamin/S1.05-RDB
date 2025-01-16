@@ -1014,6 +1014,8 @@ input:checked~#plus {
 
 #plus {
   display: inline;
+  font-size: 150%;
+
 }
 
 
@@ -1021,8 +1023,15 @@ input:checked~#moins {
   display: inline;
 }
 
+input{
+  width: 130%;
+  display: none;
+}
+
 #moins {
   display: none;
+  font-size: 150%;
+
 }
 
 span div>table {
