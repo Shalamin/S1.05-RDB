@@ -1562,14 +1562,8 @@ footer section {
 
 }
 
-footer section article:nth-child(1) {
-  background-color: #d5c46c;
-  color: #d5c46c;
-  width: 10px;
-  height: 20px;
-  margin: 0 20px;
-}
 
+footer section article:nth-of-type(1),
 footer section article:nth-of-type(2),
 footer section article:nth-of-type(3) {
   display: flex;
