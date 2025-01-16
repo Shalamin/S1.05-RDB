@@ -97,6 +97,7 @@ header {
   width: auto;
   padding: 40px 0 40px 150px;
   display: flex;
+  z-index:3;
 }
 
 header img {
@@ -104,7 +105,7 @@ header img {
   margin: 0px 25px 0px 85px;
 }
 
-header nav {
+header>nav {
   display: flex;
   width: 1300px;
   height: 70px;
@@ -116,7 +117,7 @@ header nav {
 
 }
 
-header nav a {
+header>nav a {
   width: 300px;
   height: 50px;
   border-radius: 20px;
@@ -129,7 +130,79 @@ header nav a {
   display: inline-block;
 
 }
+header>nav a:hover{
 
+  transform: scale(1.01);
+  box-shadow: -1px 1px 3px #304AAB ;
+  
+}
+header>nav a:active{
+  background-color: #03196c;
+  color:#d5c46c;
+  border:solid #d5c46c;
+  transform: scale(1.01);
+  box-shadow: -1px 1px 3px #304AAB ;
+}
+
+header .burger{
+  display:none;
+}
+.burger_deroule{
+  display:none;
+  z-index:2;
+}
+.burger_deroule ul{
+  list-style-type: none;
+}
+.burger_deroule>ul>li>a {
+  
+  color: #03196c;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  text-indent: 0%;
+}
+
+.burger_deroule {
+  display: none;
+  position: absolute;
+  top: 7.5em;
+  padding: 0;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+
+
+}
+
+.menu-plan:checked~.burger_deroule {
+  display: block;
+}
+header label li{
+  position: relative;
+  width: 12%;
+  min-width: 120px;
+  height: 6.5em;
+  padding: 0.25em;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #d5c46c;
+  color: #03196c;
+
+}
+header label ul{
+  list-style: none;
+}
+header input{
+  appearance: none;
+  position: relative;
+
+}
+.burger_deroule{
+  display: none;
+  position: absolute;
+  padding: 0;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #d5c46c;
+  color: #03196c;
+}
 
 
 /*
@@ -144,6 +217,7 @@ section {
   display: flex;
   justify-content: space-between;
   margin: 2em;
+  z-index:1;
 
 }
 
@@ -1631,38 +1705,42 @@ footer section article:nth-of-type(3) {
   */
   header {
     height: 50px;
+    padding-left:0;
   }
-
-
+  
+  header .burger{
+    display:block;
+    justify-self: flex-start;
+    z-index: 2;
+  }
+  .burger_deroule{
+    height:30%;
+    width:30%;
+  }
+  .burger_deroule  ul{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-size:150%;
+    font-weight:bolder;
+  }
+  .burger_deroule ul li{
+    padding:15%;
+  }
+  .burger .planning{
+    height:20%;
+    width:40%;
+  }
   header img {
-    flex-direction: row;
-    margin: 0px 25px 0px 85px;
+    display:none;
   }
-
-
-
-  header nav a {
-    width: 100%;
-    height: 50px;
-    margin: 10px;
-
+  
+  header>nav {
+    display:none
+  
   }
-
-
-  main:nth-child(1) > span {
-    display: inline-block;
-    width: 40%;
-  }
-
-  span>div:nth-child(1) {
-    margin: 1em auto;
-    width: 60%;
-  }
-
-  span>div:nth-child(2) {
-    margin-left: 0;
-    margin: 2em auto;
-    width: 80%;
+  header nav a::after{
+    content:"   >"
   }
 
 
