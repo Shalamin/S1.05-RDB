@@ -97,7 +97,7 @@ header {
   width: auto;
   padding: 40px 0 40px 150px;
   display: flex;
-  box-shadow: 5px -10px 30px #021145 ;
+    box-shadow: 5px -10px 30px #021145 ;
 }
 
 header img {
@@ -1901,22 +1901,21 @@ main>table thead th {
   margin-top: 0px;
   color: #e6e1d3;
   background-color: #03196c;
-  padding: 5px;
+  padding: 20px;
   transition: all .2s ease-in;
   transition: all .2s ease-out;
-
 }
 
 main>table tbody tr td {
-  padding: 10px;
+  padding: 5px;
+
   background-color: #e6e1d3;
   border: 0px solid;
   color: black;
   transition: all .2s ease-in;
   transition: all .2s ease-out;
-
-
 }
+
 
 
 /*###################################################
@@ -2230,8 +2229,17 @@ main>table .interaciviter p {
     align-self: center;
     grid-template-columns: 1fr; 
    }
-   header #Question{
-    display: none;
+   @media (max-width: 1400px){
+
+    header nav a {
+      width: 100%;
+    }
    }
+   @media (max-width: 1300px) {
+    header #Question{
+      display: none;
+     }
+   }
+   
 
 }
