@@ -1815,7 +1815,7 @@ footer section article:nth-of-type(3) {
 
 /*###################################################
 #                                                   #
-#                     CSS Sofiane                   #
+#                     CSS Discipline                #
 #                                                   #
 ###################################################*/
 
@@ -1828,7 +1828,8 @@ footer section article:nth-of-type(3) {
 
 aside {
   display: flex;
-  margin: 20px;
+  margin: 30px;
+  align-items: center;
 }
 
 aside article {
@@ -1836,28 +1837,34 @@ aside article {
   background-color: #d5c46c;
   border: solid 10px #03196c;
   margin: auto;
-  width: 35%;
-  height: 100px;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: 5%;
+  width: 17%;
+  height: 90px;
+  border-radius: 100px;
   text-align: center;
 }
 
-aside article h2 {
+
+aside article h4 {
   display: block;
   text-align: center;
+
+  font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+
+  width: 200px;
+  height: auto;
 }
 
 aside article a {
-  width: 300px;
-  height: 50px;
   color: #03196c;
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
-  text-align: center;
-  display: inline-block;
+}
 
+aside article img {
+  width: 90px;
+  height: 90px;
 }
 
 /*###################################################
@@ -1866,39 +1873,40 @@ aside article a {
 #                                                   #
 ###################################################*/
 
-main > div > article {
-  display: flex;
-  align-items: flex-start;
-  align-items: right;
+main>div>article {
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  grid-template-rows: auto;
   height: auto;
-  width: 94%;
-  
-
+  width: 79%;
+  margin: auto;
+  margin-top: 50px;
 }
 
-main > div > article h2 {
-  display: flex;
-  order: 1;
-
+main>div>article h2 {
+  align-items: center;
+  align-self: center;
 }
 
-main > div > article figure {
-  float: right;
-  align-content: flex-start;
-  order: 3;
+main>div>article img {
+  box-shadow: 0px 0px 6px #252730;
+
+  align-content: center;
   border: solid 10px #03196c;
   border-radius: 5px;
-
 }
 
-main > div > article p {
-  margin-left: 200px;
-  display: flex;
-  order: 2;
-  width: 45%;
-  height: auto;
-  font-size: 20px;
+main>div>article>figure {
+  align-self: right;
+}
 
+
+main>div>article>b {
+  align-self: start;
+  padding: 1px;
+  background-color: #03196c;
+  height: 15em;
+  margin-right: 5px;
 }
 
 /*
@@ -1909,14 +1917,19 @@ main > div > article p {
 #####################################################
 */
 main>table {
+  box-shadow: 0px 0px 6px #252730;
+
   background-color: #03196c;
-  width: 94%;
+  width: 85%;
   border: solid 15px #03196c;
   border-radius: 15px;
 
   border-spacing: 0px 10px;
   border-collapse: separate;
+
   margin: auto;
+  transition: all .2s ease-in;
+  transition: all .2s ease-out;
 }
 
 main>table thead th {
@@ -1924,6 +1937,9 @@ main>table thead th {
   color: #e6e1d3;
   background-color: #03196c;
   padding: 5px;
+  transition: all .2s ease-in;
+  transition: all .2s ease-out;
+
 }
 
 main>table tbody tr td {
@@ -1931,7 +1947,12 @@ main>table tbody tr td {
   background-color: #e6e1d3;
   border: 0px solid;
   color: black;
+  transition: all .2s ease-in;
+  transition: all .2s ease-out;
+
+
 }
+
 
 /*###################################################
 #                                                   #
@@ -1942,24 +1963,28 @@ main>table tbody tr td {
 main>table .interaciviter img,
 main>table .interaciviter a {
   display: none;
-  transition: all ease-out;
-  transition-delay: 0.5s;
+  transition: all .2s ease-in;
 
+
+}
+
+main>table .interaciviter:hover {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px #e6e1d3;
+  transition: all .2s ease-in;
+  transform: scale(1.01);
 }
 
 main>table .interaciviter:hover a {
   display: inline-block;
-  height: 175px;
   color: #03196c;
   font-size: 30px;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
   color: #03196c;
   margin-right: 250px;
-
-  transition: ease-out, 0.5s;
-  transition-delay: 0.5s;
+  align-self: center;
+  background-color: #d5c46c;
 }
 
 main>table .interaciviter:hover img {
@@ -1970,55 +1995,74 @@ main>table .interaciviter:hover img {
 
 main>table .interaciviter:hover img:nth-child(2) {
   display: inline-block;
-  width: 20%;
+  width: 25%;
 }
 
 main>table .interaciviter:hover p {
   display: none;
-  transition: ease-out;
-  transition-delay: 0.5s;
+  transition: all .2s ease-in;
+}
+
+main>table .interaciviter,
+main>table .interaciviter td,
+main>table .interaciviter a,
+main>table .interaciviter img,
+main>table .interaciviter p {
+  transition: all .2s ease-in;
+  cursor: pointer;
+
 }
 
 
 /***********************************/
 
-.DetL article{
-  display: grid; 
-  grid-template-columns: 1fr 3px 1fr;
+
+.DetL {
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.DetL article {
+  display: grid;
+  grid-template-columns: 1fr 15px 1fr;
   grid-template-rows: auto;
   place-items: center;
-  width: 47%;
+  width: 35%;
 
 }
-.DetL article b{
-background-color: #03196c;
-width: 1px;
-height: 32em;
-padding: 1px;
-align-self: left;
+
+.DetL article b {
+  background-color: #03196c;
+  width: 1px;
+  height: 32em;
+  padding: 1px;
+  align-self: left;
 }
 
 /***********************************/
 
-.RULE{
-  background-color: #6c0303;
+.RULE {
   display: grid;
-  grid-template-columns: 1fr;
+  margin: auto;
+  width: 88%;
 }
-.RULE > article{
-  display: grid; 
+
+.RULE>span>article>div {
+  display: grid;
   grid-template-columns: 1fr 3px 1fr;
   place-items: center;
-  width: 2000px;
 }
-.RULE p{
+
+.RULE>span>article>div>p {
   align-self: start;
 }
-.RULE b{
+
+.RULE>span>article>div>b {
   align-self: start;
   padding: 2px;
   background-color: #03196c;
-  height: 62em;
+  height: 30em;
+  margin-right: 5px;
 }
 
 /***********************************/
@@ -2043,4 +2087,367 @@ align-self: left;
   padding-left: 10px;
   padding-bottom: 10px;
   margin-left: 0.5em;
+}
+
+/*###################################################
+#                                                   #
+#                   Responsiviter                   #
+#                                                   #
+###################################################*/
+
+
+@media (max-width: 768px) {
+
+  main >div>article>b{
+    display: none;
+  }
+  main>div>article {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 85%;
+  }
+  main>div>article>span{
+    border-left: none;
+    align-content: center;
+    width: 100%;
+   }
+
+  main>div>article img {
+    width: 90%;
+    height: auto;
+  }
+
+  /***************************************/
+
+  aside {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  aside>article {
+    width: 30%;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+
+  aside>article>h4 {
+    border: none;
+    align-self: center;
+  }
+
+  aside>article>img {
+    height: 50px;
+    width: 50px;
+  }
+
+  /***************************************/
+
+
+  main > table {
+    width: 95%;
+    font-size: 0.9em;
+    overflow-x: auto;
+  }
+
+  main > table thead th,
+  main > table tbody td {
+    padding: 5px;
+  }
+
+
+  /***************************************/
+  .RULE article{
+    align-self: center;
+    transition: all .5s ease-in;
+
+  }
+  .RULE {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    align-items: center;
+    transition: all .5s ease-in;
+
+  }
+
+  .RULE h2 {
+    font-size: 1.5em;
+    border: none;
+    align-self: center;
+
+  }
+
+  .RULE:hover p,
+  .RULE:hover b {
+    display: inline;
+    transition: all 1.5s ease-in;
+
+  }
+  
+
+  .RULE p,
+  .RULE b{
+    display: none;
+    transition: all .75s ease-in;
+
+  }
+
+/*###################################################
+#                                                   #
+#      Date et Liste Responsive + animation         #
+#                                                   #
+###################################################*/
+
+  .DetL #ELISTE,
+  .DetL #EDATE{
+    display: block;
+    height: 100px;
+    align-content: start;
+    transition: all .5s ease-in;
+  }
+  .DetL #ELISTE:hover,
+  .DetL #EDATE:hover,
+  .DetL #ELISTE:hover p,
+  .DetL #EDATE:hover p{
+    transition: all 1.25s ease-in;
+    width: 75%;
+    display: inline-block;
+    height: auto;
+  }
+
+  .DetL #ELISTE:hover h2,
+  .DetL #EDATE:hover h2{
+    font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+  width: 250px;
+  height: 1.5em;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 0.5em;
+    
+  }
+
+
+  .DetL #ELISTE:hover img,
+  .DetL #EDATE:hover img{
+    display: flex;
+    width: 120px;
+    height: 120px;
+  }
+
+  .DetL #ELISTE img,
+  .DetL #EDATE img,
+  .DetL #ELISTE b,
+  .DetL #EDATE b,
+  .DetL #ELISTE p,
+  .DetL #EDATE p {
+    display: none;
+  }
+
+  .DetL #ELISTE h2,
+  .DetL #EDATE h2 {
+    transition: all .5s ease-in;
+    border: none;
+    align-self: center;
+    grid-template-columns: 1fr; 
+   }
+   header #Question{
+    display: none;
+   }
+
+}
+
+
+
+@media (max-width: 1480px) {
+
+  main >div>article>b{
+    display: none;
+  }
+  main>div>article {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 85%;
+  }
+  main>div>article>span{
+    border-left: none;
+    align-content: center;
+    width: 100%;
+   }
+
+  main>div>article img {
+    width: 90%;
+    height: auto;
+  }
+
+  /***************************************/
+
+  aside {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  aside>article {
+    width: 30%;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+
+  aside>article>h4 {
+    border: none;
+    align-self: center;
+  }
+
+  aside>article>img {
+    height: 50px;
+    width: 50px;
+  }
+
+  /***************************************/
+
+
+  main > table {
+    width: 95%;
+    font-size: 0.9em;
+    overflow-x: auto;
+  }
+
+  main > table thead th,
+  main > table tbody td {
+    padding: 5px;
+  }
+
+
+  /***************************************/
+  .RULE article{
+    align-self: center;
+    transition: all .5s ease-in;
+
+  }
+  .RULE {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    align-items: center;
+    transition: all .5s ease-in;
+
+  }
+
+  .RULE h2 {
+    font-size: 1.5em;
+    border: none;
+    align-self: center;
+
+  }
+
+  .RULE:hover p,
+  .RULE:hover b {
+    display: inline;
+    transition: all 1.5s ease-in;
+
+  }
+  
+
+  .RULE p,
+  .RULE b{
+    display: none;
+    transition: all .75s ease-in;
+
+  }
+
+/*###################################################
+#                                                   #
+#      Date et Liste Responsive + animation         #
+#                                                   #
+###################################################*/
+
+  .DetL #ELISTE,
+  .DetL #EDATE{
+    display: block;
+    height: 100px;
+    align-content: start;
+    transition: all .5s ease-in;
+  }
+  .DetL #ELISTE:hover,
+  .DetL #EDATE:hover,
+  .DetL #ELISTE:hover p,
+  .DetL #EDATE:hover p{
+    transition: all 1.25s ease-in;
+    width: 75%;
+    display: inline-block;
+    height: auto;
+  }
+
+  .DetL #ELISTE:hover h2,
+  .DetL #EDATE:hover h2{
+    font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+  width: 250px;
+  height: 1.5em;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 0.5em;
+    
+  }
+
+
+  .DetL #ELISTE:hover img,
+  .DetL #EDATE:hover img{
+    display: flex;
+    width: 120px;
+    height: 120px;
+  }
+
+  .DetL #ELISTE img,
+  .DetL #EDATE img,
+  .DetL #ELISTE b,
+  .DetL #EDATE b,
+  .DetL #ELISTE p,
+  .DetL #EDATE p {
+    display: none;
+  }
+
+  .DetL #ELISTE h2,
+  .DetL #EDATE h2 {
+    transition: all .5s ease-in;
+    border: none;
+    align-self: center;
+    grid-template-columns: 1fr; 
+   }
+   header #Question{
+    display: none;
+   }
+
 }

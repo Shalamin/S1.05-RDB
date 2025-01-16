@@ -8,9 +8,6 @@
   <meta name="description" content="" />
   <meta name="keywords" content="" />
 
-
-  <!--Liens vers le fichier CSS de Bootstrap-->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
   <!--Liens vers le fichier JS de Bootstrap-->
   <script src="bootstrap/js/bootstrap.bundle.js"></script>
   <!--Liens vers le fichier CSS-->
@@ -27,7 +24,7 @@
     <nav>
       <a href="./Accueil.html">Accueil</a>
       <a href="./Sports.html">Sports</a>
-      <a href="./Joueur.html">Qui somme nous</a>
+      <a href="./Joueur.html" id="Question">Qui somme nous</a>
     </nav>
 
     <img src="../images/Image_general/image 1.png" alt="Logo jo 2024" width="61" height="61" />
@@ -40,45 +37,66 @@
   ------------------------------>
   <main>
     <div>
-    <article>
-      <h2>VOLLEYBALL</h2>
-      <figure>
-        <img src="../images/img_discipline/volleyball.jpg" title="volleyball" height="225" width="350">
-      </figure>
-      <p>
-        Le volleyball est un sport collectif dynamique et passionnant, où deux équipes de six joueurs s'affrontent pour
-        marquer des points en envoyant un ballon au-dessus d'un filet, dans le but qu'il touche le sol dans le camp
-        adverse.<br>
-        Le jeu se pratique généralement en intérieur, mais peut aussi se jouer en extérieur, sur sable (volleyball de
-        plage).<br>
+      <article>
+        <span>
+        <h2>VOLLEYBALL</h2>
+      </span>
+        <p></p>
+        <figure>
+          <img src="../images/img_discipline/volleyball.jpg" title="volleyball" height="225" width="350">
+        </figure>
+        <p>
+          Le volleyball est un sport collectif dynamique et passionnant, où deux équipes de six joueurs s'affrontent
+          pour
+          marquer des points en envoyant un ballon au-dessus d'un filet, dans le but qu'il touche le sol dans le camp
+          adverse.<br>
+          Le jeu se pratique généralement en intérieur, mais peut aussi se jouer en extérieur, sur sable (volleyball de
+          plage).<br>
+          Le match est divisé en sets, et l'équipe qui remporte un certain nombre de sets (généralement trois sur cinq)
+          gagne la partie.<br>
+        </p>
+        <b></b>
+        <p>
+          Chaque équipe dispose de trois touches de balle maximum pour renvoyer le ballon dans le camp adverse, avec des
+          techniques de passes, attaques, blocages et services.<br>
+          La stratégie et la communication entre les joueurs sont essentielles pour organiser le jeu et déstabiliser
+          l'équipe adverse.<br>
 
-        Le match est divisé en sets, et l'équipe qui remporte un certain nombre de sets (généralement trois sur cinq)
-        gagne la partie.<br>
-        Chaque équipe dispose de trois touches de balle maximum pour renvoyer le ballon dans le camp adverse, avec des
-        techniques de passes, attaques, blocages et services.<br>
-        La stratégie et la communication entre les joueurs sont essentielles pour organiser le jeu et déstabiliser
-        l'équipe adverse.<br>
 
-        Le volleyball se distingue par sa rapidité et son intensité, avec des échanges souvent très spectaculaires.<br>
-        C’est un sport accessible à tous, qui favorise le travail d’équipe, la coordination et le fair-play.
-
-      </div>
+          Le volleyball se distingue par sa rapidité et son intensité, avec des échanges souvent très
+          spectaculaires.<br>
+          C’est un sport accessible à tous, qui favorise le travail d’équipe, la coordination et le fair-play.
+        </p>
+    </div>
     </article>
-  </b>
+    </b>
+  <!----------------------------
+  
+        BOUTON ENVOIE
+  
+  ------------------------------>
     <aside>
       <article id="bouton_envoie">
         <img src="../images/img_discipline/image.png" alt="balle" height="40" width="40">
-        <h3><a href="./epreuve.html">volleyball masculin</a></h3>
+        <h4><a href="./epreuve.html">volleyball<br>masculin</a></h4>
       </article>
 
       <article id="bouton_envoie">
         <img src="../images/img_discipline/image.png" alt="balle" height="40" width="40">
-        <h3><a href="./Discipline.html">volleyball feminin</a></h3>
+        <h4><a href="./Discipline.html">volleyball<br>feminin</a></h4>
       </article>
 
     </aside>
+
+ <!----------------------------
+  
+    DATE ET LISTE Epreveuves
+        
+            -DATE
+  
+ ------------------------------>
     <section class="DetL">
-      <article>
+      <article id="EDATE">
         <figure>
           <img src="../images/img_discipline/Ellipse 1.svg">
         </figure>
@@ -119,7 +137,14 @@
           Hommes et Femmes : 7 et 8 septembre 2024<br>
         </p>
       </article>
-      <article>
+<!----------------------------
+  
+    DATE ET LISTE Epreveuves
+
+           -LISTE
+  
+ ------------------------------>
+      <article id="ELISTE">
         <figure>
           <img src="../images/img_discipline/Ellipse 1.svg">
         </figure>
@@ -159,12 +184,17 @@
 
     </section>
 
-    <!----------------------------
+  <!----------------------------
   
             TABLEAU
   
   ------------------------------>
     <table>
+      <!-- 
+
+      Head 
+
+      -->
       <thead>
         <tr>
           <th>Médaillé(e.s)</th>
@@ -173,6 +203,11 @@
           <th><img src="../images/img_discipline/logo_pays/third.png"></th>
         </tr>
       </thead>
+      <!--
+      
+      Body
+       
+      -->
       <tbody>
         <tr>
         <tr class="interaciviter">
@@ -193,7 +228,7 @@
         </tr>
         <tr class="interaciviter">
           <td>
-            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" height="1000" width="1000">
+            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png">
             <img src="../images/img_discipline/logo_pays/third.png">
             <a href="./Joueur.html"> Earvin</a>
           </td>
@@ -209,7 +244,7 @@
         </tr>
         <tr class="interaciviter">
           <td>
-            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" height="1000" width="1000">
+            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" >
             <img src="../images/img_discipline/logo_pays/third.png">
             <a href="./Joueur.html"> Earvin</a>
           </td>
@@ -225,7 +260,7 @@
         </tr>
         <tr class="interaciviter">
           <td>
-            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" height="1000" width="1000">
+            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png">
             <img src="../images/img_discipline/logo_pays/third.png">
             <a href="./Joueur.html"> Earvin</a>
           </td>
@@ -241,7 +276,7 @@
         </tr>
         <tr class="interaciviter">
           <td>
-            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" height="1000" width="1000">
+            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" >
             <img src="../images/img_discipline/logo_pays/third.png">
             <a href="./Joueur.html"> Earvin</a>
           </td>
@@ -257,7 +292,7 @@
         </tr>
         <tr class="interaciviter">
           <td>
-            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" height="1000" width="1000">
+            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png">
             <img src="../images/img_discipline/logo_pays/third.png">
             <a href="./Joueur.html"> Earvin</a>
           </td>
@@ -273,7 +308,7 @@
         </tr>
         <tr class="interaciviter">
           <td>
-            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" height="1000" width="1000">
+            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png">
             <img src="../images/img_discipline/logo_pays/third.png">
             <a href="./Joueur.html"> Earvin</a>
           </td>
@@ -289,7 +324,7 @@
         </tr>
         <tr class="interaciviter">
           <td>
-            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png" height="1000" width="1000">
+            <p>nom + prénom</p> <img src="../images/images_joueur/earvin1.png">
             <img src="../images/img_discipline/logo_pays/third.png">
             <a href="./Joueur.html"> Earvin</a>
           </td>
@@ -305,64 +340,74 @@
         </tr>
       </tbody>
     </table>
-    <section  class="RULE">
-      <article>
+ <!----------------------------
+  
+      VOLLEYBALL RULES
+  
+ ------------------------------>
+    <section class="RULE">
+      <span>
+        <article>
+          <div>
 
-        <span class="discipline_img">
-          <h2>REGLE DU VOLLEYBALL</h2>
-        </span>
+            <span class="discipline_img">
+              <h2>REGLE DU VOLLEYBALL</h2>
+            </span>
 
-        <p></p>
+            <p></p>
 
-        <figure>
-          <img src="../images/img_discipline/img_regle.png" width="150px" height="200px">
-        </figure>
+            <figure>
+              <img src="../images/img_discipline/rule.png" width="275px" height="200px">
+            </figure>
 
-        <p>
-          1. Composition des équipes<br>
-          Chaque équipe est composée de 6 joueurs sur le terrain.
-          Il y a également des remplaçants sur le banc.
-          Un joueur spécifique, appelé libéro, a un maillot différent et des règles particulières (pas de service,
-          d’attaque ou de contre).<br>
-          2. Déroulement du jeu<br>
-          Le but est de faire tomber le ballon dans le camp adverse ou de provoquer une faute de l’adversaire.
-          Une équipe a trois touches maximum pour renvoyer le ballon dans le camp adverse.
-          Les touches peuvent être réalisées par des passes, des smashs ou des renvois.<br>
-          3. Début et fin des points<br>
-          Le jeu commence par un service depuis l’arrière du terrain. Le joueur doit envoyer le ballon au-dessus du
-          filet
-          dans le camp adverse.
-          Un point est marqué à chaque échange (système de rally-point), qu’une équipe soit au service ou non.<br>
-          4. Rotation des joueurs<br>
-          Chaque fois qu’une équipe récupère le service, ses joueurs doivent effectuer une rotation dans le sens des
-          aiguilles d'une montre.
-          Cette rotation affecte les positions des joueurs sur le terrain.<br>
-        
-          5. Touches du ballon<br>
-          Les joueurs ne peuvent pas toucher le ballon deux fois de suite (sauf en cas de contre suivi immédiatement
-          d’une
-          autre touche).
-          Le ballon peut être joué avec n’importe quelle partie du corps, mais il doit être frappé, et non attrapé ou
-          porté.<br>
-        </p>
-        <b></b>
-        <p>
-          6. Filet et terrain
-          Le ballon doit passer au-dessus du filet sans toucher les antennes (barres verticales aux extrémités du
-          filet).
-          Un joueur ne peut pas toucher le filet avec son corps ou pénétrer complètement dans le camp adverse.<br>
-          7. Durée et score<br>
-          Un match se joue en 3 sets gagnants (meilleur des 5).
-          Les sets se jouent jusqu’à 25 points avec au moins 2 points d’écart.
-          En cas d’égalité à 2 sets partout, un 5ᵉ set est joué jusqu’à 15 points, toujours avec 2 points d’écart.<br>
-          8. Fautes communes<br>
-          Le ballon sort des limites du terrain.
-          Un joueur fait plus de 3 touches avant de renvoyer le ballon.
-          Le ballon touche le filet sur le service (sauf s'il passe tout de même dans le camp adverse).
-          Un joueur pénètre dans le camp adverse.
-        </p>
+            <p>
+              1. Composition des équipes<br>
+              Chaque équipe est composée de 6 joueurs sur le terrain.
+              Il y a également des remplaçants sur le banc.
+              Un joueur spécifique, appelé libéro, a un maillot différent et des règles particulières (pas de service,
+              d’attaque ou de contre).<br>
+              2. Déroulement du jeu<br>
+              Le but est de faire tomber le ballon dans le camp adverse ou de provoquer une faute de l’adversaire.
+              Une équipe a trois touches maximum pour renvoyer le ballon dans le camp adverse.
+              Les touches peuvent être réalisées par des passes, des smashs ou des renvois.<br>
+              3. Début et fin des points<br>
+              Le jeu commence par un service depuis l’arrière du terrain. Le joueur doit envoyer le ballon au-dessus du
+              filet
+              dans le camp adverse.
+              Un point est marqué à chaque échange (système de rally-point), qu’une équipe soit au service ou non.<br>
+              4. Rotation des joueurs<br>
+              Chaque fois qu’une équipe récupère le service, ses joueurs doivent effectuer une rotation dans le sens des
+              aiguilles d'une montre.
+              Cette rotation affecte les positions des joueurs sur le terrain.<br>
+            </p>
+            <b></b>
+            <p>
+              5. Touches du ballon<br>
+              Les joueurs ne peuvent pas toucher le ballon deux fois de suite (sauf en cas de contre suivi immédiatement
+              d’une
+              autre touche).
+              Le ballon peut être joué avec n’importe quelle partie du corps, mais il doit être frappé, et non attrapé
+              ou
+              porté.<br>
 
-      </article>
+              6. Filet et terrain
+              Le ballon doit passer au-dessus du filet sans toucher les antennes (barres verticales aux extrémités du
+              filet).
+              Un joueur ne peut pas toucher le filet avec son corps ou pénétrer complètement dans le camp adverse.<br>
+              7. Durée et score<br>
+              Un match se joue en 3 sets gagnants (meilleur des 5).
+              Les sets se jouent jusqu’à 25 points avec au moins 2 points d’écart.
+              En cas d’égalité à 2 sets partout, un 5ᵉ set est joué jusqu’à 15 points, toujours avec 2 points
+              d’écart.<br>
+              8. Fautes communes<br>
+              Le ballon sort des limites du terrain.
+              Un joueur fait plus de 3 touches avant de renvoyer le ballon.
+              Le ballon touche le filet sur le service (sauf s'il passe tout de même dans le camp adverse).
+              Un joueur pénètre dans le camp adverse.
+            </p>
+          </div>
+        </article>
+      </span>
     </section>
   </main>
   <!----------------------------
@@ -393,7 +438,7 @@
       </p>
     </article>
     <section>
-      <article>.
+      <article>
       </article>
       <article>
         <p>
