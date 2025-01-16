@@ -1683,7 +1683,14 @@ footer section article:nth-of-type(3) {
     padding-bottom: 25%;
 
   }
-
+  /*
+  #####################################################
+  #                    Site marquant                  #
+  #####################################################
+  */
+  section div article:hover {
+    height: 12em;
+  }
   /*
   #####################################################
   #             Médailles + Moments forts             #
@@ -1773,6 +1780,93 @@ footer section article:nth-of-type(3) {
     display: inline;
     color: #e6e1d3;
   }
+
+  /*###################################################
+  #                                                   #
+  #                     footer resp                   #
+  #                                                   #
+  ###################################################*/
+  footer {
+    background-color: #304AAB;
+    padding: 20px;
+    display: flex;
+  
+  }
+  
+  footer img {
+    display: inline-block;
+  }
+  
+  footer article {
+    background-color: #e6e1d3;
+    margin: 0 20px;
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  
+  }
+  
+  footer article h1 {
+    color: #03196c;
+    align-items: left;
+  
+  
+  }
+  
+  footer article p:nth-last-child(1) em {
+    color: #304AAB;
+    text-align: right;
+  }
+  
+  footer article p:nth-last-child(1) em:nth-last-child(1) {
+    text-align: right;
+    color: #304AAB;
+    font-size: 10px;
+  
+  }
+  
+  footer li a {
+    color: #03196c;
+    text-decoration: none;
+  }
+  
+  footer li a:hover {
+    color: #304AAB;
+  }
+  
+  footer li {
+    list-style-type: none;
+  }
+  
+  footer li:before {
+    content: "• ";
+  }
+  
+  footer img {
+    margin: 0 5px;
+  }
+  
+  footer section {
+    display: flex;
+    margin-left: 100px;
+  
+  }
+  
+  
+  footer section article:nth-of-type(1),
+  footer section article:nth-of-type(2),
+  footer section article:nth-of-type(3) {
+    display: flex;
+    background-color: #d5c46c;
+    color: #03196c;
+    width: 10em;
+    height: 20px;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
 
 }
 
