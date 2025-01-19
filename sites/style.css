@@ -173,7 +173,7 @@ header .burger{
 
 }
 
-.menu-plan:checked~.burger_deroule {
+.menu-bg:checked~.burger_deroule {
   display: block;
 }
 header label li{
@@ -1670,21 +1670,13 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 
 /*-----------------Quart & Huitième-------------------*/
 #quart-finale1,
-#quart-finale2,
-#huitieme-finale1,
-#huitieme-finale2,
-#huitieme-finale3,
-#huitieme-finale4 {
+#quart-finale2{
   display: none;
   visibility: hidden;
 }
 
 #quart-finale1:target,
-#quart-finale2:target,
-#huitieme-finale1:target,
-#huitieme-finale2:target,
-#huitieme-finale3:target,
-#huitieme-finale4:target {
+#quart-finale2:target {
   visibility: visible;
   display: flex;
   flex-direction: column;
@@ -1729,14 +1721,14 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
   opacity: 1;
   background-image: url(../images/images_epreuve/Unknown.jpeg),
     url(../images/images_epreuve/victoire\ slovenie.jpg),
-    url(../images/images_epreuve/retourner\ NGAPETH.jpg);
+    url(../images/images_epreuve/image.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, left, right;
   background-size: 50%, 30%, 30%;
 }
 
 .moments_2 {
-  background-image: url(../images/images_epreuve/retourner\ NGAPETH.jpg),
+  background-image: url(../images/images_epreuve/image.jpg),
     url(../images/images_epreuve/Unknown.jpeg),
     url(../images/images_epreuve/victoire\ slovenie.jpg);
 
@@ -1748,7 +1740,7 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 
 .moments_3 {
   background-image: url(../images/images_epreuve/victoire\ slovenie.jpg),
-    url(../images/images_epreuve/retourner\ NGAPETH.jpg),
+    url(../images/images_epreuve/image.jpg),
     url(../images/images_epreuve/Unknown.jpeg);
 
   background-repeat: no-repeat, no-repeat, no-repeat;
