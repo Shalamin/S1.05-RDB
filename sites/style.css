@@ -2200,6 +2200,7 @@ main>div>article {
   width: 79%;
   margin: auto;
   margin-top: 50px;
+  z-index: 1;
 }
 
 main>div>article h2 {
