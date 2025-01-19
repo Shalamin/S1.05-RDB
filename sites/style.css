@@ -1144,17 +1144,29 @@ table tr img {
 #                                                   #
 #####################################################
 */
-main section {
+main>section {
   display: flex;
+  
 }
 
+main>section:nth-child(1){
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;  
+  }
+}
+main>section:nth-child(2) {
+@media screen and (max-width: 768px) {
+    flex-wrap: wrap-reverse;  
+  }
+  
+}
+  
 main>section>article {
   background-color: #d5c46c;
   border: solid 10px #03196c;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 3em 1em;
 }
 
@@ -1162,43 +1174,72 @@ main>section:nth-child(1)>article:nth-of-type(1),
 main>section:nth-of-type(2)>article:nth-of-type(2) {
   width: 70%;
   padding: 1em;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
 }
+main>section:nth-child(1)>article:nth-of-type(3){
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    
+  }
+}
+
+
 
 main>section:nth-child(1)>article:nth-of-type(2),
 main>section:nth-of-type(2)>article:nth-of-type(1) {
   width: 30%;
   padding: 1em;
+}
+main>section:nth-child(2)>article:nth-of-type(1) {
+  @media screen and (max-width: 768px) {
 
+    display: none;
+  }
 }
 
 main>section:nth-child(2)>article:nth-child(1) img {
   width: 90%;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
     display: none;
 
   }
 }
 
 /*----------Présentation Volleyball----------*/
-main>section:nth-child(1)>article:nth-of-type(1) {
-  display: inline-block;
-}
 
-main>section:nth-child(1)>article:nth-of-type(1) img {
 
+main>section:nth-child(1)>article:nth-of-type(1)>div>img {
+  position: absolute;
   top: 2em;
-  left: 30%;
+  right: 30%;
 }
 
 main>section:nth-child(1)>article:nth-of-type(1) h2 {
   text-align: center;
-  width: 300px;
+  width: 30%;
 }
-
+main>section:nth-child(1)>article:nth-child(1)>p{
+  @media screen and (max-width: 768px) {
+    display: none;
+    transition: 1.5s ease-in;
+    
+  }
+}
+main>section:nth-child(1)>article:nth-child(1):hover>p
+{
+  @media screen and (max-width: 768px) {
+    
+    display: inline;
+  
+  }
+}
 /*
 #####################################################
 #                                                   #
@@ -1206,6 +1247,15 @@ main>section:nth-child(1)>article:nth-of-type(1) h2 {
 #                                                   #
 #####################################################
 */
+main>section:nth-child(1)>article:nth-child(2) ul {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
 /* Image de puce URSS */
 main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(1) {
   list-style: url(../images/images_epreuve/urss.png);
@@ -1219,6 +1269,7 @@ main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(3) {
 /* Image de puce VICTOIRE des deux nation ci-dessus */
 main section:nth-child(1)>article:nth-child(2) ul li ol ul li {
   list-style: url(../images/images_epreuve/tropheeNoir.png);
+  padding-bottom: 10px;
 }
 
 /*------------Image de puce différents drapeaux------------*/
@@ -1226,27 +1277,43 @@ main section:nth-child(1)>article:nth-child(2) ul li ol ul li {
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(1),
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(2) {
   list-style: url(../images/images_epreuve/fr.png);
+  padding-bottom: 30px;
 }
 
 /* Brésil 2016 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(3) {
   list-style: url(../images/images_epreuve/br2.png);
-  /* Russie 2012 */
+  padding-bottom: 30px;
+  
 }
-
+/* Russie 2012 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(4) {
   list-style: url(../images/images_epreuve/ru.png);
+  padding-bottom: 30px;
 }
 
 /* État-Unis 2008 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(5) {
   list-style: url(../images/images_epreuve/us.png);
+  padding-bottom: 30px;
 }
 .pays{
   @media screen and (max-width: 768px) {
     display: none;
     
   }
+}
+@media  screen and (max-width: 768px) {
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(1),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(2),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(3),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(4),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(5){
+    /*Réduire le padding pour les images de puce*/
+    padding-bottom: 10px;
+    
+  }
+  
 }
 /*
 #####################################################
@@ -1257,6 +1324,12 @@ main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-chil
 */
 main>section:nth-child(2)>article:nth-child(2) {
   position: relative;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 }
 
 /*-----------------Bouton "Phase de jeu"-------------------*/
@@ -1273,14 +1346,23 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>label {
   width: 12%;
   min-width: 120px;
   height: 6%;
-  min-height: 50px;
+  min-height: 70px;
   top: 4%;
   right: 2%;
   border: solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
   color: white;
-}
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
 
+  
+  @media screen and (max-width: 768px) {
+    min-width: 70px;
+    min-height: 60px;
+    font-size: small;
+  }
+}
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>input {
   appearance: none;
   position: absolute;
@@ -1297,24 +1379,38 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
 
 .planning>ul>li>a {
   color: white;
+  position: relative;
   align-items: center;
   text-decoration: none;
   list-style-type: none;
   font-variant: small-caps;
+  @media screen and (max-width: 768px) {
+    font-size: small;
+    
+  }
 
 }
 
 .planning {
+  margin : 0;
   display: none;
   position: absolute;
-  top: 10%;
+  width: 10%;
+  height: 20%;
+  top: 15%;
   right: 2%;
   padding: 0;
   border: solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
   color: white;
-
+@media screen and (max-width: 768px) {
+    top: 25%;
+    right: 2%;
+    
+  }
+  
 }
+
 
 .menu-plan:checked~.planning {
   display: block;
@@ -1329,7 +1425,6 @@ main>section:nth-child(2)>article:nth-child(2) div:nth-child(2) div {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-
 }
 
 main>section:nth-child(2)>article:nth-child(2) div h3 {
@@ -1347,7 +1442,6 @@ main>section:nth-child(2)>article:nth-child(2) div div {
   font-weight: bold;
   display: flex;
   align-items: center;
-
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div table {
@@ -1413,9 +1507,12 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 */
 .moments {
   width: 100%;
-  margin: 32px;
   height: auto;
   background-color: none;
+  @media screen and (max-width: 768px) {
+    width: 83%;
+    
+  }
 }
 
 .moments .carrousel {
