@@ -295,7 +295,7 @@ section>.interaction {
   transition: width 0.5s ease, height 0.5s ease;
 
 }
-main .interaction:nth-child(1):hover h2{
+main:nth-child(1) .interaction:hover h2{
   width:100%;
   padding-bottom:0;
 }
@@ -380,7 +380,6 @@ section:nth-child(2) figure {
   justify-self: flex-start;
   margin-left: 5px;
 }
-
 
 /*
 #####################################################
@@ -1417,7 +1416,7 @@ main>section:nth-child(1)>article:nth-child(1)>div>img{
 }
 
 
-main>section:nth-child(1)>article:nth-of-type(1) h2 {
+.titreVolley {
   text-align: center;
   width: 30%;
 }
