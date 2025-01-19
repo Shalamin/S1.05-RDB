@@ -1215,11 +1215,11 @@ main>section:nth-child(2)>article:nth-child(1) img {
 /*----------Présentation Volleyball----------*/
 
 
-main>section:nth-child(1)>article:nth-of-type(1)>div>img {
-  position: absolute;
-  top: 2em;
-  right: 30%;
+main>section:nth-child(1)>article:nth-of-type(1)>div {
+  display: flex;
+  
 }
+
 
 main>section:nth-child(1)>article:nth-of-type(1) h2 {
   text-align: center;
@@ -1229,13 +1229,11 @@ main>section:nth-child(1)>article:nth-child(1)>p{
   @media screen and (max-width: 768px) {
     display: none;
     
-    
   }
 }
 main>section:nth-child(1)>article:nth-child(1):hover>p
 {
   @media screen and (max-width: 768px) {
-    
     display: inline;
   
   }
@@ -1327,7 +1325,7 @@ main>section:nth-child(2)>article:nth-child(2) {
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    height:1 00%;
+    height: 400px;
   }
 }
 
@@ -1380,13 +1378,10 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
   align-items: center;
   text-decoration: none;
   list-style-type: none;
-  font-variant: small-caps;
-  @media screen and (max-width: 768px) {
-    font-size: small;
-    
+  font-variant: small-caps; 
   }
 
-}
+
 
 .planning {
   margin : 0;
@@ -1394,18 +1389,19 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
   position: absolute;
   width: 10%;
   height: 15%;
-  top: 15%;
+  top: 16%;
   right: 2%;
   padding: 0;
   border: solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
   color: white;
-  font-size: .85em;
+  font-size: .75em;
 @media screen and (max-width: 768px) {
-    top: 19%;
+    top: 75px;
     right: 2%;
     width: 12%;
-    font-size: 0.25em;
+    height: 20%;
+  
   }
   
 }
@@ -1514,7 +1510,7 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 #####################################################
 */
 .moments {
-  width: 100%;
+  width: 88%;
   height: auto;
   background-color: none;
   @media screen and (max-width: 768px) {
