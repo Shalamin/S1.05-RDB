@@ -1950,10 +1950,11 @@ footer section article:nth-of-type(3) {
     justify-self: flex-start;
     z-index: 2;
   }
-  .burger_deroule{
+  .menu-bg{
     height:30%;
     width:30%;
   }
+  
   .burger_deroule  ul{
     display:flex;
     flex-direction:column;
