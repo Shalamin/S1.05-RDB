@@ -295,7 +295,10 @@ section>.interaction {
   transition: width 0.5s ease, height 0.5s ease;
 
 }
-
+main .interaction:nth-child(1):hover h2{
+  width:100%;
+  padding-bottom:0;
+}
 section>.interaction h4 {
   float: right;
   margin-right: 12%;
