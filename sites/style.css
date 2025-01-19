@@ -2205,19 +2205,26 @@ main>table .interaciviter:hover a {
 
 main>table .interaciviter:hover img {
   display: inline-block;
-  width: 10%;
+  width: 100px;
+  height: 100px;
   padding-left: 5%;
 }
 
 main>table .interaciviter:hover img:nth-child(2) {
   display: inline-block;
-  width: 25%;
+  width: 300px;
+  height: 200px;
 }
 
 main>table .interaciviter:hover p {
   display: none;
   transition: all .2s ease-in;
 }
+main>table .interaciviter:hover td {
+  height: 100px;
+}
+
+
 
 main>table .interaciviter,
 main>table .interaciviter td,
@@ -2262,6 +2269,7 @@ main>table .interaciviter p {
   margin: auto;
   width: 88%;
 }
+
 
 .RULE>span>article>div {
   display: grid;
@@ -2593,6 +2601,20 @@ main>table .interaciviter p {
     margin: 0 0 ;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  main>table .interaciviter:hover img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding-left: 5%;
+  }
+  
+  main>table .interaciviter:hover img:nth-child(2) {
+    display: inline-block;
+    width: 180px;
+    height: 120px;
   }
 }
    
