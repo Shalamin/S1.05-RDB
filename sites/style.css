@@ -974,7 +974,6 @@ nav section div {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 40%;
 }
 
 nav section div article {
