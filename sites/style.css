@@ -446,7 +446,10 @@ main>div section:nth-child(1) .interaction:hover h2 {
   background-position: center, left, right;
   background-size: 50%, 30%, 30%;
 }
-
+.carrousel a{
+  text-decoration: none;
+  color:#03196c;
+}
 
 
 /*
@@ -1163,9 +1166,7 @@ section:nth-child(2) .interaction:hover table td {
   text-align: center;
 }
 
-section:nth-child(2) .interaction:hover table td::before {
-  content: "- "
-}
+
 
 main>div>section:nth-child(1) .interaction:hover {
 
