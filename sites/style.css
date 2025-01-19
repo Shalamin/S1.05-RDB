@@ -974,6 +974,7 @@ nav section div {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
+  width:70%;
 }
 
 nav section div article {
@@ -1041,6 +1042,7 @@ nav section:nth-child(2),
 nav section:nth-child(4) {
   flex-direction: row-reverse;
 }
+
 
 /*
 #####################################################
