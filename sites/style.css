@@ -1455,12 +1455,18 @@ main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(1) {
 }
 
 /* Image de puce BRESIL */
-main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(3) {
+main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(2) {
   list-style: url(../images/images_epreuve/br2.png);
 }
 
 /* Image de puce VICTOIRE des deux nation ci-dessus */
 main section:nth-child(1)>article:nth-child(2) ul li ol ul li {
+  list-style: url(../images/images_epreuve/tropheeNoir.png);
+  padding-bottom: 10px;
+}
+main > section:nth-child(1) > article:nth-child(2) ul li ol > li:nth-child(2) ul > li:nth-child(1),
+main > section:nth-child(1) > article:nth-child(2) ul li ol > li:nth-child(2) ul > li:nth-child(2),
+main > section:nth-child(1) > article:nth-child(2) ul li ol > li:nth-child(2) ul > li:nth-child(3) {
   list-style: url(../images/images_epreuve/tropheeNoir.png);
   padding-bottom: 10px;
 }
