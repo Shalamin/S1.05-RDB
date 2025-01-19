@@ -1228,7 +1228,7 @@ main>section:nth-child(1)>article:nth-of-type(1) h2 {
 main>section:nth-child(1)>article:nth-child(1)>p{
   @media screen and (max-width: 768px) {
     display: none;
-    transition: 1.5s ease-in;
+    
     
   }
 }
@@ -1327,23 +1327,20 @@ main>section:nth-child(2)>article:nth-child(2) {
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    height:1 00%;
   }
 }
 
 /*-----------------Bouton "Phase de jeu"-------------------*/
 
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>h2 {
-  margin: 150;
-
   justify-content: none;
 }
 
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>label {
 
   position: absolute;
-  width: 12%;
+  width: 15%;
   min-width: 120px;
   height: 6%;
   min-height: 70px;
@@ -1360,7 +1357,7 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>label {
   @media screen and (max-width: 768px) {
     min-width: 70px;
     min-height: 60px;
-    font-size: small;
+    font-size: 1em;
   }
 }
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>input {
@@ -1396,17 +1393,19 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
   display: none;
   position: absolute;
   width: 10%;
-  height: 20%;
+  height: 15%;
   top: 15%;
   right: 2%;
   padding: 0;
   border: solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
   color: white;
+  font-size: .85em;
 @media screen and (max-width: 768px) {
-    top: 25%;
+    top: 19%;
     right: 2%;
-    
+    width: 12%;
+    font-size: 0.25em;
   }
   
 }
@@ -1429,12 +1428,17 @@ main>section:nth-child(2)>article:nth-child(2) div:nth-child(2) div {
 
 main>section:nth-child(2)>article:nth-child(2) div h3 {
   text-align: center;
-  background-color: none;
+
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div img {
   width: 100px;
   height: 75px;
+  @media screen and (max-width: 768px) {
+    width: 50px;
+    height: 37.5px;
+    
+  }
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div {
@@ -1442,6 +1446,10 @@ main>section:nth-child(2)>article:nth-child(2) div div {
   font-weight: bold;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    font-size: 1em;
+    
+  }
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div table {
