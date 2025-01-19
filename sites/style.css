@@ -2308,19 +2308,26 @@ main>table .interaciviter:hover a {
 
 main>table .interaciviter:hover img {
   display: inline-block;
-  width: 10%;
+  width: 100px;
+  height: 100px;
   padding-left: 5%;
 }
 
 main>table .interaciviter:hover img:nth-child(2) {
   display: inline-block;
-  width: 25%;
+  width: 300px;
+  height: 200px;
 }
 
 main>table .interaciviter:hover p {
   display: none;
   transition: all .2s ease-in;
 }
+main>table .interaciviter:hover td {
+  height: 100px;
+}
+
+
 
 main>table .interaciviter,
 main>table .interaciviter td,
@@ -2331,6 +2338,8 @@ main>table .interaciviter p {
   cursor: pointer;
 
 }
+
+
 
 
 /***********************************/
@@ -2386,7 +2395,7 @@ main>table .interaciviter p {
 
 /***********************************/
 
-.discipline_img h2 {
+.discipline_img {
   font-family: "Ubuntu";
   color: #03196c;
   /*bordure GAUCHE des titres*/
@@ -2406,6 +2415,7 @@ main>table .interaciviter p {
   padding-left: 10px;
   padding-bottom: 10px;
   margin-left: 0.5em;
+  margin-right: 3em;
 }
 
 /*###################################################
@@ -2476,6 +2486,7 @@ main>table .interaciviter p {
 /****** Taille intermediaire *****/
 
 
+
 @media (max-width: 1480px) {
 
   main >div>article>b{
@@ -2486,7 +2497,7 @@ main>table .interaciviter p {
     text-align: center;
     width: 85%;
   }
-  main>div>article>span{
+  main>div>article>h2{
     border-left: none;
     align-content: center;
     width: 100%;
@@ -2697,5 +2708,19 @@ main>table .interaciviter p {
     justify-content: center;
   }
 }
-   
+@media (max-width: 768px) {
+  main>table .interaciviter:hover img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding-left: 5%;
+  }
+  
+  main>table .interaciviter:hover img:nth-child(2) {
+    display: inline-block;
+    width: 180px;
+    height: 120px;
+  }
 }
+   
+} 
