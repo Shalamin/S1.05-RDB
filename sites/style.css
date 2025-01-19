@@ -979,6 +979,7 @@ nav section div {
 
 nav section div article {
   flex-direction: row;
+  margin-bottom: 2%;
   height: 50%;
   width: 100%;
 }
