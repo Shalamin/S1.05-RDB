@@ -97,6 +97,7 @@ header {
   width: auto;
   padding: 40px 0 40px 150px;
   display: flex;
+  z-index:3;
 }
 
 header img {
@@ -104,7 +105,7 @@ header img {
   margin: 0px 25px 0px 85px;
 }
 
-header nav {
+header>nav {
   display: flex;
   width: 1300px;
   height: 70px;
@@ -116,7 +117,7 @@ header nav {
 
 }
 
-header nav a {
+header>nav a {
   width: 300px;
   height: 50px;
   border-radius: 20px;
@@ -129,7 +130,79 @@ header nav a {
   display: inline-block;
 
 }
+header>nav a:hover{
 
+  transform: scale(1.01);
+  box-shadow: -1px 1px 3px #304AAB ;
+  
+}
+header>nav a:active{
+  background-color: #03196c;
+  color:#d5c46c;
+  border:solid #d5c46c;
+  transform: scale(1.01);
+  box-shadow: -1px 1px 3px #304AAB ;
+}
+
+header .burger{
+  display:none;
+}
+.burger_deroule{
+  display:none;
+  z-index:2;
+}
+.burger_deroule ul{
+  list-style-type: none;
+}
+.burger_deroule>ul>li>a {
+  
+  color: #03196c;
+  align-items: center;
+  text-decoration: none;
+  list-style-type: none;
+  text-indent: 0%;
+}
+
+.burger_deroule {
+  display: none;
+  position: absolute;
+  top: 7.5em;
+  padding: 0;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+
+
+}
+
+.menu-bg:checked~.burger_deroule {
+  display: block;
+}
+header label li{
+  position: relative;
+  width: 12%;
+  min-width: 120px;
+  height: 6.5em;
+  padding: 0.25em;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #d5c46c;
+  color: #03196c;
+
+}
+header label ul{
+  list-style: none;
+}
+header input{
+  appearance: none;
+  position: relative;
+
+}
+.burger_deroule{
+  display: none;
+  position: absolute;
+  padding: 0;
+  border: solid 4px rgba(0, 0, 0, 0.285);
+  background-color: #d5c46c;
+  color: #03196c;
+}
 
 
 /*
@@ -144,6 +217,7 @@ section {
   display: flex;
   justify-content: space-between;
   margin: 2em;
+  z-index:1;
 
 }
 
@@ -164,7 +238,7 @@ article {
   border-radius: 20px;
   padding: 2em;
   width: 60%;
-  height: 171px;
+  height: 10%;
   z-index: 10;
 }
 
@@ -200,7 +274,13 @@ section>.interaction .carrousel {
 
 main>div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (max-width : 1800px) {
+  main>div{
+    justify-content: center;
+  }
 }
 
 main>div>section article {
@@ -212,14 +292,21 @@ div h2 {
 }
 
 section>.interaction {
-  transition: all 2s ease;
+  transition: width 0.5s ease, height 0.5s ease;
+
 }
 
 section>.interaction h4 {
   float: right;
   margin-right: 12%;
   border-bottom: #304AAB solid;
-  width: auto;
+  width: 20%;
+}
+section>.interaction div{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  
 }
 
 /*
@@ -230,15 +317,31 @@ section>.interaction h4 {
 #####################################################
 */
 .palmares {
+  position:relative;
+  display:flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin-left: 50px;
   margin-right: 80px;
 }
+.palmares article{
+  position:relative;
+  z-index:3;
+}
 
-section:nth-child(2) .interaction img {
+main section:nth-child(2) .interaction figure img {
   margin-top: 2em;
   margin-left: 2em;
   display: block;
+}
+main .palmares>.interaction>h2 {
+  
+  text-align: right;
+  justify-content: center;
+}
+.palmares figure{
+  position:relative;
+  z-index:0;
 }
 
 section:nth-child(2)>article>h2 {
@@ -267,6 +370,7 @@ section:nth-child(2)>article>h2 {
 section:nth-child(2)>.interaction:nth-child(2) {
   display: flex;
   flex-direction: row-reverse;
+
 }
 
 section:nth-child(2) figure {
@@ -274,9 +378,6 @@ section:nth-child(2) figure {
   margin-left: 5px;
 }
 
-section:nth-child(2) .interaction {
-  height: 265px;
-}
 
 /*
 #####################################################
@@ -287,8 +388,14 @@ section:nth-child(2) .interaction {
 */
 
 main>div section:nth-child(1) article {
-  width: 700px;
+  width: 100%;
   height: 163px;
+}
+
+main > div section:nth-child(1){
+  width: 35%;
+  margin: 0;
+
 }
 
 .presentation img {
@@ -300,11 +407,48 @@ main>div section:nth-child(1) article {
   margin-top: 5%;
   margin-right: 20%;
 }
-
+.interaction:hover .carrousel p{
+  top:-5em;
+}
 main>div section:nth-child(1) .interaction:hover h2 {
   margin-bottom: 0;
 }
 
+.interaction .carrousel .img_1{
+
+  background-image: url(../images/images_joueur/le_parisien.jpg),
+    url(../images/images_joueur/ouest_france.jpg),
+    url(../images/images_joueur/lequipe.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+.interaction .carrousel .img_2 {
+  background-image: url(../images/images_joueur/lequipe.jpg),
+    url(../images/images_joueur/le_parisien.jpg),
+    url(../images/images_joueur/ouest_france.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+
+.interaction .carrousel .img_3 {
+  background-image: url(../images/images_joueur/ouest_france.jpg),
+    url(../images/images_joueur/lequipe.jpg),
+    url(../images/images_joueur/le_parisien.jpg);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: center, left, right;
+  background-size: 50%, 30%, 30%;
+}
+
+.carrousel a{
+  text-decoration: none;
+  color:#03196c;
+}
 
 /*
 #####################################################
@@ -314,8 +458,13 @@ main>div section:nth-child(1) .interaction:hover h2 {
 #####################################################
 */
 main>div section:nth-child(2) article {
-  width: 700px;
-  height: 250px;
+  width: 80%;
+  height: 60.69%;
+}
+
+main > div section:nth-child(2){
+  width: 50%;
+  margin: 0;
 }
 
 main div section:nth-child(2) article nav {
@@ -346,8 +495,6 @@ section:nth-child(4) img {
 main>div section:nth-child(2) h2 {
   width: auto;
 }
-
-
 
 /*
 #####################################################
@@ -495,17 +642,15 @@ div>div {
   flex-wrap: nowrap;
 }
 
-span {
+main > span {
   display: flex;
-  width: 95%;
+  width: 85%;
   justify-content: space-around;
   margin: 2em auto;
-  align-items: flex-start;
 }
 
 span>div {
   margin: 0 auto;
-  width: 80%;
   padding: 2em;
 }
 
@@ -536,7 +681,6 @@ div>figure figcaption {
   background-color: #e6e1d3;
   margin: 0 2em;
 }
-
 /*
 #####################################################
 #                  Sites marquants                  #
@@ -551,12 +695,22 @@ div>figure figcaption {
 
 }
 
+section div > div:nth-child(1) {
+  width: 100%;
+}
+
+section div > div:nth-child(1) > span{
+  width: 18%;
+  margin-left: 0;
+
+}
+
 #siteM>div {
   width: 80%;
   height: 80%;
   margin: 0 auto;
   padding: 2em;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 section:nth-child(2)>div>div>h2 {
@@ -571,21 +725,11 @@ section:nth-child(2)>div>div>h2 {
   border-right: 0;
 }
 
-section div div:nth-child(1) {
-  width: 150em;
-  text-align: right;
-  justify-content: flex-start;
-}
-
-section div article p {
-  display: none;
-}
-
 section div article {
   transition-duration: 0.5s;
   background-color: #304aab;
   width: 33%;
-  height: 40em;
+  height: 30em;
   padding: 1em;
   margin: 10px;
 }
@@ -597,19 +741,21 @@ section div div article h3 {
   margin: 0;
 }
 
-section div div article li {
-  padding: 0;
-  text-align: left;
-  color: #e6e1d3;
-  margin: 0;
-}
-
-
 section>div>h3 {
   padding: 1em;
   width: 51%;
   text-align: center;
   background-color: #304aab;
+  border-radius: 15px;
+  border: #03196c solid 10px;
+}
+
+section div div article li {
+  padding: 0;
+  text-align: left;
+  color: #e6e1d3;
+  margin: 0;
+  display: flex;
 }
 
 section div h3 a {
@@ -618,16 +764,27 @@ section div h3 a {
 
 div > article > ul > li > img {
   width: 2em;
+  padding: 0 15%;
   transition-duration: 0.5s;
 }
 
+div > article > ul > li > p {
+  display: contents;
+}
+
 div > article > ul > li {
-  font-size: 3em;
+  font-size: 2em;
   transition-duration: 0.5s;
 }
 
 div > article > ul > li {
   list-style: none;
+}
+div > article > ul > li > br{
+  display: none;
+}
+div > article:hover > ul > li > br{
+  display: inline;
 }
 
 article:hover div > article > ul > li > img {
@@ -635,9 +792,17 @@ article:hover div > article > ul > li > img {
   width: 8%;
 }
 
-article:hover li {
+main:nth-child(3) article:hover li {
   transition-duration: 0.5s;
-  font-size: 100%;
+  font-size: 130%;
+  display: inline-block;
+  justify-content: space-around;
+  padding: 0 auto;
+  width: 22%;
+  text-align: center;
+}
+div > article:hover > h3{
+  text-align: center;
 }
 
 /*
@@ -646,65 +811,44 @@ article:hover li {
 #####################################################
 */
 
-
-section div:nth-child(2) article div {
+section div article div{
   width: 185px;
   height: 127px;
   flex-shrink: 0;
-
   border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
   transition-duration: 0.5s;
+
 
 }
 
-section div:nth-child(3) article div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
+section div article:nth-child(1) div {
   background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
-
 }
 
-section div:nth-child(4) article div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
-
+section div article:nth-child(2) div {
+  background: url("../images/Img_Accueil/pont.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
 }
 
-section div:nth-child(5) article div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
-
-  border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
-
+section div article:nth-child(3) div {
+  background: url("../images/Img_Accueil/palais.png") lightgray 0 0  / 100.242% 100.628% no-repeat;
 }
 
-section div:nth-child(6) article div {
-  width: 185px;
-  height: 127px;
-  flex-shrink: 0;
+section div article:nth-child(4) div {
+  background: url("../images/Img_Accueil/palais_eph.png") lightgray 0 0 / 100.242% 100.628% no-repeat;
+}
 
-  border-radius: 360px;
-  background: url("../images/Img_Accueil/lieu1.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
-  transition-duration: 0.5s;
+section div article:nth-child(5) div {
+  background: url("../images/Img_Accueil/stade.jpg") lightgray 0 0 / 100.242% 100.628% no-repeat;
+}
 
+section div article:nth-child(6) div {
+  background: url("../images/Img_Accueil/plage.png") lightgray -74.14px -9.063px / 173.242% 180.628% no-repeat;
 }
 
 section div article:hover div {
-  width: 370px;
-  height: 254px;
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
   flex-shrink: 0;
   transition-duration: 0.5s;
   border-radius: 20px;
@@ -725,8 +869,9 @@ section div article:hover div {
 
 }
 
-section div article p {
+section div article > p {
   display: none;
+  font-size: 90%;
 }
 
 section>div,
@@ -753,10 +898,11 @@ section div article:hover p {
 section div article:hover {
   transition-duration: 0.5s;
   width: 40%;
+  height: 40em;
 }
 
 section div div article>img {
-  width: 70%;
+  width: 80%;
 }
 
 
@@ -806,11 +952,13 @@ main>article>div {
 nav section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 20%;
+  margin: 0;
   margin-top: 2%;
   padding: 0;
+  
 }
 
 nav section>article {
@@ -826,41 +974,37 @@ nav section div {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: fit-content;
+  width:70%;
 }
 
 nav section div article {
   flex-direction: row;
-  margin-bottom: 2%;
+  margin-bottom: 1em;
   height: 50%;
-  width: 70%;
-
+  width: 90%;
+  margin-right: 1em ;
 }
 
-nav section>div article {
-  width: 70%;
+nav section>div article:hover {
+  width: 90%;
+  height: 80%;
 }
+
 
 nav section article {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-right: 0;
-  margin-left: 5%;
   background-color: #304AAB;
   border-radius: 0;
   height: auto;
   transition: none;
+  margin-bottom: 1em;
+  margin-right: 3.5em;
+
 }
 
-nav section:nth-child(1)>article:hover {
-  width: 30%;
-}
-
-nav section>div article:hover {
-  width: 70%;
-}
 
 nav section article a {
   padding: 5%;
@@ -906,12 +1050,33 @@ nav section:nth-child(4) {
 #                                                   #
 #####################################################
 */
+@keyframes resize {
+  0% {
+    width: 50%;
+    height: 50%;
+  }
+  33% {
+    width:55%;
+    height:55%;
+  }
+  50% {
+    width: 60%;
+    height: 60%;
+  }
+  70% {
+    width:65%;
+    height:70%;
+  }
+  100% {
+    width: 70%;
+    height: 80%;
+  }
+}
+
 section:nth-child(1) .interaction:hover {
   position: relative;
   display: flex;
   flex-direction: row;
-  height: 450px;
-  width: 1200px;
 }
 
 
@@ -941,24 +1106,34 @@ section:nth-child(1) .interaction:hover ul li {
   padding: 20px 0 20px 0;
 }
 
-section:nth-child(1) .interaction:hover div {
+section:nth-child(1) .interaction:hover:nth-child(2) div {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  
 }
 
 section:nth-child(1) .interaction:hover div>p {
   display: block;
-  justify-self: flex-end;
-  margin-left: 2em;
-  margin-top: 5em;
+  position:relative;
+  float:left;
+  justify-self: flex-start;
+  text-align:left; 
+  align-self:flex-start;
+  
 }
+
 
 
 section:nth-child(2) .interaction:hover {
   display: flex;
   flex-direction: row-reverse;
-  height: 368px;
-  width: 1100px;
+  justify-content: space-around;
+  width: 80%;
+  z-index:3;
+}
+section:nth-child(2) .interaction:hover + figure img{
+  display:none;
 }
 
 section:nth-child(2) .interaction:hover img {
@@ -974,13 +1149,13 @@ section:nth-child(2) .interaction:hover table {
 
 section:nth-child(2) .interaction:hover table th,
 section:nth-child(2) .interaction:hover table td {
-  padding-right: 4em;
-  padding-left: 4em;
+  padding-right: 1em;
+  padding-left: 1em;
   border-right: solid #304aab 5px;
 }
 
 section:nth-child(2) .interaction:hover table td {
-  height: 50px;
+  height: 10%;
   text-align: center;
 }
 
@@ -989,8 +1164,11 @@ section:nth-child(2) .interaction:hover table td::before {
 }
 
 main>div>section:nth-child(1) .interaction:hover {
-  width: 700px;
-  height: 400px;
+
+  height: 60%;
+}
+main>div>section:nth-child(1) .interaction:hover p{
+  text-align: center;
 }
 
 
@@ -1002,8 +1180,7 @@ main>div>section:nth-child(1) .interaction:hover {
 #####################################################
 */
 
-
-span>div {
+main span div {
   text-align: center;
 
 }
@@ -1014,6 +1191,8 @@ input:checked~#plus {
 
 #plus {
   display: inline;
+  font-size: 150%;
+
 }
 
 
@@ -1021,8 +1200,15 @@ input:checked~#moins {
   display: inline;
 }
 
+input{
+  width: 130%;
+  display: none;
+}
+
 #moins {
   display: none;
+  font-size: 150%;
+
 }
 
 span div>table {
@@ -1144,17 +1330,29 @@ table tr img {
 #                                                   #
 #####################################################
 */
-main section {
+main>section {
   display: flex;
+  
 }
 
+main>section:nth-child(1){
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;  
+  }
+}
+main>section:nth-child(2) {
+@media screen and (max-width: 768px) {
+    flex-wrap: wrap-reverse;  
+  }
+  
+}
+  
 main>section>article {
   background-color: #d5c46c;
   border: solid 10px #03196c;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 3em 1em;
 }
 
@@ -1162,43 +1360,73 @@ main>section:nth-child(1)>article:nth-of-type(1),
 main>section:nth-of-type(2)>article:nth-of-type(2) {
   width: 70%;
   padding: 1em;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
 }
+main>section:nth-child(1)>article:nth-of-type(3){
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    
+  }
+}
+
+
 
 main>section:nth-child(1)>article:nth-of-type(2),
 main>section:nth-of-type(2)>article:nth-of-type(1) {
   width: 30%;
   padding: 1em;
+}
+main>section:nth-child(2)>article:nth-of-type(1) {
+  @media screen and (max-width: 768px) {
 
+    display: none;
+  }
 }
 
-main>section:nth-child(2)>article:nth-child(1) img {
+main>section:nth-child(2)>article:nth-child(1)>img {
   width: 90%;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
     display: none;
 
   }
 }
 
 /*----------Présentation Volleyball----------*/
-main>section:nth-child(1)>article:nth-of-type(1) {
-  display: inline-block;
+
+
+main>section:nth-child(1)>article:nth-of-type(1)>div {
+  display: flex;
+  
+}
+main>section:nth-child(1)>article:nth-child(1)>div>img{
+  margin-left: 40em;
 }
 
-main>section:nth-child(1)>article:nth-of-type(1) img {
-
-  top: 2em;
-  left: 30%;
-}
 
 main>section:nth-child(1)>article:nth-of-type(1) h2 {
   text-align: center;
-  width: 300px;
+  width: 30%;
 }
-
+main>section:nth-child(1)>article:nth-child(1)>p{
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
+}
+main>section:nth-child(1)>article:nth-child(1):hover>p
+{
+  @media screen and (max-width: 768px) {
+    display: inline;
+  
+  }
+}
 /*
 #####################################################
 #                                                   #
@@ -1206,6 +1434,15 @@ main>section:nth-child(1)>article:nth-of-type(1) h2 {
 #                                                   #
 #####################################################
 */
+main>section:nth-child(1)>article:nth-child(2) ul {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
 /* Image de puce URSS */
 main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(1) {
   list-style: url(../images/images_epreuve/urss.png);
@@ -1219,6 +1456,7 @@ main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(3) {
 /* Image de puce VICTOIRE des deux nation ci-dessus */
 main section:nth-child(1)>article:nth-child(2) ul li ol ul li {
   list-style: url(../images/images_epreuve/tropheeNoir.png);
+  padding-bottom: 10px;
 }
 
 /*------------Image de puce différents drapeaux------------*/
@@ -1226,23 +1464,44 @@ main section:nth-child(1)>article:nth-child(2) ul li ol ul li {
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(1),
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(2) {
   list-style: url(../images/images_epreuve/fr.png);
+  padding-bottom: 30px;
 }
 
 /* Brésil 2016 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(3) {
   list-style: url(../images/images_epreuve/br2.png);
-  /* Russie 2012 */
+  padding-bottom: 30px;
+  
 }
-
+/* Russie 2012 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(4) {
   list-style: url(../images/images_epreuve/ru.png);
+  padding-bottom: 30px;
 }
 
 /* État-Unis 2008 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(5) {
   list-style: url(../images/images_epreuve/us.png);
+  padding-bottom: 30px;
 }
-
+.pays{
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
+}
+@media  screen and (max-width: 768px) {
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(1),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(2),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(3),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(4),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(5){
+    /*Réduire le padding pour les images de puce*/
+    padding-bottom: 10px;
+    
+  }
+  
+}
 /*
 #####################################################
 #                                                   #
@@ -1252,35 +1511,47 @@ main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-chil
 */
 main>section:nth-child(2)>article:nth-child(2) {
   position: relative;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
 }
 
 /*-----------------Bouton "Phase de jeu"-------------------*/
 
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>h2 {
-  margin: 150;
-
   justify-content: none;
 }
 
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>label {
 
   position: absolute;
-  width: 12%;
+  width: 15%;
   min-width: 120px;
-  height: 6.5em;
-  top: 20px;
-  right: 20px;
-  padding: 0.25em;
+  height: 6%;
+  min-height: 70px;
+  top: 4%;
+  right: 2%;
   border: solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
   color: white;
-}
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
 
+  
+  @media screen and (max-width: 768px) {
+    min-width: 70px;
+    min-height: 60px;
+    font-size: 1em;
+  }
+}
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>input {
   appearance: none;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 4%;
+  right: 2%;
 
 }
 
@@ -1292,24 +1563,38 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
 
 .planning>ul>li>a {
   color: white;
+  position: relative;
   align-items: center;
   text-decoration: none;
   list-style-type: none;
-  font-variant: small-caps;
+  font-variant: small-caps; 
+  }
 
-}
+
 
 .planning {
+  margin : 0;
   display: none;
   position: absolute;
-  top: 7.5em;
-  right: 20px;
+  width: 10%;
+  height: 15%;
+  top: 15%;
+  right: 2%;
   padding: 0;
   border: solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
   color: white;
-
+  font-size: .75em;
+@media screen and (max-width: 768px) {
+    top: 75px;
+    right: 2%;
+    width: 12%;
+    height: 20%;
+  
+  }
+  
 }
+
 
 .menu-plan:checked~.planning {
   display: block;
@@ -1317,8 +1602,6 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
 
 /*-----------------Différents match-------------------*/
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(2) {
-  width: 100%;
-  height: 100%;
   max-height: 25em;
 }
 
@@ -1326,17 +1609,21 @@ main>section:nth-child(2)>article:nth-child(2) div:nth-child(2) div {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-
 }
 
 main>section:nth-child(2)>article:nth-child(2) div h3 {
   text-align: center;
-  background-color: none;
+
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div img {
   width: 100px;
   height: 75px;
+  @media screen and (max-width: 768px) {
+    width: 50px;
+    height: 37.5px;
+    
+  }
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div {
@@ -1344,18 +1631,20 @@ main>section:nth-child(2)>article:nth-child(2) div div {
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  @media screen and (max-width: 768px) {
+    font-size: 1em;
+    
+  }
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div table {
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div table td {
-  width: 8em;
-  height: 2em;
+  width: 8%;
+  height: 3%;
 
 }
 
@@ -1382,21 +1671,13 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 
 /*-----------------Quart & Huitième-------------------*/
 #quart-finale1,
-#quart-finale2,
-#huitieme-finale1,
-#huitieme-finale2,
-#huitieme-finale3,
-#huitieme-finale4 {
+#quart-finale2{
   display: none;
   visibility: hidden;
 }
 
 #quart-finale1:target,
-#quart-finale2:target,
-#huitieme-finale1:target,
-#huitieme-finale2:target,
-#huitieme-finale3:target,
-#huitieme-finale4:target {
+#quart-finale2:target {
   visibility: visible;
   display: flex;
   flex-direction: column;
@@ -1410,10 +1691,13 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 #####################################################
 */
 .moments {
-  width: 100%;
-  margin: 32px;
+  width: 88%;
   height: auto;
   background-color: none;
+  @media screen and (max-width: 768px) {
+    width: 83%;
+    
+  }
 }
 
 .moments .carrousel {
@@ -1436,17 +1720,17 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 .moments_1 {
   z-index: 2;
   opacity: 1;
-  background-image: url(../images/images_epreuve/Unknown.jpeg),
+  background-image: url(../images/images_epreuve/victoirefrance.jpg),
     url(../images/images_epreuve/victoire\ slovenie.jpg),
-    url(../images/images_epreuve/retourner\ NGAPETH.jpg);
+    url(../images/images_epreuve/ngapeth.avif);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, left, right;
   background-size: 50%, 30%, 30%;
 }
 
 .moments_2 {
-  background-image: url(../images/images_epreuve/retourner\ NGAPETH.jpg),
-    url(../images/images_epreuve/Unknown.jpeg),
+  background-image: url(../images/images_epreuve/ngapeth.avif),
+    url(../images/images_epreuve/victoirefrance.jpg),
     url(../images/images_epreuve/victoire\ slovenie.jpg);
 
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -1457,8 +1741,8 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 
 .moments_3 {
   background-image: url(../images/images_epreuve/victoire\ slovenie.jpg),
-    url(../images/images_epreuve/retourner\ NGAPETH.jpg),
-    url(../images/images_epreuve/Unknown.jpeg);
+    url(../images/images_epreuve/ngapeth.avif),
+    url(../images/images_epreuve/victoirefrance.jpg);
 
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, left, right;
@@ -1478,6 +1762,28 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
   z-index: 2;
   opacity: 1;
 }
+
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(2) .suivant {
+  top: 350px;
+  right: 10px;
+  @media screen and (max-width: 768px) {
+    top: 250px;
+    right: 15px;
+    
+  }
+  
+}
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(2) .precedent {
+  top: 350px;
+  left: 15px;
+  @media screen and (max-width: 768px) {
+    top: 250px;
+    left: 15px;
+    
+  }
+  
+}
+
 
 /*
 #####################################################
@@ -1553,14 +1859,8 @@ footer section {
 
 }
 
-footer section article:nth-child(1) {
-  background-color: #d5c46c;
-  color: #d5c46c;
-  width: 10px;
-  height: 20px;
-  margin: 0 20px;
-}
 
+footer section article:nth-of-type(1),
 footer section article:nth-of-type(2),
 footer section article:nth-of-type(3) {
   display: flex;
@@ -1584,7 +1884,7 @@ footer section article:nth-of-type(3) {
   #                                                   #
   #####################################################
   */
-  span {
+  main > span {
     display: inline-block;
     width: 100%;
   }
@@ -1630,38 +1930,42 @@ footer section article:nth-of-type(3) {
   */
   header {
     height: 50px;
+    padding-left:0;
   }
-
-
+  
+  header .burger{
+    display:block;
+    justify-self: flex-start;
+    z-index: 2;
+  }
+  .burger_deroule{
+    height:30%;
+    width:30%;
+  }
+  .burger_deroule  ul{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    font-size:150%;
+    font-weight:bolder;
+  }
+  .burger_deroule ul li{
+    padding:15%;
+  }
+  .burger .planning{
+    height:20%;
+    width:40%;
+  }
   header img {
-    flex-direction: row;
-    margin: 0px 25px 0px 85px;
+    display:none;
   }
-
-
-
-  header nav a {
-    width: 100%;
-    height: 50px;
-    margin: 10px;
-
+  
+  header>nav {
+    display:none
+  
   }
-
-
-  span {
-    display: inline-block;
-    width: 40%;
-  }
-
-  span>div:nth-child(1) {
-    margin: 1em auto;
-    width: 60%;
-  }
-
-  span>div:nth-child(2) {
-    margin-left: 0;
-    margin: 2em auto;
-    width: 80%;
+  header nav a::after{
+    content:"   >"
   }
 
 
@@ -1683,6 +1987,19 @@ footer section article:nth-of-type(3) {
 
   /*
   #####################################################
+  #                    Site marquant                  #
+  #####################################################
+  */
+  section div article:hover {
+    height: 18em;
+  }
+
+  section div article {
+    height: 18em;
+  }
+
+  /*
+  #####################################################
   #             Médailles + Moments forts             #
   #####################################################
   */
@@ -1694,7 +2011,7 @@ footer section article:nth-of-type(3) {
     color: #03196c;
   }
 
-  span {
+  main > span {
     width: 100%;
     display: inline;
   }
@@ -1737,8 +2054,34 @@ footer section article:nth-of-type(3) {
 
 
 
-  section>div>div>article>ul {
+  section>div>div>article>ul li{
+    display:inline-block;
+    justify-content: space-around;
+    padding: 0 auto;
+    text-align: center;
+    width: 22%;
+  }
+  section>div>div>article>ul img {
+    width: 60%;
+    height: 40%;
+    padding: 0.1em;
+  }
+  section>div>div>article>ul p {
     display: none;
+    font-size: 10em;
+  }
+
+  section>div>div>article:hover>ul p {
+    display: inline;
+  }
+  main:nth-child(3) article:hover li {
+    transition-duration: 0.5s;
+    font-size: 10%;
+    display: inline-block;
+    justify-content: space-around;
+    padding: 0 auto;
+    width: 22%;
+    text-align: center;
   }
 
   section>div>div>article:hover>p {
@@ -1750,7 +2093,7 @@ footer section article:nth-of-type(3) {
   }
 
   section>div>div>article:hover img {
-    height: 10em;
+    height: 22em;
   }
 
   section div article:hover div {
@@ -1771,11 +2114,51 @@ footer section article:nth-of-type(3) {
     color: #e6e1d3;
   }
 
+  /*###################################################
+  #                                                   #
+  #                     footer resp                   #
+  #                                                   #
+  ###################################################*/
+  footer{
+    display:inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  footer article {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  
+  }
+
+  footer img{
+    margin: 1em;
+  }
+  
+  footer section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  
+  footer section article:nth-of-type(1),  
+  footer section article:nth-of-type(2),
+  footer section article:nth-of-type(3) {
+    width: 10em;
+    height: 20px;
+    margin: 0 0 ;
+    align-items: center;
+    justify-content: center;
+  }
+
 }
 
 /*###################################################
 #                                                   #
-#                     CSS Sofiane                   #
+#                     CSS Discipline                #
 #                                                   #
 ###################################################*/
 
@@ -1788,36 +2171,37 @@ footer section article:nth-of-type(3) {
 
 aside {
   display: flex;
-  margin: 20px;
+  margin: 30px;
+  align-items: center;
 }
 
 aside article {
   display: flex;
   background-color: #d5c46c;
-  border: solid 10px #03196c;
+  border: 7px solid #03196c;
   margin: auto;
-  width: 35%;
-  height: 100px;
-  border-radius: 20px;
-  background-repeat: no-repeat;
-  background-position: 5%;
-  text-align: center;
+  width: 22%;
+  height: 50px;
+  border-radius: 100px;
+  align-items: center;
 }
 
-aside article h2 {
+
+aside article h4 {
   display: block;
-  text-align: center;
+  font-family: "Ubuntu";
+  color: #03196c;
 }
 
 aside article a {
-  width: 300px;
-  height: 50px;
   color: #03196c;
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
-  text-align: center;
-  display: inline-block;
+}
 
+aside article img {
+  width: 50px;
+  height: 50px;
 }
 
 /*###################################################
@@ -1826,39 +2210,41 @@ aside article a {
 #                                                   #
 ###################################################*/
 
-main > div > article {
-  display: flex;
-  align-items: flex-start;
-  align-items: right;
+main>div>article {
+  display: grid;
+  grid-template-columns: 1fr 3px 1fr;
+  grid-template-rows: auto;
   height: auto;
-  width: 94%;
-  
-
+  width: 79%;
+  margin: auto;
+  margin-top: 50px;
+  z-index: 1;
 }
 
-main > div > article h2 {
-  display: flex;
-  order: 1;
-
+main>div>article h2 {
+  align-items: center;
+  align-self: center;
 }
 
-main > div > article figure {
-  float: right;
-  align-content: flex-start;
-  order: 3;
+main>div>article img {
+  box-shadow: 0px 0px 6px #252730;
+
+  align-content: center;
   border: solid 10px #03196c;
   border-radius: 5px;
-
 }
 
-main > div > article p {
-  margin-left: 200px;
-  display: flex;
-  order: 2;
-  width: 45%;
-  height: auto;
-  font-size: 20px;
+main>div>article>figure {
+  align-self: right;
+}
 
+
+main>div>article>b {
+  align-self: start;
+  padding: 1px;
+  background-color: #03196c;
+  height: 15em;
+  margin-right: 5px;
 }
 
 /*
@@ -1869,29 +2255,41 @@ main > div > article p {
 #####################################################
 */
 main>table {
+  box-shadow: 0px 0px 6px #252730;
+
   background-color: #03196c;
-  width: 94%;
+  width: 85%;
   border: solid 15px #03196c;
   border-radius: 15px;
 
   border-spacing: 0px 10px;
   border-collapse: separate;
+
   margin: auto;
+  transition: all .2s ease-in;
+  transition: all .2s ease-out;
 }
 
 main>table thead th {
   margin-top: 0px;
   color: #e6e1d3;
   background-color: #03196c;
-  padding: 5px;
+  padding: 20px;
+  transition: all .2s ease-in;
+  transition: all .2s ease-out;
 }
 
 main>table tbody tr td {
-  padding: 10px;
+  padding: 5px;
+
   background-color: #e6e1d3;
   border: 0px solid;
   color: black;
+  transition: all .2s ease-in;
+  transition: all .2s ease-out;
 }
+
+
 
 /*###################################################
 #                                                   #
@@ -1902,88 +2300,118 @@ main>table tbody tr td {
 main>table .interaciviter img,
 main>table .interaciviter a {
   display: none;
-  transition: all ease-out;
-  transition-delay: 0.5s;
+  transition: all .2s ease-in;
+}
 
+
+main>table .interaciviter:hover {
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px #e6e1d3;
+  transition: all .2s ease-in;
+  transform: scale(1.01);
 }
 
 main>table .interaciviter:hover a {
   display: inline-block;
-  height: 175px;
   color: #03196c;
   font-size: 30px;
   text-decoration: none;
   text-align: center;
-  display: inline-block;
   color: #03196c;
   margin-right: 250px;
-
-  transition: ease-out, 0.5s;
-  transition-delay: 0.5s;
+  align-self: center;
 }
 
 main>table .interaciviter:hover img {
   display: inline-block;
-  width: 10%;
+  width: 100px;
+  height: 100px;
   padding-left: 5%;
 }
 
 main>table .interaciviter:hover img:nth-child(2) {
   display: inline-block;
-  width: 20%;
+  width: 300px;
+  height: 200px;
 }
 
 main>table .interaciviter:hover p {
   display: none;
-  transition: ease-out;
-  transition-delay: 0.5s;
+  transition: all .2s ease-in;
 }
+main>table .interaciviter:hover td {
+  height: 100px;
+}
+
+
+
+main>table .interaciviter,
+main>table .interaciviter td,
+main>table .interaciviter a,
+main>table .interaciviter img,
+main>table .interaciviter p {
+  transition: all .2s ease-in;
+  cursor: pointer;
+
+}
+
+
 
 
 /***********************************/
 
-.DetL article{
-  display: grid; 
-  grid-template-columns: 1fr 3px 1fr;
+
+.DetL {
+  justify-content: space-evenly;
+  height: 50%;
+}
+
+.DetL article {
+  display: grid;
+  grid-template-columns: 1fr 15px 1fr;
   grid-template-rows: auto;
   place-items: center;
-  width: 47%;
+  width: 35%;
 
 }
-.DetL article b{
-background-color: #03196c;
-width: 1px;
-height: 32em;
-padding: 1px;
-align-self: left;
+
+.DetL article b {
+  background-color: #03196c;
+  width: 1px;
+  height: 32em;
+  padding: 1px;
+  align-self: left;
 }
 
 /***********************************/
 
-.RULE{
-  background-color: #6c0303;
+.RULE {
   display: grid;
-  grid-template-columns: 1fr;
+  margin: auto;
+  width: 88%;
 }
-.RULE > article{
-  display: grid; 
+
+.RULE>span>article>div {
+  display: grid;
   grid-template-columns: 1fr 3px 1fr;
   place-items: center;
-  width: 2000px;
 }
-.RULE p{
+
+.RULE>span>article>div>p {
   align-self: start;
 }
-.RULE b{
+
+.RULE>span>article>div>b {
   align-self: start;
   padding: 2px;
   background-color: #03196c;
-  height: 62em;
+  height: 30em;
+  margin-right: 5px;
 }
 
 /***********************************/
 
-.discipline_img h2 {
+.discipline_img {
   font-family: "Ubuntu";
   color: #03196c;
   /*bordure GAUCHE des titres*/
@@ -2003,4 +2431,312 @@ align-self: left;
   padding-left: 10px;
   padding-bottom: 10px;
   margin-left: 0.5em;
+  margin-right: 3em;
 }
+
+/*###################################################
+#                                                   #
+#                   Responsivité                    #
+#                                                   #
+###################################################*/
+
+/*###################################################
+#                   Bernard                         #
+###################################################*/
+@media screen and (max-width:768px){
+  main>div{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  section:nth-child(1) .interaction:hover + figure{
+    display:none;
+  }
+  section:nth-child(1) .interaction:hover{
+    width:90%;
+  }
+
+  .palmares img{
+    display:none;
+  }
+  .palmares{
+    width:90%;
+    justify-content: center;
+  }
+
+  .palmares article:hover{
+    width:20%;
+  }
+  .palmares article:hover h2{
+    display:none
+  }
+  
+  main>div section:nth-child(1) {
+    width: 80%;
+  }
+  main>div section:nth-child(1):hover {
+
+    height: 400px;
+  }
+  main>div section:nth-child(2) {
+    display:block;
+    width: 80%;
+    height: 400px;
+  }
+  main>div section:nth-child(2) article{
+    width:85%;
+  }
+  main>div section:nth-child(2) article figure{
+    margin:0;
+
+  }
+
+
+}
+
+
+
+
+/****** Taille intermediaire *****/
+
+
+
+@media (max-width: 1480px) {
+
+  main >div>article>b{
+    display: none;
+  }
+  main>div>article {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 85%;
+  }
+  main>div>article>h2{
+    border-left: none;
+    align-content: center;
+    width: 100%;
+   }
+
+  main>div>article img {
+    width: 90%;
+    height: auto;
+  }
+
+  /***************************************/
+
+  aside {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  aside>article {
+    width: 30%;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+
+  aside>article>h4 {
+    border: none;
+    align-self: center;
+  }
+
+  aside>article>img {
+    height: 50px;
+    width: 50px;
+  }
+
+  /***************************************/
+
+
+  main > table {
+    width: 95%;
+    font-size: 0.9em;
+    overflow-x: auto;
+  }
+
+  main > table thead th,
+  main > table tbody td {
+    padding: 5px;
+  }
+
+
+  /***************************************/
+  .RULE article{
+    align-self: center;
+    transition: all .5s ease-in;
+
+  }
+  .RULE {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    align-items: center;
+    transition: all .5s ease-in;
+
+  }
+
+  .RULE h2 {
+    font-size: 1.5em;
+    border: none;
+    align-self: center;
+
+  }
+
+  .RULE:hover p,
+  .RULE:hover b {
+    display: inline;
+    transition: all 1.5s ease-in;
+
+  }
+  
+
+  .RULE p,
+  .RULE b{
+    display: none;
+    transition: all .75s ease-in;
+
+  }
+
+/*###################################################
+#                                                   #
+#      Date et Liste Responsive + animation         #
+#                                                   #
+###################################################*/
+
+  .DetL #ELISTE,
+  .DetL #EDATE{
+    display: block;
+    height: 100px;
+    align-content: start;
+    transition: all .5s ease-in;
+  }
+  .DetL #ELISTE:hover,
+  .DetL #EDATE:hover,
+  .DetL #ELISTE:hover p,
+  .DetL #EDATE:hover p{
+    transition: all 1.25s ease-in;
+    width: 75%;
+    display: inline-block;
+    height: auto;
+  }
+
+  .DetL #ELISTE:hover h2,
+  .DetL #EDATE:hover h2{
+    font-family: "Ubuntu";
+  color: #03196c;
+  /*bordure GAUCHE des titres*/
+  border-left: #304aab solid 3px;
+  border-left-width: 5px;
+  width: 250px;
+  height: 1.5em;
+
+  /*bordure BAS des titres*/
+  border-bottom: #304aab solid 3px;
+  border-bottom-width: 5px;
+
+  /*bordure DROITE et HAUT des titres*/
+  border-top: 0;
+  border-right: 0;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin-left: 0.5em;
+    
+  }
+
+
+  .DetL #ELISTE:hover img,
+  .DetL #EDATE:hover img{
+    display: flex;
+    width: 120px;
+    height: 120px;
+  }
+
+  .DetL #ELISTE img,
+  .DetL #EDATE img,
+  .DetL #ELISTE b,
+  .DetL #EDATE b,
+  .DetL #ELISTE p,
+  .DetL #EDATE p {
+    display: none;
+  }
+
+  .DetL #ELISTE h2,
+  .DetL #EDATE h2 {
+    transition: all .5s ease-in;
+    border: none;
+    align-self: center;
+    grid-template-columns: 1fr; 
+   }
+   @media (max-width: 1400px){
+
+    header nav a {
+      width: 100%;
+    }
+   }
+   @media (max-width: 1300px) {
+    header #Question{
+      display: none;
+     }
+   }
+
+   @media (max-width: 1200px)
+   {
+
+   footer{
+    display:inline-block;
+    width: 100%;
+    padding: 0;
+  }
+  footer article {
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  
+  }
+
+  footer img{
+    margin: 1em;
+  }
+  
+  footer section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  
+  footer section article:nth-of-type(1),  
+  footer section article:nth-of-type(2),
+  footer section article:nth-of-type(3) {
+    width: 10em;
+    height: 20px;
+    margin: 0 0 ;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  main>table .interaciviter:hover img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding-left: 5%;
+  }
+  
+  main>table .interaciviter:hover img:nth-child(2) {
+    display: inline-block;
+    width: 180px;
+    height: 120px;
+  }
+}
+   
+} 
