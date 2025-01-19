@@ -1950,7 +1950,7 @@ footer section article:nth-of-type(3) {
     justify-self: flex-start;
     z-index: 2;
   }
-  .menu-bg{
+  .burger_deroule{
     height:30%;
     width:30%;
   }
@@ -1965,7 +1965,7 @@ footer section article:nth-of-type(3) {
   .burger_deroule ul li{
     padding:15%;
   }
-  .burger .planning{
+  .burger .menu-burger{
     height:20%;
     width:40%;
   }
