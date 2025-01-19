@@ -377,9 +377,6 @@ section:nth-child(2) figure {
   margin-left: 5px;
 }
 
-section:nth-child(2) .interaction {
-  height: 265px;
-}
 
 /*
 #####################################################
@@ -2067,7 +2064,9 @@ footer section article:nth-of-type(3) {
     align-items: center;
     justify-content: center;
   }
-
+  .interaction .palmares{
+    height:30%;
+  }
 }
 
 /*###################################################
