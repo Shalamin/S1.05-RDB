@@ -448,7 +448,10 @@ main>div section:nth-child(1) .interaction:hover h2 {
   background-size: 50%, 30%, 30%;
 }
 
-
+.carrousel a{
+  text-decoration: none;
+  color:#03196c;
+}
 
 /*
 #####################################################
