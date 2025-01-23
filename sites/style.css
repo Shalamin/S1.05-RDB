@@ -173,7 +173,7 @@ header .burger{
 
 }
 
-.menu-plan:checked~.burger_deroule {
+.menu-bg:checked~.burger_deroule {
   display: block;
 }
 header label li{
@@ -295,7 +295,10 @@ section>.interaction {
   transition: width 0.5s ease, height 0.5s ease;
 
 }
-
+main:nth-child(1) .interaction:hover h2{
+  width:100%;
+  padding-bottom:0;
+}
 section>.interaction h4 {
   float: right;
   margin-right: 12%;
@@ -378,10 +381,6 @@ section:nth-child(2) figure {
   margin-left: 5px;
 }
 
-section:nth-child(2) .interaction {
-  height: 265px;
-}
-
 /*
 #####################################################
 #                                                   #
@@ -448,7 +447,10 @@ main>div section:nth-child(1) .interaction:hover h2 {
   background-size: 50%, 30%, 30%;
 }
 
-
+.carrousel a{
+  text-decoration: none;
+  color:#03196c;
+}
 
 /*
 #####################################################
@@ -642,7 +644,7 @@ div>div {
   flex-wrap: nowrap;
 }
 
-span {
+main > span {
   display: flex;
   width: 85%;
   justify-content: space-around;
@@ -952,11 +954,13 @@ main>article>div {
 nav section {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   height: 20%;
+  margin: 0;
   margin-top: 2%;
   padding: 0;
+  
 }
 
 nav section>article {
@@ -972,41 +976,37 @@ nav section div {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: fit-content;
+  width:70%;
 }
 
 nav section div article {
   flex-direction: row;
-  margin-bottom: 2%;
+  margin-bottom: 1em;
   height: 50%;
-  width: 70%;
-
+  width: 90%;
+  margin-right: 1em ;
 }
 
-nav section>div article {
-  width: 70%;
+nav section>div article:hover {
+  width: 90%;
+  height: 80%;
 }
+
 
 nav section article {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  margin-right: 0;
-  margin-left: 5%;
   background-color: #304AAB;
   border-radius: 0;
   height: auto;
   transition: none;
+  margin-bottom: 1em;
+  margin-right: 3.5em;
+
 }
 
-nav section:nth-child(1)>article:hover {
-  width: 30%;
-}
-
-nav section>div article:hover {
-  width: 70%;
-}
 
 nav section article a {
   padding: 5%;
@@ -1044,6 +1044,7 @@ nav section:nth-child(2),
 nav section:nth-child(4) {
   flex-direction: row-reverse;
 }
+
 
 /*
 #####################################################
@@ -1332,17 +1333,29 @@ table tr img {
 #                                                   #
 #####################################################
 */
-main section {
+main>section {
   display: flex;
+  
 }
 
+main>section:nth-child(1){
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;  
+  }
+}
+main>section:nth-child(2) {
+@media screen and (max-width: 768px) {
+    flex-wrap: wrap-reverse;  
+  }
+  
+}
+  
 main>section>article {
   background-color: #d5c46c;
   border: solid 10px #03196c;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 3em 1em;
 }
 
@@ -1350,43 +1363,76 @@ main>section:nth-child(1)>article:nth-of-type(1),
 main>section:nth-of-type(2)>article:nth-of-type(2) {
   width: 70%;
   padding: 1em;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
 }
+main>section:nth-child(1)>article:nth-of-type(3){
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 35%;
+    
+  }
+}
+
+
 
 main>section:nth-child(1)>article:nth-of-type(2),
 main>section:nth-of-type(2)>article:nth-of-type(1) {
   width: 30%;
   padding: 1em;
-
+}
+.MVP{
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
 }
 
 main>section:nth-child(2)>article:nth-child(1)>img {
   width: 90%;
 
   @media screen and (max-width: 768px) {
-    width: 100%;
-    height: auto;
     display: none;
 
   }
 }
 
 /*----------Présentation Volleyball----------*/
-main>section:nth-child(1)>article:nth-of-type(1) {
-  display: inline-block;
+
+
+main>section:nth-child(1)>article:nth-of-type(1)>div {
+  display: flex;
+  
+}
+main>section:nth-child(1)>article:nth-child(1)>div>img{
+  margin-left: 40em;
 }
 
-main>section:nth-child(1)>article:nth-of-type(1) img {
 
-  top: 2em;
-  left: 30%;
-}
-
-main>section:nth-child(1)>article:nth-of-type(1) h2 {
+.titreVolley {
   text-align: center;
-  width: 300px;
+  width: 30%;
 }
-
+main>section:nth-child(1)>article:nth-child(1)>p{
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
+}
+main>section:nth-child(1)>article:nth-child(1):hover>p
+{
+  @media screen and (max-width: 768px) {
+    display: inline;
+  
+  }
+}
 /*
 #####################################################
 #                                                   #
@@ -1394,19 +1440,35 @@ main>section:nth-child(1)>article:nth-of-type(1) h2 {
 #                                                   #
 #####################################################
 */
+main>section:nth-child(1)>article:nth-child(2) ul {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
+
 /* Image de puce URSS */
 main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(1) {
   list-style: url(../images/images_epreuve/urss.png);
 }
 
 /* Image de puce BRESIL */
-main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(3) {
+main>section:nth-child(1)>article:nth-child(2) ul li ol>li:nth-child(2) {
   list-style: url(../images/images_epreuve/br2.png);
 }
 
 /* Image de puce VICTOIRE des deux nation ci-dessus */
 main section:nth-child(1)>article:nth-child(2) ul li ol ul li {
   list-style: url(../images/images_epreuve/tropheeNoir.png);
+  padding-bottom: 10px;
+}
+main > section:nth-child(1) > article:nth-child(2) ul li ol > li:nth-child(2) ul > li:nth-child(1),
+main > section:nth-child(1) > article:nth-child(2) ul li ol > li:nth-child(2) ul > li:nth-child(2),
+main > section:nth-child(1) > article:nth-child(2) ul li ol > li:nth-child(2) ul > li:nth-child(3) {
+  list-style: url(../images/images_epreuve/tropheeNoir.png);
+  padding-bottom: 10px;
 }
 
 /*------------Image de puce différents drapeaux------------*/
@@ -1414,23 +1476,44 @@ main section:nth-child(1)>article:nth-child(2) ul li ol ul li {
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(1),
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(2) {
   list-style: url(../images/images_epreuve/fr.png);
+  padding-bottom: 30px;
 }
 
 /* Brésil 2016 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(3) {
   list-style: url(../images/images_epreuve/br2.png);
-  /* Russie 2012 */
+  padding-bottom: 30px;
+  
 }
-
+/* Russie 2012 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(4) {
   list-style: url(../images/images_epreuve/ru.png);
+  padding-bottom: 30px;
 }
 
 /* État-Unis 2008 */
 main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(5) {
   list-style: url(../images/images_epreuve/us.png);
+  padding-bottom: 30px;
 }
-
+.pays{
+  @media screen and (max-width: 768px) {
+    display: none;
+    
+  }
+}
+@media  screen and (max-width: 768px) {
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(1),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(2),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(3),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(4),
+  main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-child(5){
+    /*Réduire le padding pour les images de puce*/
+    padding-bottom: 10px;
+    
+  }
+  
+}
 /*
 #####################################################
 #                                                   #
@@ -1440,35 +1523,47 @@ main>section:nth-child(1)>article:nth-child(2) ul li:nth-child(2) ul>li:nth-chil
 */
 main>section:nth-child(2)>article:nth-child(2) {
   position: relative;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+  }
 }
 
 /*-----------------Bouton "Phase de jeu"-------------------*/
 
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>h2 {
-  margin: 150;
-
   justify-content: none;
 }
 
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>label {
 
   position: absolute;
-  width: 12%;
+  width: 15%;
   min-width: 120px;
-  height: 6.5em;
-  top: 20px;
-  right: 20px;
-  padding: 0.25em;
+  height: 6%;
+  min-height: 70px;
+  top: 4%;
+  right: 2%;
   border: solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
   color: white;
-}
+  cursor: pointer;
+  text-align: center;
+  align-content: center;
 
+  
+  @media screen and (max-width: 768px) {
+    min-width: 70px;
+    min-height: 60px;
+    font-size: 1em;
+  }
+}
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>input {
   appearance: none;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 4%;
+  right: 2%;
 
 }
 
@@ -1480,24 +1575,38 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
 
 .planning>ul>li>a {
   color: white;
+  position: relative;
   align-items: center;
   text-decoration: none;
   list-style-type: none;
-  font-variant: small-caps;
+  font-variant: small-caps; 
+  }
 
-}
+
 
 .planning {
+  margin : 0;
   display: none;
   position: absolute;
-  top: 7.5em;
-  right: 20px;
+  width: 10%;
+  height: 15%;
+  top: 15%;
+  right: 2%;
   padding: 0;
   border: solid 4px rgba(0, 0, 0, 0.285);
   background-color: #03196c;
   color: white;
-
+  font-size: .75em;
+@media screen and (max-width: 768px) {
+    top: 75px;
+    right: 2%;
+    width: 12%;
+    height: 20%;
+  
+  }
+  
 }
+
 
 .menu-plan:checked~.planning {
   display: block;
@@ -1505,8 +1614,6 @@ main>section:nth-child(2)>article:nth-child(2)>div:nth-child(1)>nav>ul {
 
 /*-----------------Différents match-------------------*/
 main>section:nth-child(2)>article:nth-child(2)>div:nth-child(2) {
-  width: 100%;
-  height: 100%;
   max-height: 25em;
 }
 
@@ -1514,17 +1621,21 @@ main>section:nth-child(2)>article:nth-child(2) div:nth-child(2) div {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-
 }
 
 main>section:nth-child(2)>article:nth-child(2) div h3 {
   text-align: center;
-  background-color: none;
+
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div img {
   width: 100px;
   height: 75px;
+  @media screen and (max-width: 768px) {
+    width: 50px;
+    height: 37.5px;
+    
+  }
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div {
@@ -1532,18 +1643,20 @@ main>section:nth-child(2)>article:nth-child(2) div div {
   font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
+  @media screen and (max-width: 768px) {
+    font-size: 1em;
+    
+  }
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div table {
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 main>section:nth-child(2)>article:nth-child(2) div div table td {
-  width: 8em;
-  height: 2em;
+  width: 8%;
+  height: 3%;
 
 }
 
@@ -1570,21 +1683,13 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 
 /*-----------------Quart & Huitième-------------------*/
 #quart-finale1,
-#quart-finale2,
-#huitieme-finale1,
-#huitieme-finale2,
-#huitieme-finale3,
-#huitieme-finale4 {
+#quart-finale2{
   display: none;
   visibility: hidden;
 }
 
 #quart-finale1:target,
-#quart-finale2:target,
-#huitieme-finale1:target,
-#huitieme-finale2:target,
-#huitieme-finale3:target,
-#huitieme-finale4:target {
+#quart-finale2:target {
   visibility: visible;
   display: flex;
   flex-direction: column;
@@ -1598,10 +1703,13 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 #####################################################
 */
 .moments {
-  width: 100%;
-  margin: 32px;
+  width: 88%;
   height: auto;
   background-color: none;
+  @media screen and (max-width: 768px) {
+    width: 83%;
+    
+  }
 }
 
 .moments .carrousel {
@@ -1624,17 +1732,17 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 .moments_1 {
   z-index: 2;
   opacity: 1;
-  background-image: url(../images/images_epreuve/Unknown.jpeg),
+  background-image: url(../images/images_epreuve/victoirefrance.jpg),
     url(../images/images_epreuve/victoire\ slovenie.jpg),
-    url(../images/images_epreuve/retourner\ NGAPETH.jpg);
+    url(../images/images_epreuve/ngapeth.avif);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, left, right;
   background-size: 50%, 30%, 30%;
 }
 
 .moments_2 {
-  background-image: url(../images/images_epreuve/retourner\ NGAPETH.jpg),
-    url(../images/images_epreuve/Unknown.jpeg),
+  background-image: url(../images/images_epreuve/ngapeth.avif),
+    url(../images/images_epreuve/victoirefrance.jpg),
     url(../images/images_epreuve/victoire\ slovenie.jpg);
 
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -1645,8 +1753,8 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
 
 .moments_3 {
   background-image: url(../images/images_epreuve/victoire\ slovenie.jpg),
-    url(../images/images_epreuve/retourner\ NGAPETH.jpg),
-    url(../images/images_epreuve/Unknown.jpeg);
+    url(../images/images_epreuve/ngapeth.avif),
+    url(../images/images_epreuve/victoirefrance.jpg);
 
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center, left, right;
@@ -1666,6 +1774,28 @@ main>section:nth-child(2)>article:nth-child(2) div div table td {
   z-index: 2;
   opacity: 1;
 }
+
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(2) .suivant {
+  top: 350px;
+  right: 10px;
+  @media screen and (max-width: 768px) {
+    top: 250px;
+    right: 15px;
+    
+  }
+  
+}
+main>section:nth-child(2)>article:nth-child(2)>div:nth-child(2) .precedent {
+  top: 350px;
+  left: 15px;
+  @media screen and (max-width: 768px) {
+    top: 250px;
+    left: 15px;
+    
+  }
+  
+}
+
 
 /*
 #####################################################
@@ -1766,7 +1896,7 @@ footer section article:nth-of-type(3) {
   #                                                   #
   #####################################################
   */
-  span {
+  main > span {
     display: inline-block;
     width: 100%;
   }
@@ -1824,6 +1954,7 @@ footer section article:nth-of-type(3) {
     height:30%;
     width:30%;
   }
+  
   .burger_deroule  ul{
     display:flex;
     flex-direction:column;
@@ -1834,7 +1965,7 @@ footer section article:nth-of-type(3) {
   .burger_deroule ul li{
     padding:15%;
   }
-  .burger .planning{
+  .burger .menu-burger{
     height:20%;
     width:40%;
   }
@@ -1893,7 +2024,7 @@ footer section article:nth-of-type(3) {
     color: #03196c;
   }
 
-  span {
+  main > span {
     width: 100%;
     display: inline;
   }
@@ -2100,6 +2231,7 @@ main>div>article {
   width: 79%;
   margin: auto;
   margin-top: 50px;
+  z-index: 1;
 }
 
 main>div>article h2 {
@@ -2235,6 +2367,8 @@ main>table .interaciviter p {
   cursor: pointer;
 
 }
+
+
 
 
 /***********************************/
@@ -2380,6 +2514,7 @@ main>table .interaciviter p {
 
 
 /****** Taille intermediaire *****/
+
 
 
 @media (max-width: 1480px) {
@@ -2618,4 +2753,4 @@ main>table .interaciviter p {
   }
 }
    
-}
+} 
